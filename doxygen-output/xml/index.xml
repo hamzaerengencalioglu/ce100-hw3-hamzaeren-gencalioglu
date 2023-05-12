@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.6" xml:lang="en-US">
+  <compound refid="classce100__hw3__algo__lib__cs_1_1_huffman" kind="class"><name>ce100_hw3_algo_lib_cs::Huffman</name>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1ac78f79ce7f37e1a249e211ba48c7376e" kind="function"><name>GenerateLoremIpsum</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1a831aa46624b616207428159df16c0888" kind="function"><name>WriteBitArray</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1ac68d4c3bac7505d36f26e573b47fca9e" kind="function"><name>ReadBitArray</name></member>
+  </compound>
+  <compound refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree" kind="class"><name>ce100_hw3_algo_lib_cs::Huffman::HuffmanTree</name>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1a4a5db18d02fbb42b61ec4d56dc54aaf3" kind="variable"><name>nodes</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1a23f1aede22a6effe26c84f9abf91451b" kind="property"><name>Root</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1a26f218a51a885ed02f9c9f57da6abd6f" kind="variable"><name>Frequencies</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1af0cdf596e49f987d0e613e1286374216" kind="function"><name>Build</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1a6e6e671687c1d9bda1a713daeca82e5c" kind="function"><name>Encode</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1aa3180451080a1c157a5380c3d0e78231" kind="function"><name>Decode</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1ac54997c54a06d4b5412315d5d846e602" kind="function"><name>IsLeaf</name></member>
+  </compound>
+  <compound refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3" kind="class"><name>ce100_hw3_algo_lib_cs::Huffman::HuffmanTree_mp3</name>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3_1a00ab675b8625c179353a835784caf791" kind="variable"><name>nodes</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3_1a102bd1a2822b9f07861445a8deb32e6c" kind="property"><name>Root</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3_1addd419263069bbb2e70a8064c3e12aa9" kind="variable"><name>Frequencies</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3_1ac41ccbb12e004e929b9fdb7f14afe1bc" kind="function"><name>Build</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3_1a10db01adfca7b8c774a0d7bebe6d9bf4" kind="function"><name>Encode</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3_1a1a96874a895877ee47493baa3ce7b461" kind="function"><name>Decode</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3_1ad3eacdafa7eea1d9701e862383397c9f" kind="function"><name>IsLeaf</name></member>
+  </compound>
+  <compound refid="class_ikea_assembly_guide" kind="class"><name>IkeaAssemblyGuide</name>
+    <member refid="class_ikea_assembly_guide_1afe6a00bd53a0a80318cbe19db3899b1c" kind="variable"><name>productName</name></member>
+    <member refid="class_ikea_assembly_guide_1ae2c3b969c3d04f4c34a83dbcc57400ec" kind="variable"><name>productLink</name></member>
+    <member refid="class_ikea_assembly_guide_1ad304831695fb1fe957b95738be1b2514" kind="variable"><name>parts</name></member>
+    <member refid="class_ikea_assembly_guide_1af384d644fa4c837f2195d01a9c2a5956" kind="variable"><name>order</name></member>
+    <member refid="class_ikea_assembly_guide_1adbcb753afd6cbe7b22ad586c225eb6d9" kind="variable"><name>steps</name></member>
+    <member refid="class_ikea_assembly_guide_1ac9c89544660eb3e121985d6ceb462bbc" kind="function"><name>IkeaAssemblyGuide</name></member>
+    <member refid="class_ikea_assembly_guide_1a20b8f09e3a8c8196b95568ce0614f2c5" kind="function"><name>AddPart</name></member>
+    <member refid="class_ikea_assembly_guide_1a10edcd3b675b56ae553a392fa8a9420a" kind="function"><name>TopologicalSort</name></member>
+    <member refid="class_ikea_assembly_guide_1ab86454e2702133cf2b64620d243f117c" kind="function"><name>GetAssemblySteps</name></member>
+    <member refid="class_ikea_assembly_guide_1a2feda70455b94e5484e3052220b1e2ae" kind="function"><name>DFS</name></member>
+  </compound>
+  <compound refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node" kind="class"><name>ce100_hw3_algo_lib_cs::Huffman::Node</name>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_1acdcaec161f3ef02c408e115286f559e3" kind="property"><name>Symbol</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_1ac8f09bb728b21aac079ed62d6f3d4cf1" kind="property"><name>Frequency</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_1aae0fc776f4fa97942f9a7a76f3c8d06a" kind="property"><name>Right</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_1adea5e65ae5f9159b2dc46bcb45c15d4c" kind="property"><name>Left</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_1a34d0c2145b67d1d1f361716e1418f23d" kind="function"><name>Traverse</name></member>
+  </compound>
+  <compound refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3" kind="class"><name>ce100_hw3_algo_lib_cs::Huffman::Node_mp3</name>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1ab4fb3ee8be262efb1fdab1cf3ff78834" kind="property"><name>Symbol</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1a76cf8eaa290addcc3984b04958187dc5" kind="property"><name>Frequency</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1a690bc0a177ff59fa379863294d8bd0f7" kind="property"><name>Left</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1ad70aaa343d42c6b1e5aadbfd766b34f8" kind="property"><name>Right</name></member>
+    <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1a49f1ff1a6b0b87810598dbca37d33246" kind="function"><name>Traverse_mp3</name></member>
+  </compound>
+  <compound refid="namespacece100__hw3__algo__lib__cs" kind="namespace"><name>ce100_hw3_algo_lib_cs</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
+  </compound>
+  <compound refid="_huffman_8cs" kind="file"><name>Huffman.cs</name>
+  </compound>
+  <compound refid="_ikea_assembly_guide_8cs" kind="file"><name>IkeaAssemblyGuide.cs</name>
+  </compound>
+  <compound refid="dir_6349ebac575028621732fa64cab80b1a" kind="dir"><name>C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs</name>
+  </compound>
+  <compound refid="dir_c450e01fba5cad4af780c03e193fba46" kind="dir"><name>C:/Users/Administrator/Desktop/ce100-hw3-sln</name>
+  </compound>
+</doxygenindex>

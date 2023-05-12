@@ -1,0 +1,121 @@
+\hypertarget{class_ikea_assembly_guide}{}\doxysection{Ikea\+Assembly\+Guide Class Reference}
+\label{class_ikea_assembly_guide}\index{IkeaAssemblyGuide@{IkeaAssemblyGuide}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ikea_assembly_guide_ac9c89544660eb3e121985d6ceb462bbc}{Ikea\+Assembly\+Guide}} (string name, string link)
+\item 
+void \mbox{\hyperlink{class_ikea_assembly_guide_a20b8f09e3a8c8196b95568ce0614f2c5}{Add\+Part}} (string part, List$<$ string $>$ dependencies)
+\item 
+void \mbox{\hyperlink{class_ikea_assembly_guide_a10edcd3b675b56ae553a392fa8a9420a}{Topological\+Sort}} ()
+\item 
+Array\+List \mbox{\hyperlink{class_ikea_assembly_guide_ab86454e2702133cf2b64620d243f117c}{Get\+Assembly\+Steps}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_ikea_assembly_guide_8cs_source_l00011}{11}} of file \mbox{\hyperlink{_ikea_assembly_guide_8cs_source}{Ikea\+Assembly\+Guide.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ikea_assembly_guide_ac9c89544660eb3e121985d6ceb462bbc}\label{class_ikea_assembly_guide_ac9c89544660eb3e121985d6ceb462bbc}} 
+\index{IkeaAssemblyGuide@{IkeaAssemblyGuide}!IkeaAssemblyGuide@{IkeaAssemblyGuide}}
+\index{IkeaAssemblyGuide@{IkeaAssemblyGuide}!IkeaAssemblyGuide@{IkeaAssemblyGuide}}
+\doxysubsubsection{\texorpdfstring{IkeaAssemblyGuide()}{IkeaAssemblyGuide()}}
+{\footnotesize\ttfamily Ikea\+Assembly\+Guide.\+Ikea\+Assembly\+Guide (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{link }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_ikea_assembly_guide_8cs_source_l00028}{28}} of file \mbox{\hyperlink{_ikea_assembly_guide_8cs_source}{Ikea\+Assembly\+Guide.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00029\ \ \ \ \ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ productName\ =\ name;}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ productLink\ =\ link;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ parts\ =\ \textcolor{keyword}{new}\ Dictionary<string,\ List<string>>();}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ order\ =\ \textcolor{keyword}{new}\ Stack<string>();}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ steps\ =\ \textcolor{keyword}{new}\ ArrayList();}
+\DoxyCodeLine{00035\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ikea_assembly_guide_a20b8f09e3a8c8196b95568ce0614f2c5}\label{class_ikea_assembly_guide_a20b8f09e3a8c8196b95568ce0614f2c5}} 
+\index{IkeaAssemblyGuide@{IkeaAssemblyGuide}!AddPart@{AddPart}}
+\index{AddPart@{AddPart}!IkeaAssemblyGuide@{IkeaAssemblyGuide}}
+\doxysubsubsection{\texorpdfstring{AddPart()}{AddPart()}}
+{\footnotesize\ttfamily void Ikea\+Assembly\+Guide.\+Add\+Part (\begin{DoxyParamCaption}\item[{string}]{part,  }\item[{List$<$ string $>$}]{dependencies }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_ikea_assembly_guide_8cs_source_l00038}{38}} of file \mbox{\hyperlink{_ikea_assembly_guide_8cs_source}{Ikea\+Assembly\+Guide.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00039\ \ \ \ \ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ parts.Add(part,\ dependencies);}
+\DoxyCodeLine{00041\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ikea_assembly_guide_ab86454e2702133cf2b64620d243f117c}\label{class_ikea_assembly_guide_ab86454e2702133cf2b64620d243f117c}} 
+\index{IkeaAssemblyGuide@{IkeaAssemblyGuide}!GetAssemblySteps@{GetAssemblySteps}}
+\index{GetAssemblySteps@{GetAssemblySteps}!IkeaAssemblyGuide@{IkeaAssemblyGuide}}
+\doxysubsubsection{\texorpdfstring{GetAssemblySteps()}{GetAssemblySteps()}}
+{\footnotesize\ttfamily Array\+List Ikea\+Assembly\+Guide.\+Get\+Assembly\+Steps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_ikea_assembly_guide_8cs_source_l00082}{82}} of file \mbox{\hyperlink{_ikea_assembly_guide_8cs_source}{Ikea\+Assembly\+Guide.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00083\ \ \ \ \ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Creates\ a\ step\ for\ each\ item\ in\ the\ stack\ and\ adds\ them\ to\ the\ ArrayList\ in\ reverse\ order.}}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ ArrayList\ steps\ =\ \textcolor{keyword}{new}\ ArrayList();}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (order.Count\ >\ 0)}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ part\ =\ order.Pop();}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ step\ =\ \textcolor{stringliteral}{"{}Assemble\ part\ "{}}\ +\ part;}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ steps.Insert(0,\ step);}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Returns\ the\ inverted\ ArrayList.}}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ steps;}
+\DoxyCodeLine{00096\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ikea_assembly_guide_a10edcd3b675b56ae553a392fa8a9420a}\label{class_ikea_assembly_guide_a10edcd3b675b56ae553a392fa8a9420a}} 
+\index{IkeaAssemblyGuide@{IkeaAssemblyGuide}!TopologicalSort@{TopologicalSort}}
+\index{TopologicalSort@{TopologicalSort}!IkeaAssemblyGuide@{IkeaAssemblyGuide}}
+\doxysubsubsection{\texorpdfstring{TopologicalSort()}{TopologicalSort()}}
+{\footnotesize\ttfamily void Ikea\+Assembly\+Guide.\+Topological\+Sort (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_ikea_assembly_guide_8cs_source_l00044}{44}} of file \mbox{\hyperlink{_ikea_assembly_guide_8cs_source}{Ikea\+Assembly\+Guide.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00045\ \ \ \ \ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ A\ set\ that\ holds\ visited\ fragments}}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ HashSet<string>\ visited\ =\ \textcolor{keyword}{new}\ HashSet<string>();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Call\ DFS\ for\ each\ item\ in\ the\ dictionary}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\textcolor{keywordtype}{string}\ part\ \textcolor{keywordflow}{in}\ parts.Keys)}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ DFS(part,\ visited);}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Administrator/\+Desktop/ce100-\/hw3-\/sln/ce100-\/hw3-\/algo-\/lib-\/cs/\mbox{\hyperlink{_ikea_assembly_guide_8cs}{Ikea\+Assembly\+Guide.\+cs}}\end{DoxyCompactItemize}

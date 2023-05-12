@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3" kind="class" language="C#" prot="public">
+    <compoundname>ce100_hw3_algo_lib_cs::Huffman::Node_mp3</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1ab4fb3ee8be262efb1fdab1cf3ff78834" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>byte</type>
+        <definition>byte ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Symbol</definition>
+        <argsstring></argsstring>
+        <name>Symbol</name>
+        <qualifiedname>ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Symbol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="273" column="25" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="274" bodyend="277"/>
+        <referencedby refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1a49f1ff1a6b0b87810598dbca37d33246" compoundref="_huffman_8cs" startline="294" endline="348">ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Traverse_mp3</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1a76cf8eaa290addcc3984b04958187dc5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Frequency</definition>
+        <argsstring></argsstring>
+        <name>Frequency</name>
+        <qualifiedname>ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Frequency</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="278" column="24" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="279" bodyend="282"/>
+        <referencedby refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3_1ac41ccbb12e004e929b9fdb7f14afe1bc" compoundref="_huffman_8cs" startline="361" endline="416">ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Build</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1a690bc0a177ff59fa379863294d8bd0f7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3" kindref="compound">Node_mp3</ref></type>
+        <definition>Node_mp3 ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Left</definition>
+        <argsstring></argsstring>
+        <name>Left</name>
+        <qualifiedname>ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Left</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="283" column="29" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="284" bodyend="287"/>
+        <referencedby refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3_1ad3eacdafa7eea1d9701e862383397c9f" compoundref="_huffman_8cs" startline="478" endline="483">ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.IsLeaf</referencedby>
+        <referencedby refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1a49f1ff1a6b0b87810598dbca37d33246" compoundref="_huffman_8cs" startline="294" endline="348">ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Traverse_mp3</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1ad70aaa343d42c6b1e5aadbfd766b34f8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3" kindref="compound">Node_mp3</ref></type>
+        <definition>Node_mp3 ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Right</definition>
+        <argsstring></argsstring>
+        <name>Right</name>
+        <qualifiedname>ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Right</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="288" column="29" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="289" bodyend="292"/>
+        <referencedby refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3_1ad3eacdafa7eea1d9701e862383397c9f" compoundref="_huffman_8cs" startline="478" endline="483">ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.IsLeaf</referencedby>
+        <referencedby refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1a49f1ff1a6b0b87810598dbca37d33246" compoundref="_huffman_8cs" startline="294" endline="348">ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Traverse_mp3</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1a49f1ff1a6b0b87810598dbca37d33246" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; bool &gt;</type>
+        <definition>List&lt; bool &gt; ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Traverse_mp3</definition>
+        <argsstring>(byte? symbol, List&lt; bool &gt; data)</argsstring>
+        <name>Traverse_mp3</name>
+        <qualifiedname>ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Traverse_mp3</qualifiedname>
+        <param>
+          <type>byte?</type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type>List&lt; bool &gt;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="294" column="25" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="294" bodyend="348"/>
+        <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1a690bc0a177ff59fa379863294d8bd0f7" compoundref="_huffman_8cs" startline="284" endline="287">ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Left</references>
+        <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1ad70aaa343d42c6b1e5aadbfd766b34f8" compoundref="_huffman_8cs" startline="289" endline="292">ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Right</references>
+        <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1ab4fb3ee8be262efb1fdab1cf3ff78834" compoundref="_huffman_8cs" startline="274" endline="277">ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Symbol</references>
+        <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1a49f1ff1a6b0b87810598dbca37d33246" compoundref="_huffman_8cs" startline="294" endline="348">ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Traverse_mp3</references>
+        <referencedby refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3_1a10db01adfca7b8c774a0d7bebe6d9bf4" compoundref="_huffman_8cs" startline="417" endline="435">ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Encode</referencedby>
+        <referencedby refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1a49f1ff1a6b0b87810598dbca37d33246" compoundref="_huffman_8cs" startline="294" endline="348">ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Traverse_mp3</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="271" column="15" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="272" bodyend="349"/>
+    <listofallmembers>
+      <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1a76cf8eaa290addcc3984b04958187dc5" prot="public" virt="non-virtual"><scope>ce100_hw3_algo_lib_cs::Huffman::Node_mp3</scope><name>Frequency</name></member>
+      <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1a690bc0a177ff59fa379863294d8bd0f7" prot="public" virt="non-virtual"><scope>ce100_hw3_algo_lib_cs::Huffman::Node_mp3</scope><name>Left</name></member>
+      <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1ad70aaa343d42c6b1e5aadbfd766b34f8" prot="public" virt="non-virtual"><scope>ce100_hw3_algo_lib_cs::Huffman::Node_mp3</scope><name>Right</name></member>
+      <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1ab4fb3ee8be262efb1fdab1cf3ff78834" prot="public" virt="non-virtual"><scope>ce100_hw3_algo_lib_cs::Huffman::Node_mp3</scope><name>Symbol</name></member>
+      <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1a49f1ff1a6b0b87810598dbca37d33246" prot="public" virt="non-virtual"><scope>ce100_hw3_algo_lib_cs::Huffman::Node_mp3</scope><name>Traverse_mp3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,273 @@
+\hypertarget{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree}{}\doxysection{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree Class Reference}
+\label{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree}\index{ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree@{ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_af0cdf596e49f987d0e613e1286374216}{Build}} (string source)
+\item 
+Bit\+Array \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_a6e6e671687c1d9bda1a713daeca82e5c}{Encode}} (string source)
+\item 
+string \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_aa3180451080a1c157a5380c3d0e78231}{Decode}} (Bit\+Array bits)
+\item 
+bool \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_ac54997c54a06d4b5412315d5d846e602}{Is\+Leaf}} (\mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node}{Node}} node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ char, int $>$ \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_a26f218a51a885ed02f9c9f57da6abd6f}{Frequencies}} = new Dictionary$<$char, int$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node}{Node}} \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_a23f1aede22a6effe26c84f9abf91451b}{Root}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_huffman_8cs_source_l00127}{127}} of file \mbox{\hyperlink{_huffman_8cs_source}{Huffman.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_af0cdf596e49f987d0e613e1286374216}\label{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_af0cdf596e49f987d0e613e1286374216}} 
+\index{ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree@{ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree}!Build@{Build}}
+\index{Build@{Build}!ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree@{ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree}}
+\doxysubsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily void ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree.\+Build (\begin{DoxyParamCaption}\item[{string}]{source }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_huffman_8cs_source_l00137}{137}} of file \mbox{\hyperlink{_huffman_8cs_source}{Huffman.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ For\ each\ character\ of\ the\ source\ text}}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ source.Length;\ i++)}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ If\ it\ is\ not\ in\ the\ dictionary,\ appends\ it\ and\ sets\ its\ frequency\ to\ 0.}}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_a26f218a51a885ed02f9c9f57da6abd6f}{Frequencies}}.ContainsKey(source[i]))}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_a26f218a51a885ed02f9c9f57da6abd6f}{Frequencies}}.Add(source[i],\ 0);}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Increase\ the\ frequency\ by\ one.}}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_a26f218a51a885ed02f9c9f57da6abd6f}{Frequencies}}[source[i]]++;}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ For\ each\ symbol\ in\ the\ dictionary}}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (KeyValuePair<char,\ int>\ symbol\ \textcolor{keywordflow}{in}\ \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_a26f218a51a885ed02f9c9f57da6abd6f}{Frequencies}})}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Creates\ a\ node\ and\ adds\ it\ to\ the\ list.}}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nodes.Add(\textcolor{keyword}{new}\ Node()}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Symbol\ =\ symbol.Key,}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Frequency\ =\ symbol.Value}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Until\ the\ list\ is\ single\ element}}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (nodes.Count\ >\ 1)}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Sorts\ the\ list\ by\ frequency.}}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ List<Node>\ orderedNodes\ =\ nodes.OrderBy(node\ =>\ node.Frequency).ToList<Node>();}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ If\ there\ are\ at\ least\ two\ elements}}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (orderedNodes.Count\ >=\ 2)}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Gets\ the\ first\ two\ elements.}}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ List<Node>\ taken\ =\ orderedNodes.Take(2).ToList<Node>();}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Creates\ the\ common\ parent\ of\ these\ two\ elements.}}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Node\ parent\ =\ \textcolor{keyword}{new}\ Node() }
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Symbol\ =\ \textcolor{charliteral}{'*'},}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Frequency\ =\ taken[0].Frequency\ +\ taken[1].Frequency,}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Left\ =\ taken[0],}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Right\ =\ taken[1]}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Removes\ the\ received\ elements\ from\ the\ list.}}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nodes.Remove(taken[0]);}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nodes.Remove(taken[1]);}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Ebeveyni\ listeye\ ekler.}}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nodes.Add(parent);}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Updates\ the\ root\ node.}}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.Root\ =\ nodes.FirstOrDefault();}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_huffman_8cs_source_l00135}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree.\+Frequencies}}, and \mbox{\hyperlink{_huffman_8cs_source_l00026}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Node.\+Frequency}}.
+
+\mbox{\Hypertarget{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_aa3180451080a1c157a5380c3d0e78231}\label{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_aa3180451080a1c157a5380c3d0e78231}} 
+\index{ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree@{ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree}!Decode@{Decode}}
+\index{Decode@{Decode}!ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree@{ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree}}
+\doxysubsubsection{\texorpdfstring{Decode()}{Decode()}}
+{\footnotesize\ttfamily string ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree.\+Decode (\begin{DoxyParamCaption}\item[{Bit\+Array}]{bits }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_huffman_8cs_source_l00214}{214}} of file \mbox{\hyperlink{_huffman_8cs_source}{Huffman.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Variable\ to\ hold\ the\ current\ node}}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Node\ current\ =\ this.\mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_a23f1aede22a6effe26c84f9abf91451b}{Root}};}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Decoded\ text}}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ decoded\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00220\ }
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ For\ each\ bit\ of\ the\ bit\ array}}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\textcolor{keywordtype}{bool}\ bit\ \textcolor{keywordflow}{in}\ bits)}
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ If\ bit\ is\ 1,\ it\ goes\ to\ the\ lower\ right\ branch.}}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (bit)}
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (current.Right\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ current\ =\ current.\mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_aae0fc776f4fa97942f9a7a76f3c8d06a}{Right}};}
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00232\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ If\ bit\ is\ 0,\ it\ goes\ to\ the\ lower\ left\ branch.}}
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (current.Left\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ current\ =\ current.\mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_adea5e65ae5f9159b2dc46bcb45c15d4c}{Left}};}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00240\ }
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ If\ the\ leaf\ has\ arrived\ at\ the\ node}}
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_ac54997c54a06d4b5412315d5d846e602}{IsLeaf}}(current))}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Adds\ the\ node's\ symbol\ to\ the\ text.}}
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ decoded\ +=\ current.\mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_acdcaec161f3ef02c408e115286f559e3}{Symbol}};}
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Resets\ the\ current\ node\ to\ the\ root.}}
+\DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ current\ =\ this.\mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_a23f1aede22a6effe26c84f9abf91451b}{Root}};}
+\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00250\ }
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Returns\ the\ decoded\ text.}}
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ decoded;}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_huffman_8cs_source_l00255}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree.\+Is\+Leaf()}}, \mbox{\hyperlink{_huffman_8cs_source_l00036}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Node.\+Left}}, \mbox{\hyperlink{_huffman_8cs_source_l00031}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Node.\+Right}}, \mbox{\hyperlink{_huffman_8cs_source_l00131}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree.\+Root}}, and \mbox{\hyperlink{_huffman_8cs_source_l00021}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Node.\+Symbol}}.
+
+\mbox{\Hypertarget{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_a6e6e671687c1d9bda1a713daeca82e5c}\label{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_a6e6e671687c1d9bda1a713daeca82e5c}} 
+\index{ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree@{ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree}!Encode@{Encode}}
+\index{Encode@{Encode}!ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree@{ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree}}
+\doxysubsubsection{\texorpdfstring{Encode()}{Encode()}}
+{\footnotesize\ttfamily Bit\+Array ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree.\+Encode (\begin{DoxyParamCaption}\item[{string}]{source }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_huffman_8cs_source_l00194}{194}} of file \mbox{\hyperlink{_huffman_8cs_source}{Huffman.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ List\ to\ hold\ encoded\ text}}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ List<bool>\ encodedSource\ =\ \textcolor{keyword}{new}\ List<bool>();}
+\DoxyCodeLine{00198\ }
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ For\ each\ character\ of\ the\ source\ text}}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ source.Length;\ i++)}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Finds\ the\ encoded\ version\ of\ the\ character\ in\ the\ tree.}}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ List<bool>\ encodedSymbol\ =\ this.\mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_a23f1aede22a6effe26c84f9abf91451b}{Root}}.\mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_a34d0c2145b67d1d1f361716e1418f23d}{Traverse}}(source[i],\ \textcolor{keyword}{new}\ List<bool>());}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Adds\ the\ encoded\ character\ to\ the\ list.}}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ encodedSource.AddRange(encodedSymbol);}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Converts\ list\ elements\ to\ a\ bit\ array.}}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BitArray\ bits\ =\ \textcolor{keyword}{new}\ BitArray(encodedSource.ToArray());}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Returns\ the\ bit\ array.}}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ bits;}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_huffman_8cs_source_l00131}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree.\+Root}}, and \mbox{\hyperlink{_huffman_8cs_source_l00041}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Node.\+Traverse()}}.
+
+\mbox{\Hypertarget{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_ac54997c54a06d4b5412315d5d846e602}\label{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_ac54997c54a06d4b5412315d5d846e602}} 
+\index{ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree@{ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree}!IsLeaf@{IsLeaf}}
+\index{IsLeaf@{IsLeaf}!ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree@{ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree}}
+\doxysubsubsection{\texorpdfstring{IsLeaf()}{IsLeaf()}}
+{\footnotesize\ttfamily bool ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree.\+Is\+Leaf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node}{Node}}}]{node }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_huffman_8cs_source_l00255}{255}} of file \mbox{\hyperlink{_huffman_8cs_source}{Huffman.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Checks\ if\ the\ node\ is\ a\ leaf.}}
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ If\ it\ has\ no\ left\ and\ right\ child\ branches,\ it\ is\ a\ leaf}}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (node.Left\ ==\ \textcolor{keyword}{null}\ \&\&\ node.Right\ ==\ \textcolor{keyword}{null});}
+\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_huffman_8cs_source_l00036}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Node.\+Left}}, and \mbox{\hyperlink{_huffman_8cs_source_l00031}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Node.\+Right}}.
+
+
+
+Referenced by \mbox{\hyperlink{_huffman_8cs_source_l00214}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree.\+Decode()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_a26f218a51a885ed02f9c9f57da6abd6f}\label{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_a26f218a51a885ed02f9c9f57da6abd6f}} 
+\index{ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree@{ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree}!Frequencies@{Frequencies}}
+\index{Frequencies@{Frequencies}!ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree@{ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree}}
+\doxysubsubsection{\texorpdfstring{Frequencies}{Frequencies}}
+{\footnotesize\ttfamily Dictionary$<$char, int$>$ ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree.\+Frequencies = new Dictionary$<$char, int$>$()}
+
+
+
+Definition at line \mbox{\hyperlink{_huffman_8cs_source_l00135}{135}} of file \mbox{\hyperlink{_huffman_8cs_source}{Huffman.\+cs}}.
+
+
+
+Referenced by \mbox{\hyperlink{_huffman_8cs_source_l00137}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree.\+Build()}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_a23f1aede22a6effe26c84f9abf91451b}\label{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_a23f1aede22a6effe26c84f9abf91451b}} 
+\index{ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree@{ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree}!Root@{Root}}
+\index{Root@{Root}!ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree@{ce100\_hw3\_algo\_lib\_cs.Huffman.HuffmanTree}}
+\doxysubsubsection{\texorpdfstring{Root}{Root}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node}{Node}} ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree.\+Root\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line \mbox{\hyperlink{_huffman_8cs_source_l00130}{130}} of file \mbox{\hyperlink{_huffman_8cs_source}{Huffman.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get};}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set};}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{_huffman_8cs_source_l00214}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree.\+Decode()}}, and \mbox{\hyperlink{_huffman_8cs_source_l00194}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree.\+Encode()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Administrator/\+Desktop/ce100-\/hw3-\/sln/ce100-\/hw3-\/algo-\/lib-\/cs/\mbox{\hyperlink{_huffman_8cs}{Huffman.\+cs}}\end{DoxyCompactItemize}

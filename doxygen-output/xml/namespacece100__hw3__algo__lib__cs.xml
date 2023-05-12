@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="namespacece100__hw3__algo__lib__cs" kind="namespace" language="C#">
+    <compoundname>ce100_hw3_algo_lib_cs</compoundname>
+    <innerclass refid="classce100__hw3__algo__lib__cs_1_1_huffman" prot="public">ce100_hw3_algo_lib_cs::Huffman</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

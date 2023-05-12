@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree" kind="class" language="C#" prot="public">
+    <compoundname>ce100_hw3_algo_lib_cs::Huffman::HuffmanTree</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1a4a5db18d02fbb42b61ec4d56dc54aaf3" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node" kindref="compound">Node</ref> &gt;</type>
+        <definition>List&lt;Node&gt; ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.nodes</definition>
+        <argsstring></argsstring>
+        <name>nodes</name>
+        <qualifiedname>ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.nodes</qualifiedname>
+        <initializer>= new List&lt;<ref refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node" kindref="compound">Node</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="129" column="26" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1a23f1aede22a6effe26c84f9abf91451b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node" kindref="compound">Node</ref></type>
+        <definition>Node ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Root</definition>
+        <argsstring></argsstring>
+        <name>Root</name>
+        <qualifiedname>ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Root</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="130" column="25" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="131" bodyend="134"/>
+        <referencedby refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1aa3180451080a1c157a5380c3d0e78231" compoundref="_huffman_8cs" startline="214" endline="253">ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Decode</referencedby>
+        <referencedby refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1a6e6e671687c1d9bda1a713daeca82e5c" compoundref="_huffman_8cs" startline="194" endline="212">ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Encode</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1a26f218a51a885ed02f9c9f57da6abd6f" prot="public" static="no" mutable="no">
+        <type>Dictionary&lt; char, int &gt;</type>
+        <definition>Dictionary&lt;char, int&gt; ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Frequencies</definition>
+        <argsstring></argsstring>
+        <name>Frequencies</name>
+        <qualifiedname>ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Frequencies</qualifiedname>
+        <initializer>= new Dictionary&lt;char, int&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="135" column="31" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="135" bodyend="-1"/>
+        <referencedby refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1af0cdf596e49f987d0e613e1286374216" compoundref="_huffman_8cs" startline="137" endline="192">ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Build</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1af0cdf596e49f987d0e613e1286374216" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Build</definition>
+        <argsstring>(string source)</argsstring>
+        <name>Build</name>
+        <qualifiedname>ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Build</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="137" column="25" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="137" bodyend="192"/>
+        <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1a26f218a51a885ed02f9c9f57da6abd6f" compoundref="_huffman_8cs" startline="135">ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Frequencies</references>
+        <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_1ac8f09bb728b21aac079ed62d6f3d4cf1" compoundref="_huffman_8cs" startline="26" endline="29">ce100_hw3_algo_lib_cs.Huffman.Node.Frequency</references>
+      </memberdef>
+      <memberdef kind="function" id="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1a6e6e671687c1d9bda1a713daeca82e5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BitArray</type>
+        <definition>BitArray ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Encode</definition>
+        <argsstring>(string source)</argsstring>
+        <name>Encode</name>
+        <qualifiedname>ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Encode</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="194" column="29" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="194" bodyend="212"/>
+        <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1a23f1aede22a6effe26c84f9abf91451b" compoundref="_huffman_8cs" startline="131" endline="134">ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Root</references>
+        <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_1a34d0c2145b67d1d1f361716e1418f23d" compoundref="_huffman_8cs" startline="41" endline="95">ce100_hw3_algo_lib_cs.Huffman.Node.Traverse</references>
+      </memberdef>
+      <memberdef kind="function" id="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1aa3180451080a1c157a5380c3d0e78231" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Decode</definition>
+        <argsstring>(BitArray bits)</argsstring>
+        <name>Decode</name>
+        <qualifiedname>ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Decode</qualifiedname>
+        <param>
+          <type>BitArray</type>
+          <declname>bits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="214" column="27" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="214" bodyend="253"/>
+        <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1ac54997c54a06d4b5412315d5d846e602" compoundref="_huffman_8cs" startline="255" endline="260">ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.IsLeaf</references>
+        <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_1adea5e65ae5f9159b2dc46bcb45c15d4c" compoundref="_huffman_8cs" startline="36" endline="39">ce100_hw3_algo_lib_cs.Huffman.Node.Left</references>
+        <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_1aae0fc776f4fa97942f9a7a76f3c8d06a" compoundref="_huffman_8cs" startline="31" endline="34">ce100_hw3_algo_lib_cs.Huffman.Node.Right</references>
+        <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1a23f1aede22a6effe26c84f9abf91451b" compoundref="_huffman_8cs" startline="131" endline="134">ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Root</references>
+        <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_1acdcaec161f3ef02c408e115286f559e3" compoundref="_huffman_8cs" startline="21" endline="24">ce100_hw3_algo_lib_cs.Huffman.Node.Symbol</references>
+      </memberdef>
+      <memberdef kind="function" id="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1ac54997c54a06d4b5412315d5d846e602" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.IsLeaf</definition>
+        <argsstring>(Node node)</argsstring>
+        <name>IsLeaf</name>
+        <qualifiedname>ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.IsLeaf</qualifiedname>
+        <param>
+          <type><ref refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node" kindref="compound">Node</ref></type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="255" column="25" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="255" bodyend="260"/>
+        <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_1adea5e65ae5f9159b2dc46bcb45c15d4c" compoundref="_huffman_8cs" startline="36" endline="39">ce100_hw3_algo_lib_cs.Huffman.Node.Left</references>
+        <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_1aae0fc776f4fa97942f9a7a76f3c8d06a" compoundref="_huffman_8cs" startline="31" endline="34">ce100_hw3_algo_lib_cs.Huffman.Node.Right</references>
+        <referencedby refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1aa3180451080a1c157a5380c3d0e78231" compoundref="_huffman_8cs" startline="214" endline="253">ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Decode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="127" column="15" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="128" bodyend="262"/>
+    <listofallmembers>
+      <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1af0cdf596e49f987d0e613e1286374216" prot="public" virt="non-virtual"><scope>ce100_hw3_algo_lib_cs::Huffman::HuffmanTree</scope><name>Build</name></member>
+      <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1aa3180451080a1c157a5380c3d0e78231" prot="public" virt="non-virtual"><scope>ce100_hw3_algo_lib_cs::Huffman::HuffmanTree</scope><name>Decode</name></member>
+      <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1a6e6e671687c1d9bda1a713daeca82e5c" prot="public" virt="non-virtual"><scope>ce100_hw3_algo_lib_cs::Huffman::HuffmanTree</scope><name>Encode</name></member>
+      <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1a26f218a51a885ed02f9c9f57da6abd6f" prot="public" virt="non-virtual"><scope>ce100_hw3_algo_lib_cs::Huffman::HuffmanTree</scope><name>Frequencies</name></member>
+      <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1ac54997c54a06d4b5412315d5d846e602" prot="public" virt="non-virtual"><scope>ce100_hw3_algo_lib_cs::Huffman::HuffmanTree</scope><name>IsLeaf</name></member>
+      <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1a4a5db18d02fbb42b61ec4d56dc54aaf3" prot="private" virt="non-virtual"><scope>ce100_hw3_algo_lib_cs::Huffman::HuffmanTree</scope><name>nodes</name></member>
+      <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree_1a23f1aede22a6effe26c84f9abf91451b" prot="public" virt="non-virtual"><scope>ce100_hw3_algo_lib_cs::Huffman::HuffmanTree</scope><name>Root</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

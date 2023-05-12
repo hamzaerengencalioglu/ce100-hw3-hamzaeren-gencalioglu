@@ -1,0 +1,2228 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\info 
+{\title {\comment ce100-hw3  {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+1.0 \par
+}}ce100-hw3}
+{\comment Generated by doxygen 1.9.6.}
+{\creatim \yr2023\mo5\dy13\hr2\min32\sec42}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt ce100-hw3}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version 1.0\par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt Sat May 13 2023 }}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table of Contents\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Namespace Index\par \pard\plain 
+{\tc \v Namespace Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Package List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here are the packages with brief descriptions (if available):}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b ce100_hw3_algo_lib_cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Class Index\par \pard\plain 
+{\tc \v Class Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Class List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here are the classes, structs, unions and interfaces with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b ce100_hw3_algo_lib_cs.Huffman} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAK \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAV \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b IkeaAssemblyGuide} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b ce100_hw3_algo_lib_cs.Huffman.Node} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b ce100_hw3_algo_lib_cs.Huffman.Node_mp3} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABI \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Index\par \pard\plain 
+{\tc \v File Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+File List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all files with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/{\b Huffman.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/{\b IkeaAssemblyGuide.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Namespace Documentation\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100_hw3_algo_lib_cs Namespace Reference\par \pard\plain 
+{\tc\tcl2 \v ce100_hw3_algo_lib_cs}
+{\xe \v ce100_hw3_algo_lib_cs}
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Huffman}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Class Documentation{\tc \v Class Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100_hw3_algo_lib_cs.Huffman Class Reference\par \pard\plain 
+{\tc\tcl2 \v ce100_hw3_algo_lib_cs.Huffman}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman}
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b HuffmanTree}\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b HuffmanTree_mp3}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Node}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Node_mp3}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Static Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static void {\b WriteBitArray} (BinaryWriter writer, BitArray bits)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static BitArray {\b ReadBitArray} (BinaryReader reader, long byteCount)\par
+}
+{
+\pard\plain \s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid GenerateLoremIpsum\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Generates Lorem Ipsum text with the specified length.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i Source} \cell }{The source text used to build the Huffman tree.\cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i The} \cell }{generated Lorem Ipsum text. \cell }
+{\row }
+}
+}}\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static string {\b GenerateLoremIpsum} (long length)\par
+}
+}{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\b 15} of file {\b Huffman.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v GenerateLoremIpsum\:ce100_hw3_algo_lib_cs.Huffman}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman\:GenerateLoremIpsum}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static string ce100_hw3_algo_lib_cs.Huffman.GenerateLoremIpsum (long  {\i length}){\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 495} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00496         \{\par
+00497             {\cf20 // Defines a variable to hold the text Lorem ipsum.}\par
+00498             {\cf18 string} loremIpsumText = {\cf22 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "} +\par
+00499                                     {\cf22 "Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. "} +\par
+00500                                     {\cf22 "Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi."};\par
+00501             {\cf20 // Calculates how many times the text should be repeated.}\par
+00502             {\cf18 int} repeatCount = (int)Math.Ceiling(({\cf18 double})length / loremIpsumText.Length);\par
+00503             {\cf20 // Variable to hold repeated text}\par
+00504             {\cf18 string} loremIpsum = {\cf22 ""};\par
+00505 \par
+00506             {\cf20 // Repeats the text the desired number of times.}\par
+00507             {\cf19 for} ({\cf18 int} i = 0; i < repeatCount; i++)\par
+00508             \{\par
+00509                 loremIpsum += loremIpsumText;\par
+00510             \}\par
+00511 \par
+00512             {\cf20 // Truncates the text to the desired length.}\par
+00513             loremIpsum = loremIpsum.Substring(0, ({\cf18 int})length);\par
+00514             {\cf20 // Returns the text.}\par
+00515             {\cf19 return} loremIpsum;\par
+00516         \}\par
+}
+}
+{\xe \v ReadBitArray\:ce100_hw3_algo_lib_cs.Huffman}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman\:ReadBitArray}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static BitArray ce100_hw3_algo_lib_cs.Huffman.ReadBitArray (BinaryReader  {\i reader}, long  {\i byteCount}){\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 106} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00107         \{\par
+00108             {\cf20 // List to hold bits.}\par
+00109             List<bool> bits = {\cf17 new} List<bool>();\par
+00110             {\cf20 // Reads the byte array from the reader.}\par
+00111             {\cf18 byte}[] bytes = reader.ReadBytes(({\cf18 int})byteCount);\par
+00112 \par
+00113             {\cf20 // For each byte}\par
+00114             {\cf19 foreach} ({\cf18 byte} b {\cf19 in} bytes)\par
+00115             \{\par
+00116                 {\cf20 // Checks 8 bits one by one.}\par
+00117                 {\cf19 for} ({\cf18 int} i = 0; i < 8; i++)\par
+00118                 \{\par
+00119                     {\cf20 // If bit is 1, it adds true to the list.}\par
+00120                     bits.Add((b & (1 << i)) != 0);\par
+00121                 \}\par
+00122             \}\par
+00123 \par
+00124             {\cf20 // Creates and returns an array of bits.}\par
+00125             {\cf19 return} {\cf17 new} BitArray(bits.ToArray());\par
+00126         \}\par
+}
+}
+{\xe \v WriteBitArray\:ce100_hw3_algo_lib_cs.Huffman}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman\:WriteBitArray}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static void ce100_hw3_algo_lib_cs.Huffman.WriteBitArray (BinaryWriter  {\i writer}, BitArray  {\i bits}){\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 97} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00098         \{\par
+00099             {\cf20 // Converts bit array to byte array.}\par
+00100             {\cf18 byte}[] bytes = {\cf17 new} {\cf18 byte}[(bits.Length + 7) / 8];\par
+00101             bits.CopyTo(bytes, 0);\par
+00102             {\cf20 // Prints the byte array to the printer.}\par
+00103             writer.Write(bytes);\par
+00104         \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/{\b Huffman.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100_hw3_algo_lib_cs.Huffman.HuffmanTree Class Reference\par \pard\plain 
+{\tc\tcl2 \v ce100_hw3_algo_lib_cs.Huffman.HuffmanTree}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.HuffmanTree}
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Build} (string source)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+BitArray {\b Encode} (string source)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\b Decode} (BitArray bits)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b IsLeaf} ({\b Node} node)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Dictionary< char, int > {\b Frequencies} = new Dictionary<char, int>()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Node} {\b Root}{\f2  [get, set]}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\b 127} of file {\b Huffman.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v Build\:ce100_hw3_algo_lib_cs.Huffman.HuffmanTree}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.HuffmanTree\:Build}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Build (string  {\i source})}}
+\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 137} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00138             \{\par
+00139                 {\cf20 // For each character of the source text}\par
+00140                 {\cf19 for} ({\cf18 int} i = 0; i < source.Length; i++)\par
+00141                 \{\par
+00142                     {\cf20 // If it is not in the dictionary, appends it and sets its frequency to 0.}\par
+00143                     {\cf19 if} (!Frequencies.ContainsKey(source[i]))\par
+00144                     \{\par
+00145                         Frequencies.Add(source[i], 0);\par
+00146                     \}\par
+00147 \par
+00148                     {\cf20 // Increase the frequency by one.}\par
+00149                     Frequencies[source[i]]++;\par
+00150                 \}\par
+00151 \par
+00152                 {\cf20 // For each symbol in the dictionary}\par
+00153                 {\cf19 foreach} (KeyValuePair<char, int> symbol {\cf19 in} Frequencies)\par
+00154                 \{\par
+00155                     {\cf20 // Creates a node and adds it to the list.}\par
+00156                     nodes.Add({\cf17 new} Node()\par
+00157                     \{\par
+00158                         Symbol = symbol.Key,\par
+00159                         Frequency = symbol.Value\par
+00160                     \});\par
+00161                 \}\par
+00162 \par
+00163                 {\cf20 // Until the list is single element}\par
+00164                 {\cf19 while} (nodes.Count > 1)\par
+00165                 \{\par
+00166                     {\cf20 // Sorts the list by frequency.}\par
+00167                     List<Node> orderedNodes = nodes.OrderBy(node => node.Frequency).ToList<Node>();\par
+00168 \par
+00169                     {\cf20 // If there are at least two elements}\par
+00170                     {\cf19 if} (orderedNodes.Count >= 2)\par
+00171                     \{\par
+00172                         {\cf20 // Gets the first two elements.}\par
+00173                         List<Node> taken = orderedNodes.Take(2).ToList<Node>();\par
+00174                         {\cf20 // Creates the common parent of these two elements.}\par
+00175                         Node parent = {\cf17 new} Node()\par
+00176                         \{\par
+00177                             Symbol = {\cf23 '*'},\par
+00178                             Frequency = taken[0].Frequency + taken[1].Frequency,\par
+00179                             Left = taken[0],\par
+00180                             Right = taken[1]\par
+00181                         \};\par
+00182                         {\cf20 // Removes the received elements from the list.}\par
+00183                         nodes.Remove(taken[0]);\par
+00184                         nodes.Remove(taken[1]);\par
+00185                         {\cf20 // Ebeveyni listeye ekler.}\par
+00186                         nodes.Add(parent);\par
+00187                     \}\par
+00188 \par
+00189                     {\cf20 // Updates the root node.}\par
+00190                     this.Root = nodes.FirstOrDefault();\par
+00191                 \}\par
+00192             \}\par
+}
+{
+\ql
+References {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Frequencies}, and {\b ce100_hw3_algo_lib_cs.Huffman.Node.Frequency}.}\par
+}
+{\xe \v Decode\:ce100_hw3_algo_lib_cs.Huffman.HuffmanTree}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.HuffmanTree\:Decode}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Decode (BitArray  {\i bits})}}
+\par
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 214} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00215             \{\par
+00216                 {\cf20 // Variable to hold the current node}\par
+00217                 Node current = this.Root;\par
+00218                 {\cf20 // Decoded text}\par
+00219                 {\cf18 string} decoded = {\cf22 ""};\par
+00220 \par
+00221                 {\cf20 // For each bit of the bit array}\par
+00222                 {\cf19 foreach} ({\cf18 bool} bit {\cf19 in} bits)\par
+00223                 \{\par
+00224                     {\cf20 // If bit is 1, it goes to the lower right branch.}\par
+00225                     {\cf19 if} (bit)\par
+00226                     \{\par
+00227                         {\cf19 if} (current.Right != {\cf17 null})\par
+00228                         \{\par
+00229                             current = current.Right;\par
+00230                         \}\par
+00231                     \}\par
+00232                     {\cf20 // If bit is 0, it goes to the lower left branch.}\par
+00233                     {\cf19 else}\par
+00234                     \{\par
+00235                         {\cf19 if} (current.Left != {\cf17 null})\par
+00236                         \{\par
+00237                             current = current.Left;\par
+00238                         \}\par
+00239                     \}\par
+00240 \par
+00241                     {\cf20 // If the leaf has arrived at the node}\par
+00242                     {\cf19 if} (IsLeaf(current))\par
+00243                     \{\par
+00244                         {\cf20 // Adds the node's symbol to the text.}\par
+00245                         decoded += current.Symbol;\par
+00246                         {\cf20 // Resets the current node to the root.}\par
+00247                         current = this.Root;\par
+00248                     \}\par
+00249                 \}\par
+00250 \par
+00251                 {\cf20 // Returns the decoded text.}\par
+00252                 {\cf19 return} decoded;\par
+00253             \}\par
+}
+{
+\ql
+References {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.IsLeaf()}, {\b ce100_hw3_algo_lib_cs.Huffman.Node.Left}, {\b ce100_hw3_algo_lib_cs.Huffman.Node.Right}, {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Root}, and {\b ce100_hw3_algo_lib_cs.Huffman.Node.Symbol}.}\par
+}
+{\xe \v Encode\:ce100_hw3_algo_lib_cs.Huffman.HuffmanTree}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.HuffmanTree\:Encode}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+BitArray ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Encode (string  {\i source})}}
+\par
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 194} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00195             \{\par
+00196                 {\cf20 // List to hold encoded text}\par
+00197                 List<bool> encodedSource = {\cf17 new} List<bool>();\par
+00198 \par
+00199                 {\cf20 // For each character of the source text}\par
+00200                 {\cf19 for} ({\cf18 int} i = 0; i < source.Length; i++)\par
+00201                 \{\par
+00202                     {\cf20 // Finds the encoded version of the character in the tree.}\par
+00203                     List<bool> encodedSymbol = this.Root.Traverse(source[i], {\cf17 new} List<bool>());\par
+00204                     {\cf20 // Adds the encoded character to the list.}\par
+00205                     encodedSource.AddRange(encodedSymbol);\par
+00206                 \}\par
+00207 \par
+00208                 {\cf20 // Converts list elements to a bit array.}\par
+00209                 BitArray bits = {\cf17 new} BitArray(encodedSource.ToArray());\par
+00210                 {\cf20 // Returns the bit array.}\par
+00211                 {\cf19 return} bits;\par
+00212             \}\par
+}
+{
+\ql
+References {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Root}, and {\b ce100_hw3_algo_lib_cs.Huffman.Node.Traverse()}.}\par
+}
+{\xe \v IsLeaf\:ce100_hw3_algo_lib_cs.Huffman.HuffmanTree}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.HuffmanTree\:IsLeaf}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.IsLeaf ({\b Node}  {\i node})}}
+\par
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 255} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00256             \{\par
+00257                 {\cf20 // Checks if the node is a leaf.}\par
+00258                 {\cf20 // If it has no left and right child branches, it is a leaf}\par
+00259                 {\cf19 return} (node.Left == {\cf17 null} && node.Right == {\cf17 null});\par
+00260             \}\par
+}
+{
+\ql
+References {\b ce100_hw3_algo_lib_cs.Huffman.Node.Left}, and {\b ce100_hw3_algo_lib_cs.Huffman.Node.Right}.}\par
+{
+\ql
+Referenced by {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Decode()}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v Frequencies\:ce100_hw3_algo_lib_cs.Huffman.HuffmanTree}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.HuffmanTree\:Frequencies}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Dictionary<char, int> ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Frequencies = new Dictionary<char, int>()}}
+\par
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 135} of file {\b Huffman.cs}.}\par
+{
+\ql
+Referenced by {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Build()}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Property Documentation\par
+\pard\plain 
+{\xe \v Root\:ce100_hw3_algo_lib_cs.Huffman.HuffmanTree}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.HuffmanTree\:Root}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Node} ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Root{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 130} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00131             \{\par
+00132                 {\cf17 get};\par
+00133                 {\cf17 set};\par
+00134             \}\par
+}
+{
+\ql
+Referenced by {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Decode()}, and {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Encode()}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/{\b Huffman.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3 Class Reference\par \pard\plain 
+{\tc\tcl2 \v ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3}
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Build} (byte[] source)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+BitArray {\b Encode} (byte[] source)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+byte[] {\b Decode} (BitArray bits)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b IsLeaf} ({\b Node_mp3} node)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Dictionary< byte, int > {\b Frequencies} = new Dictionary<byte, int>()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Node_mp3} {\b Root}{\f2  [get, set]}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\b 351} of file {\b Huffman.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v Build\:ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3\:Build}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Build (byte[]  {\i source})}}
+\par
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 361} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00362             \{\par
+00363                 {\cf20 // For each byte of the source array}\par
+00364                 {\cf19 for} ({\cf18 int} i = 0; i < source.Length; i++)\par
+00365                 \{\par
+00366                     {\cf20 // If it is not in the dictionary, add it and set its frequency to 0.}\par
+00367                     {\cf19 if} (!Frequencies.ContainsKey(source[i]))\par
+00368                     \{\par
+00369                         Frequencies.Add(source[i], 0);\par
+00370                     \}\par
+00371 \par
+00372                     {\cf20 // Increases the frequency by one.}\par
+00373                     Frequencies[source[i]]++;\par
+00374                 \}\par
+00375 \par
+00376                 {\cf20 // For each symbol in the dictionary}\par
+00377                 {\cf19 foreach} (KeyValuePair<byte, int> symbol {\cf19 in} Frequencies)\par
+00378                 \{\par
+00379                     {\cf20 // Create a node and add it to the list.}\par
+00380                     nodes.Add({\cf17 new} Node_mp3()\par
+00381                     \{\par
+00382                         Symbol = symbol.Key,\par
+00383                         Frequency = symbol.Value\par
+00384                     \});\par
+00385                 \}\par
+00386 \par
+00387                 {\cf20 // Until the list is single element}\par
+00388                 {\cf19 while} (nodes.Count > 1)\par
+00389                 \{\par
+00390                     {\cf20 // Sorts the list by frequency.}\par
+00391                     List<Node_mp3> orderedNodes = nodes.OrderBy(node => node.Frequency).ToList<Node_mp3>();\par
+00392 \par
+00393                     {\cf20 // If there are at least two elements}\par
+00394                     {\cf19 if} (orderedNodes.Count >= 2)\par
+00395                     \{\par
+00396                         {\cf20 // Gets the first two elements.}\par
+00397                         List<Node_mp3> taken = orderedNodes.Take(2).ToList<Node_mp3>();\par
+00398                         {\cf20 // Creates the common parent of these two elements.}\par
+00399                         Node_mp3 parent = {\cf17 new} Node_mp3()\par
+00400                         \{\par
+00401                             Symbol = {\cf18 byte}.MaxValue, {\cf20 // The parent has no symbol.}\par
+00402                             Frequency = taken[0].Frequency + taken[1].Frequency,\par
+00403                             Left = taken[0],\par
+00404                             Right = taken[1]\par
+00405                         \};\par
+00406                         {\cf20 // Removes the received elements from the list.}\par
+00407                         nodes.Remove(taken[0]);\par
+00408                         nodes.Remove(taken[1]);\par
+00409                         {\cf20 // Adds the parent to the list.}\par
+00410                         nodes.Add(parent);\par
+00411                     \}\par
+00412 \par
+00413                     {\cf20 // Updates the root node.}\par
+00414                     this.Root = nodes.FirstOrDefault();\par
+00415                 \}\par
+00416             \}\par
+}
+{
+\ql
+References {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Frequencies}, and {\b ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Frequency}.}\par
+}
+{\xe \v Decode\:ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3\:Decode}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+byte[] ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Decode (BitArray  {\i bits})}}
+\par
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 437} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00438             \{\par
+00439                 {\cf20 // Variable to hold the current node}\par
+00440                 Node_mp3 current = this.Root;\par
+00441                 {\cf20 // List to hold the decoded array}\par
+00442                 List<byte> decoded = {\cf17 new} List<byte>();\par
+00443 \par
+00444                 {\cf20 // For each bit of the bit array}\par
+00445                 {\cf19 foreach} ({\cf18 bool} bit {\cf19 in} bits)\par
+00446                 \{\par
+00447                     {\cf20 // If bit is 1, it goes to the lower right branch.}\par
+00448                     {\cf19 if} (bit)\par
+00449                     \{\par
+00450                         {\cf19 if} (current.Right != {\cf17 null})\par
+00451                         \{\par
+00452                             current = current.Right;\par
+00453                         \}\par
+00454                     \}\par
+00455                     {\cf20 // If bit is 0, it goes to the lower left branch.}\par
+00456                     {\cf19 else}\par
+00457                     \{\par
+00458                         {\cf19 if} (current.Left != {\cf17 null})\par
+00459                         \{\par
+00460                             current = current.Left;\par
+00461                         \}\par
+00462                     \}\par
+00463 \par
+00464                     {\cf20 // If the leaf has arrived at the node}\par
+00465                     {\cf19 if} (IsLeaf(current))\par
+00466                     \{\par
+00467                         {\cf20 // Adds the node's symbol to the list.}\par
+00468                         decoded.Add(current.Symbol);\par
+00469                         {\cf20 // Resets the current node to the root.}\par
+00470                         current = this.Root;\par
+00471                     \}\par
+00472                 \}\par
+00473 \par
+00474                 {\cf20 // Returns the decoded array.}\par
+00475                 {\cf19 return} decoded.ToArray();\par
+00476             \}\par
+}
+{
+\ql
+References {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.IsLeaf()}, and {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Root}.}\par
+}
+{\xe \v Encode\:ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3\:Encode}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+BitArray ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Encode (byte[]  {\i source})}}
+\par
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 417} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00418             \{\par
+00419                 {\cf20 // List to hold the encoded array}\par
+00420                 List<bool> encodedSource = {\cf17 new} List<bool>();\par
+00421 \par
+00422                 {\cf20 // For each byte of the source array}\par
+00423                 {\cf19 for} ({\cf18 int} i = 0; i < source.Length; i++)\par
+00424                 \{\par
+00425                     {\cf20 // Finds the encoded byte in the tree.}\par
+00426                     List<bool> encodedSymbol = this.Root.Traverse_mp3(source[i], {\cf17 new} List<bool>());\par
+00427                     {\cf20 // Add the encoded byte to the list}\par
+00428                     encodedSource.AddRange(encodedSymbol);\par
+00429                 \}\par
+00430 \par
+00431                 {\cf20 // Converts list elements to a bit array.}\par
+00432                 BitArray bits = {\cf17 new} BitArray(encodedSource.ToArray());\par
+00433                 {\cf20 // Returns the bit array.}\par
+00434                 {\cf19 return} bits;\par
+00435             \}\par
+}
+{
+\ql
+References {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Root}, and {\b ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Traverse_mp3()}.}\par
+}
+{\xe \v IsLeaf\:ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3\:IsLeaf}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.IsLeaf ({\b Node_mp3}  {\i node})}}
+\par
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 478} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00479             \{\par
+00480                 {\cf20 // Checks if the node is a leaf.}\par
+00481                 {\cf20 // If it has no left or right child branches, it is a leaf.}\par
+00482                 {\cf19 return} (node.Left == {\cf17 null} && node.Right == {\cf17 null});\par
+00483             \}\par
+}
+{
+\ql
+References {\b ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Left}, and {\b ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Right}.}\par
+{
+\ql
+Referenced by {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Decode()}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v Frequencies\:ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3\:Frequencies}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Dictionary<byte, int> ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Frequencies = new Dictionary<byte, int>()}}
+\par
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 359} of file {\b Huffman.cs}.}\par
+{
+\ql
+Referenced by {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Build()}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Property Documentation\par
+\pard\plain 
+{\xe \v Root\:ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3\:Root}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Node_mp3} ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Root{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 354} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00355             \{\par
+00356                 {\cf17 get};\par
+00357                 {\cf17 set};\par
+00358             \}\par
+}
+{
+\ql
+Referenced by {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Decode()}, and {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Encode()}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/{\b Huffman.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+IkeaAssemblyGuide Class Reference\par \pard\plain 
+{\tc\tcl2 \v IkeaAssemblyGuide}
+{\xe \v IkeaAssemblyGuide}
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b IkeaAssemblyGuide} (string name, string link)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b AddPart} (string part, List< string > dependencies)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b TopologicalSort} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ArrayList {\b GetAssemblySteps} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\b 11} of file {\b IkeaAssemblyGuide.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v IkeaAssemblyGuide\:IkeaAssemblyGuide}
+{\xe \v IkeaAssemblyGuide\:IkeaAssemblyGuide}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+IkeaAssemblyGuide.IkeaAssemblyGuide (string  {\i name}, string  {\i link})}}
+\par
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 28} of file {\b IkeaAssemblyGuide.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00029     \{\par
+00030         productName = name;\par
+00031         productLink = link;\par
+00032         parts = {\cf17 new} Dictionary<string, List<string>>();\par
+00033         order = {\cf17 new} Stack<string>();\par
+00034         steps = {\cf17 new} ArrayList();\par
+00035     \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v AddPart\:IkeaAssemblyGuide}
+{\xe \v IkeaAssemblyGuide\:AddPart}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void IkeaAssemblyGuide.AddPart (string  {\i part}, List< string >  {\i dependencies})}}
+\par
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 38} of file {\b IkeaAssemblyGuide.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00039     \{\par
+00040         parts.Add(part, dependencies);\par
+00041     \}\par
+}
+}
+{\xe \v GetAssemblySteps\:IkeaAssemblyGuide}
+{\xe \v IkeaAssemblyGuide\:GetAssemblySteps}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+ArrayList IkeaAssemblyGuide.GetAssemblySteps ()}}
+\par
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 82} of file {\b IkeaAssemblyGuide.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00083     \{\par
+00084         {\cf20 // Creates a step for each item in the stack and adds them to the ArrayList in reverse order.}\par
+00085         ArrayList steps = {\cf17 new} ArrayList();\par
+00086 \par
+00087         {\cf19 while} (order.Count > 0)\par
+00088         \{\par
+00089             {\cf18 string} part = order.Pop();\par
+00090             {\cf18 string} step = {\cf22 "Assemble part "} + part;\par
+00091             steps.Insert(0, step);\par
+00092         \}\par
+00093 \par
+00094         {\cf20 // Returns the inverted ArrayList.}\par
+00095         {\cf19 return} steps;\par
+00096     \}\par
+}
+}
+{\xe \v TopologicalSort\:IkeaAssemblyGuide}
+{\xe \v IkeaAssemblyGuide\:TopologicalSort}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void IkeaAssemblyGuide.TopologicalSort ()}}
+\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 44} of file {\b IkeaAssemblyGuide.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00045     \{\par
+00046         {\cf20 // A set that holds visited fragments}\par
+00047         HashSet<string> visited = {\cf17 new} HashSet<string>();\par
+00048 \par
+00049         {\cf20 // Call DFS for each item in the dictionary}\par
+00050         {\cf19 foreach} ({\cf18 string} part {\cf19 in} parts.Keys)\par
+00051         \{\par
+00052             DFS(part, visited);\par
+00053         \}\par
+00054     \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/{\b IkeaAssemblyGuide.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100_hw3_algo_lib_cs.Huffman.Node Class Reference\par \pard\plain 
+{\tc\tcl2 \v ce100_hw3_algo_lib_cs.Huffman.Node}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.Node}
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+List< bool > {\b Traverse} (char symbol, List< bool > data)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char {\b Symbol}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b Frequency}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Node} {\b Right}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Node} {\b Left}{\f2  [get, set]}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\b 18} of file {\b Huffman.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v Traverse\:ce100_hw3_algo_lib_cs.Huffman.Node}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.Node\:Traverse}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+List< bool > ce100_hw3_algo_lib_cs.Huffman.Node.Traverse (char  {\i symbol}, List< bool >  {\i data})}}
+\par
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 41} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00042             \{\par
+00043                 {\cf19 if} (Right == {\cf17 null} && Left == {\cf17 null})\par
+00044                 \{\par
+00045                     {\cf20 // If the symbol is equal to this node's symbol, return the data.}\par
+00046                     {\cf19 if} (symbol.Equals({\cf17 this}.Symbol))\par
+00047                     \{\par
+00048                         {\cf19 return} data;\par
+00049                     \}\par
+00050                     {\cf20 // If the symbol is not equal to this node's symbol, return null.}\par
+00051                     {\cf19 else}\par
+00052                     \{\par
+00053                         {\cf19 return} {\cf17 null};\par
+00054                     \}\par
+00055                 \}\par
+00056                 {\cf19 else}\par
+00057                 \{\par
+00058                     {\cf20 // Defines variables to hold left and right sub-branches.}\par
+00059                     List<bool> left = {\cf17 null};\par
+00060                     List<bool> right = {\cf17 null};\par
+00061 \par
+00062                     {\cf20 // If there is a left lower branch}\par
+00063                     {\cf19 if} (Left != {\cf17 null})\par
+00064                     \{\par
+00065                         {\cf20 // Creates the left path.}\par
+00066                         List<bool> leftPath = {\cf17 new} List<bool>();\par
+00067                         leftPath.AddRange(data);\par
+00068                         leftPath.Add({\cf17 false});\par
+00069                         {\cf20 // Performs a symbol search on the lower left branch.}\par
+00070                         left = Left.Traverse(symbol, leftPath);\par
+00071                     \}\par
+00072 \par
+00073                     {\cf20 // If there is a right lower branch}\par
+00074                     {\cf19 if} (Right != {\cf17 null})\par
+00075                     \{\par
+00076                         {\cf20 // Creates the right path.}\par
+00077                         List<bool> rightPath = {\cf17 new} List<bool>();\par
+00078                         rightPath.AddRange(data);\par
+00079                         rightPath.Add({\cf17 true});\par
+00080                         {\cf20 // Starts searching for the symbol in the lower right branch.}\par
+00081                         right = Right.Traverse(symbol, rightPath);\par
+00082                     \}\par
+00083 \par
+00084                     {\cf20 // Returns the left path if it found the left sub-branch.}\par
+00085                     {\cf19 if} (left != {\cf17 null})\par
+00086                     \{\par
+00087                         {\cf19 return} left;\par
+00088                     \}\par
+00089                     {\cf20 // Returns the right path if found in the right sub-branch.}\par
+00090                     {\cf19 else}\par
+00091                     \{\par
+00092                         {\cf19 return} right;\par
+00093                     \}\par
+00094                 \}\par
+00095             \}\par
+}
+{
+\ql
+References {\b ce100_hw3_algo_lib_cs.Huffman.Node.Left}, {\b ce100_hw3_algo_lib_cs.Huffman.Node.Right}, and {\b ce100_hw3_algo_lib_cs.Huffman.Node.Traverse()}.}\par
+{
+\ql
+Referenced by {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Encode()}, and {\b ce100_hw3_algo_lib_cs.Huffman.Node.Traverse()}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Property Documentation\par
+\pard\plain 
+{\xe \v Frequency\:ce100_hw3_algo_lib_cs.Huffman.Node}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.Node\:Frequency}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int ce100_hw3_algo_lib_cs.Huffman.Node.Frequency{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 25} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00026             \{\par
+00027                 {\cf17 get};\par
+00028                 {\cf17 set};\par
+00029             \}\par
+}
+{
+\ql
+Referenced by {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Build()}.}\par
+}
+{\xe \v Left\:ce100_hw3_algo_lib_cs.Huffman.Node}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.Node\:Left}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Node} ce100_hw3_algo_lib_cs.Huffman.Node.Left{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 35} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00036             \{\par
+00037                 {\cf17 get};\par
+00038                 {\cf17 set};\par
+00039             \}\par
+}
+{
+\ql
+Referenced by {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Decode()}, {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.IsLeaf()}, and {\b ce100_hw3_algo_lib_cs.Huffman.Node.Traverse()}.}\par
+}
+{\xe \v Right\:ce100_hw3_algo_lib_cs.Huffman.Node}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.Node\:Right}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Node} ce100_hw3_algo_lib_cs.Huffman.Node.Right{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 30} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00031             \{\par
+00032                 {\cf17 get};\par
+00033                 {\cf17 set};\par
+00034             \}\par
+}
+{
+\ql
+Referenced by {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Decode()}, {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.IsLeaf()}, and {\b ce100_hw3_algo_lib_cs.Huffman.Node.Traverse()}.}\par
+}
+{\xe \v Symbol\:ce100_hw3_algo_lib_cs.Huffman.Node}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.Node\:Symbol}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char ce100_hw3_algo_lib_cs.Huffman.Node.Symbol{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 20} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00021             \{\par
+00022                 {\cf17 get};\par
+00023                 {\cf17 set};\par
+00024             \}\par
+}
+{
+\ql
+Referenced by {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree.Decode()}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/{\b Huffman.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ce100_hw3_algo_lib_cs.Huffman.Node_mp3 Class Reference\par \pard\plain 
+{\tc\tcl2 \v ce100_hw3_algo_lib_cs.Huffman.Node_mp3}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.Node_mp3}
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+List< bool > {\b Traverse_mp3} (byte? symbol, List< bool > data)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+byte {\b Symbol}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b Frequency}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Node_mp3} {\b Left}{\f2  [get, set]}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Node_mp3} {\b Right}{\f2  [get, set]}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\b 271} of file {\b Huffman.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v Traverse_mp3\:ce100_hw3_algo_lib_cs.Huffman.Node_mp3}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.Node_mp3\:Traverse_mp3}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+List< bool > ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Traverse_mp3 (byte?  {\i symbol}, List< bool >  {\i data})}}
+\par
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 294} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00295             \{\par
+00296                 {\cf19 if} (Left == {\cf17 null} && Right == {\cf17 null})\par
+00297                 \{\par
+00298                     {\cf20 // Returns the data if the symbol is equal to this node's symbol.}\par
+00299                     {\cf19 if} (Symbol == symbol)\par
+00300                     \{\par
+00301                         {\cf19 return} data;\par
+00302                     \}\par
+00303                     {\cf20 // If not, returns null.}\par
+00304                     {\cf19 else}\par
+00305                     \{\par
+00306                         {\cf19 return} {\cf17 null};\par
+00307                     \}\par
+00308                 \}\par
+00309                 {\cf19 else}\par
+00310                 \{\par
+00311                     {\cf20 // Variables to hold left and right sub-branches}\par
+00312                     List<bool> left = {\cf17 null};\par
+00313                     List<bool> right = {\cf17 null};\par
+00314 \par
+00315                     {\cf20 // If there is a left lower branch}\par
+00316                     {\cf19 if} (Left != {\cf17 null})\par
+00317                     \{\par
+00318                         {\cf20 // Creates the left path.}\par
+00319                         List<bool> leftPath = {\cf17 new} List<bool>();\par
+00320                         leftPath.AddRange(data);\par
+00321                         leftPath.Add({\cf17 false});\par
+00322                         {\cf20 // Searches for the symbol in the lower left branch.}\par
+00323                         left = Left.Traverse_mp3(symbol, leftPath);\par
+00324                     \}\par
+00325 \par
+00326                     {\cf20 // If there is a lower right branch}\par
+00327                     {\cf19 if} (Right != {\cf17 null})\par
+00328                     \{\par
+00329                         {\cf20 // Creates the right path.}\par
+00330                         List<bool> rightPath = {\cf17 new} List<bool>();\par
+00331                         rightPath.AddRange(data);\par
+00332                         rightPath.Add({\cf17 true});\par
+00333                         {\cf20 // Searches for the symbol in the lower right branch.}\par
+00334                         right = Right.Traverse_mp3(symbol, rightPath);\par
+00335                     \}\par
+00336 \par
+00337                     {\cf20 // Returns the left path if it found the left sub-branch.}\par
+00338                     {\cf19 if} (left != {\cf17 null})\par
+00339                     \{\par
+00340                         {\cf19 return} left;\par
+00341                     \}\par
+00342                     {\cf20 // Returns the right path if found in the right sub-branch.}\par
+00343                     {\cf19 else}\par
+00344                     \{\par
+00345                         {\cf19 return} right;\par
+00346                     \}\par
+00347                 \}\par
+00348             \}\par
+}
+{
+\ql
+References {\b ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Left}, {\b ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Right}, {\b ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Symbol}, and {\b ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Traverse_mp3()}.}\par
+{
+\ql
+Referenced by {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Encode()}, and {\b ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Traverse_mp3()}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Property Documentation\par
+\pard\plain 
+{\xe \v Frequency\:ce100_hw3_algo_lib_cs.Huffman.Node_mp3}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.Node_mp3\:Frequency}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Frequency{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 278} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00279             \{\par
+00280                 {\cf17 get};\par
+00281                 {\cf17 set};\par
+00282             \}\par
+}
+{
+\ql
+Referenced by {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Build()}.}\par
+}
+{\xe \v Left\:ce100_hw3_algo_lib_cs.Huffman.Node_mp3}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.Node_mp3\:Left}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Node_mp3} ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Left{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 283} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00284             \{\par
+00285                 {\cf17 get};\par
+00286                 {\cf17 set};\par
+00287             \}\par
+}
+{
+\ql
+Referenced by {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.IsLeaf()}, and {\b ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Traverse_mp3()}.}\par
+}
+{\xe \v Right\:ce100_hw3_algo_lib_cs.Huffman.Node_mp3}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.Node_mp3\:Right}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Node_mp3} ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Right{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 288} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00289             \{\par
+00290                 {\cf17 get};\par
+00291                 {\cf17 set};\par
+00292             \}\par
+}
+{
+\ql
+Referenced by {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.IsLeaf()}, and {\b ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Traverse_mp3()}.}\par
+}
+{\xe \v Symbol\:ce100_hw3_algo_lib_cs.Huffman.Node_mp3}
+{\xe \v ce100_hw3_algo_lib_cs.Huffman.Node_mp3\:Symbol}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+byte ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Symbol{\f2 [get]}, {\f2 [set]}}}
+\par
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\b 273} of file {\b Huffman.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00274             \{\par
+00275                 {\cf17 get};\par
+00276                 {\cf17 set};\par
+00277             \}\par
+}
+{
+\ql
+Referenced by {\b ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Traverse_mp3()}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/{\b Huffman.cs}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Documentation{\tc \v File Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs}
+{\xe \v C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs}
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b ce100_hw3_algo_lib_cs.Huffman}\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b ce100_hw3_algo_lib_cs.Huffman.Node}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b ce100_hw3_algo_lib_cs.Huffman.Node_mp3}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+namespace {\b ce100_hw3_algo_lib_cs}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Huffman.cs\par \pard\plain 
+{\tc\tcl2 \v C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs}
+{\xe \v C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }System.Collections;\par
+00002 \par
+00003 \par
+00004 {\cf17 namespace }ce100_hw3_algo_lib_cs\par
+00005 \{\par
+00006 \par
+00015     {\cf17 public} {\cf17 class }Huffman\par
+00016     \{\par
+00017 \par
+00018         {\cf17 public} {\cf17 class }Node\par
+00019         \{\par
+00020             {\cf17 public} {\cf18 char} Symbol\par
+00021             \{\par
+00022                 {\cf17 get};\par
+00023                 {\cf17 set};\par
+00024             \}\par
+00025             {\cf17 public} {\cf18 int} Frequency\par
+00026             \{\par
+00027                 {\cf17 get};\par
+00028                 {\cf17 set};\par
+00029             \}\par
+00030             {\cf17 public} Node Right\par
+00031             \{\par
+00032                 {\cf17 get};\par
+00033                 {\cf17 set};\par
+00034             \}\par
+00035             {\cf17 public} Node Left\par
+00036             \{\par
+00037                 {\cf17 get};\par
+00038                 {\cf17 set};\par
+00039             \}\par
+00040 \par
+00041             {\cf17 public} List<bool> Traverse({\cf18 char} symbol, List<bool> data)\par
+00042             \{\par
+00043                 {\cf19 if} (Right == {\cf17 null} && Left == {\cf17 null})\par
+00044                 \{\par
+00045                     {\cf20 // If the symbol is equal to this node's symbol, return the data.}\par
+00046                     {\cf19 if} (symbol.Equals({\cf17 this}.Symbol))\par
+00047                     \{\par
+00048                         {\cf19 return} data;\par
+00049                     \}\par
+00050                     {\cf20 // If the symbol is not equal to this node's symbol, return null.}\par
+00051                     {\cf19 else}\par
+00052                     \{\par
+00053                         {\cf19 return} {\cf17 null};\par
+00054                     \}\par
+00055                 \}\par
+00056                 {\cf19 else}\par
+00057                 \{\par
+00058                     {\cf20 // Defines variables to hold left and right sub-branches.}\par
+00059                     List<bool> left = {\cf17 null};\par
+00060                     List<bool> right = {\cf17 null};\par
+00061 \par
+00062                     {\cf20 // If there is a left lower branch}\par
+00063                     {\cf19 if} (Left != {\cf17 null})\par
+00064                     \{\par
+00065                         {\cf20 // Creates the left path.}\par
+00066                         List<bool> leftPath = {\cf17 new} List<bool>();\par
+00067                         leftPath.AddRange(data);\par
+00068                         leftPath.Add({\cf17 false});\par
+00069                         {\cf20 // Performs a symbol search on the lower left branch.}\par
+00070                         left = Left.Traverse(symbol, leftPath);\par
+00071                     \}\par
+00072 \par
+00073                     {\cf20 // If there is a right lower branch}\par
+00074                     {\cf19 if} (Right != {\cf17 null})\par
+00075                     \{\par
+00076                         {\cf20 // Creates the right path.}\par
+00077                         List<bool> rightPath = {\cf17 new} List<bool>();\par
+00078                         rightPath.AddRange(data);\par
+00079                         rightPath.Add({\cf17 true});\par
+00080                         {\cf20 // Starts searching for the symbol in the lower right branch.}\par
+00081                         right = Right.Traverse(symbol, rightPath);\par
+00082                     \}\par
+00083 \par
+00084                     {\cf20 // Returns the left path if it found the left sub-branch.}\par
+00085                     {\cf19 if} (left != {\cf17 null})\par
+00086                     \{\par
+00087                         {\cf19 return} left;\par
+00088                     \}\par
+00089                     {\cf20 // Returns the right path if found in the right sub-branch.}\par
+00090                     {\cf19 else}\par
+00091                     \{\par
+00092                         {\cf19 return} right;\par
+00093                     \}\par
+00094                 \}\par
+00095             \}\par
+00096         \}\par
+00097         {\cf17 public} {\cf17 static} {\cf18 void} WriteBitArray(BinaryWriter writer, BitArray bits)\par
+00098         \{\par
+00099             {\cf20 // Converts bit array to byte array.}\par
+00100             {\cf18 byte}[] bytes = {\cf17 new} {\cf18 byte}[(bits.Length + 7) / 8];\par
+00101             bits.CopyTo(bytes, 0);\par
+00102             {\cf20 // Prints the byte array to the printer.}\par
+00103             writer.Write(bytes);\par
+00104         \}\par
+00105 \par
+00106         {\cf17 public} {\cf17 static} BitArray ReadBitArray(BinaryReader reader, {\cf18 long} byteCount)\par
+00107         \{\par
+00108             {\cf20 // List to hold bits.}\par
+00109             List<bool> bits = {\cf17 new} List<bool>();\par
+00110             {\cf20 // Reads the byte array from the reader.}\par
+00111             {\cf18 byte}[] bytes = reader.ReadBytes(({\cf18 int})byteCount);\par
+00112 \par
+00113             {\cf20 // For each byte}\par
+00114             {\cf19 foreach} ({\cf18 byte} b {\cf19 in} bytes)\par
+00115             \{\par
+00116                 {\cf20 // Checks 8 bits one by one.}\par
+00117                 {\cf19 for} ({\cf18 int} i = 0; i < 8; i++)\par
+00118                 \{\par
+00119                     {\cf20 // If bit is 1, it adds true to the list.}\par
+00120                     bits.Add((b & (1 << i)) != 0);\par
+00121                 \}\par
+00122             \}\par
+00123 \par
+00124             {\cf20 // Creates and returns an array of bits.}\par
+00125             {\cf19 return} {\cf17 new} BitArray(bits.ToArray());\par
+00126         \}\par
+00127         {\cf17 public} {\cf17 class }HuffmanTree\par
+00128         \{\par
+00129             {\cf17 private} List<Node> nodes = {\cf17 new} List<Node>();\par
+00130             {\cf17 public} Node Root\par
+00131             \{\par
+00132                 {\cf17 get};\par
+00133                 {\cf17 set};\par
+00134             \}\par
+00135             {\cf17 public} Dictionary<char, int> Frequencies = {\cf17 new} Dictionary<char, int>();\par
+00136 \par
+00137             {\cf17 public} {\cf18 void} Build({\cf18 string} source)\par
+00138             \{\par
+00139                 {\cf20 // For each character of the source text}\par
+00140                 {\cf19 for} ({\cf18 int} i = 0; i < source.Length; i++)\par
+00141                 \{\par
+00142                     {\cf20 // If it is not in the dictionary, appends it and sets its frequency to 0.}\par
+00143                     {\cf19 if} (!Frequencies.ContainsKey(source[i]))\par
+00144                     \{\par
+00145                         Frequencies.Add(source[i], 0);\par
+00146                     \}\par
+00147 \par
+00148                     {\cf20 // Increase the frequency by one.}\par
+00149                     Frequencies[source[i]]++;\par
+00150                 \}\par
+00151 \par
+00152                 {\cf20 // For each symbol in the dictionary}\par
+00153                 {\cf19 foreach} (KeyValuePair<char, int> symbol {\cf19 in} Frequencies)\par
+00154                 \{\par
+00155                     {\cf20 // Creates a node and adds it to the list.}\par
+00156                     nodes.Add({\cf17 new} Node()\par
+00157                     \{\par
+00158                         Symbol = symbol.Key,\par
+00159                         Frequency = symbol.Value\par
+00160                     \});\par
+00161                 \}\par
+00162 \par
+00163                 {\cf20 // Until the list is single element}\par
+00164                 {\cf19 while} (nodes.Count > 1)\par
+00165                 \{\par
+00166                     {\cf20 // Sorts the list by frequency.}\par
+00167                     List<Node> orderedNodes = nodes.OrderBy(node => node.Frequency).ToList<Node>();\par
+00168 \par
+00169                     {\cf20 // If there are at least two elements}\par
+00170                     {\cf19 if} (orderedNodes.Count >= 2)\par
+00171                     \{\par
+00172                         {\cf20 // Gets the first two elements.}\par
+00173                         List<Node> taken = orderedNodes.Take(2).ToList<Node>();\par
+00174                         {\cf20 // Creates the common parent of these two elements.}\par
+00175                         Node parent = {\cf17 new} Node()\par
+00176                         \{\par
+00177                             Symbol = {\cf23 '*'},\par
+00178                             Frequency = taken[0].Frequency + taken[1].Frequency,\par
+00179                             Left = taken[0],\par
+00180                             Right = taken[1]\par
+00181                         \};\par
+00182                         {\cf20 // Removes the received elements from the list.}\par
+00183                         nodes.Remove(taken[0]);\par
+00184                         nodes.Remove(taken[1]);\par
+00185                         {\cf20 // Ebeveyni listeye ekler.}\par
+00186                         nodes.Add(parent);\par
+00187                     \}\par
+00188 \par
+00189                     {\cf20 // Updates the root node.}\par
+00190                     this.Root = nodes.FirstOrDefault();\par
+00191                 \}\par
+00192             \}\par
+00193 \par
+00194             {\cf17 public} BitArray Encode({\cf18 string} source)\par
+00195             \{\par
+00196                 {\cf20 // List to hold encoded text}\par
+00197                 List<bool> encodedSource = {\cf17 new} List<bool>();\par
+00198 \par
+00199                 {\cf20 // For each character of the source text}\par
+00200                 {\cf19 for} ({\cf18 int} i = 0; i < source.Length; i++)\par
+00201                 \{\par
+00202                     {\cf20 // Finds the encoded version of the character in the tree.}\par
+00203                     List<bool> encodedSymbol = this.Root.Traverse(source[i], {\cf17 new} List<bool>());\par
+00204                     {\cf20 // Adds the encoded character to the list.}\par
+00205                     encodedSource.AddRange(encodedSymbol);\par
+00206                 \}\par
+00207 \par
+00208                 {\cf20 // Converts list elements to a bit array.}\par
+00209                 BitArray bits = {\cf17 new} BitArray(encodedSource.ToArray());\par
+00210                 {\cf20 // Returns the bit array.}\par
+00211                 {\cf19 return} bits;\par
+00212             \}\par
+00213 \par
+00214             {\cf17 public} {\cf18 string} Decode(BitArray bits)\par
+00215             \{\par
+00216                 {\cf20 // Variable to hold the current node}\par
+00217                 Node current = this.Root;\par
+00218                 {\cf20 // Decoded text}\par
+00219                 {\cf18 string} decoded = {\cf22 ""};\par
+00220 \par
+00221                 {\cf20 // For each bit of the bit array}\par
+00222                 {\cf19 foreach} ({\cf18 bool} bit {\cf19 in} bits)\par
+00223                 \{\par
+00224                     {\cf20 // If bit is 1, it goes to the lower right branch.}\par
+00225                     {\cf19 if} (bit)\par
+00226                     \{\par
+00227                         {\cf19 if} (current.Right != {\cf17 null})\par
+00228                         \{\par
+00229                             current = current.Right;\par
+00230                         \}\par
+00231                     \}\par
+00232                     {\cf20 // If bit is 0, it goes to the lower left branch.}\par
+00233                     {\cf19 else}\par
+00234                     \{\par
+00235                         {\cf19 if} (current.Left != {\cf17 null})\par
+00236                         \{\par
+00237                             current = current.Left;\par
+00238                         \}\par
+00239                     \}\par
+00240 \par
+00241                     {\cf20 // If the leaf has arrived at the node}\par
+00242                     {\cf19 if} (IsLeaf(current))\par
+00243                     \{\par
+00244                         {\cf20 // Adds the node's symbol to the text.}\par
+00245                         decoded += current.Symbol;\par
+00246                         {\cf20 // Resets the current node to the root.}\par
+00247                         current = this.Root;\par
+00248                     \}\par
+00249                 \}\par
+00250 \par
+00251                 {\cf20 // Returns the decoded text.}\par
+00252                 {\cf19 return} decoded;\par
+00253             \}\par
+00254 \par
+00255             {\cf17 public} {\cf18 bool} IsLeaf(Node node)\par
+00256             \{\par
+00257                 {\cf20 // Checks if the node is a leaf.}\par
+00258                 {\cf20 // If it has no left and right child branches, it is a leaf}\par
+00259                 {\cf19 return} (node.Left == {\cf17 null} && node.Right == {\cf17 null});\par
+00260             \}\par
+00261 \par
+00262         \}\par
+00271         {\cf17 public} {\cf17 class }Node_mp3\par
+00272         \{\par
+00273             {\cf17 public} {\cf18 byte} Symbol\par
+00274             \{\par
+00275                 {\cf17 get};\par
+00276                 {\cf17 set};\par
+00277             \}\par
+00278             {\cf17 public} {\cf18 int} Frequency\par
+00279             \{\par
+00280                 {\cf17 get};\par
+00281                 {\cf17 set};\par
+00282             \}\par
+00283             {\cf17 public} Node_mp3 Left\par
+00284             \{\par
+00285                 {\cf17 get};\par
+00286                 {\cf17 set};\par
+00287             \}\par
+00288             {\cf17 public} Node_mp3 Right\par
+00289             \{\par
+00290                 {\cf17 get};\par
+00291                 {\cf17 set};\par
+00292             \}\par
+00293 \par
+00294             {\cf17 public} List<bool> Traverse_mp3({\cf18 byte}? symbol, List<bool> data)\par
+00295             \{\par
+00296                 {\cf19 if} (Left == {\cf17 null} && Right == {\cf17 null})\par
+00297                 \{\par
+00298                     {\cf20 // Returns the data if the symbol is equal to this node's symbol.}\par
+00299                     {\cf19 if} (Symbol == symbol)\par
+00300                     \{\par
+00301                         {\cf19 return} data;\par
+00302                     \}\par
+00303                     {\cf20 // If not, returns null.}\par
+00304                     {\cf19 else}\par
+00305                     \{\par
+00306                         {\cf19 return} {\cf17 null};\par
+00307                     \}\par
+00308                 \}\par
+00309                 {\cf19 else}\par
+00310                 \{\par
+00311                     {\cf20 // Variables to hold left and right sub-branches}\par
+00312                     List<bool> left = {\cf17 null};\par
+00313                     List<bool> right = {\cf17 null};\par
+00314 \par
+00315                     {\cf20 // If there is a left lower branch}\par
+00316                     {\cf19 if} (Left != {\cf17 null})\par
+00317                     \{\par
+00318                         {\cf20 // Creates the left path.}\par
+00319                         List<bool> leftPath = {\cf17 new} List<bool>();\par
+00320                         leftPath.AddRange(data);\par
+00321                         leftPath.Add({\cf17 false});\par
+00322                         {\cf20 // Searches for the symbol in the lower left branch.}\par
+00323                         left = Left.Traverse_mp3(symbol, leftPath);\par
+00324                     \}\par
+00325 \par
+00326                     {\cf20 // If there is a lower right branch}\par
+00327                     {\cf19 if} (Right != {\cf17 null})\par
+00328                     \{\par
+00329                         {\cf20 // Creates the right path.}\par
+00330                         List<bool> rightPath = {\cf17 new} List<bool>();\par
+00331                         rightPath.AddRange(data);\par
+00332                         rightPath.Add({\cf17 true});\par
+00333                         {\cf20 // Searches for the symbol in the lower right branch.}\par
+00334                         right = Right.Traverse_mp3(symbol, rightPath);\par
+00335                     \}\par
+00336 \par
+00337                     {\cf20 // Returns the left path if it found the left sub-branch.}\par
+00338                     {\cf19 if} (left != {\cf17 null})\par
+00339                     \{\par
+00340                         {\cf19 return} left;\par
+00341                     \}\par
+00342                     {\cf20 // Returns the right path if found in the right sub-branch.}\par
+00343                     {\cf19 else}\par
+00344                     \{\par
+00345                         {\cf19 return} right;\par
+00346                     \}\par
+00347                 \}\par
+00348             \}\par
+00349         \}\par
+00350 \par
+00351         {\cf17 public} {\cf17 class }HuffmanTree_mp3\par
+00352         \{\par
+00353             {\cf17 private} List<Node_mp3> nodes = {\cf17 new} List<Node_mp3>();\par
+00354             {\cf17 public} Node_mp3 Root\par
+00355             \{\par
+00356                 {\cf17 get};\par
+00357                 {\cf17 set};\par
+00358             \}\par
+00359             {\cf17 public} Dictionary<byte, int> Frequencies = {\cf17 new} Dictionary<byte, int>();\par
+00360 \par
+00361             {\cf17 public} {\cf18 void} Build({\cf18 byte}[] source)\par
+00362             \{\par
+00363                 {\cf20 // For each byte of the source array}\par
+00364                 {\cf19 for} ({\cf18 int} i = 0; i < source.Length; i++)\par
+00365                 \{\par
+00366                     {\cf20 // If it is not in the dictionary, add it and set its frequency to 0.}\par
+00367                     {\cf19 if} (!Frequencies.ContainsKey(source[i]))\par
+00368                     \{\par
+00369                         Frequencies.Add(source[i], 0);\par
+00370                     \}\par
+00371 \par
+00372                     {\cf20 // Increases the frequency by one.}\par
+00373                     Frequencies[source[i]]++;\par
+00374                 \}\par
+00375 \par
+00376                 {\cf20 // For each symbol in the dictionary}\par
+00377                 {\cf19 foreach} (KeyValuePair<byte, int> symbol {\cf19 in} Frequencies)\par
+00378                 \{\par
+00379                     {\cf20 // Create a node and add it to the list.}\par
+00380                     nodes.Add({\cf17 new} Node_mp3()\par
+00381                     \{\par
+00382                         Symbol = symbol.Key,\par
+00383                         Frequency = symbol.Value\par
+00384                     \});\par
+00385                 \}\par
+00386 \par
+00387                 {\cf20 // Until the list is single element}\par
+00388                 {\cf19 while} (nodes.Count > 1)\par
+00389                 \{\par
+00390                     {\cf20 // Sorts the list by frequency.}\par
+00391                     List<Node_mp3> orderedNodes = nodes.OrderBy(node => node.Frequency).ToList<Node_mp3>();\par
+00392 \par
+00393                     {\cf20 // If there are at least two elements}\par
+00394                     {\cf19 if} (orderedNodes.Count >= 2)\par
+00395                     \{\par
+00396                         {\cf20 // Gets the first two elements.}\par
+00397                         List<Node_mp3> taken = orderedNodes.Take(2).ToList<Node_mp3>();\par
+00398                         {\cf20 // Creates the common parent of these two elements.}\par
+00399                         Node_mp3 parent = {\cf17 new} Node_mp3()\par
+00400                         \{\par
+00401                             Symbol = {\cf18 byte}.MaxValue, {\cf20 // The parent has no symbol.}\par
+00402                             Frequency = taken[0].Frequency + taken[1].Frequency,\par
+00403                             Left = taken[0],\par
+00404                             Right = taken[1]\par
+00405                         \};\par
+00406                         {\cf20 // Removes the received elements from the list.}\par
+00407                         nodes.Remove(taken[0]);\par
+00408                         nodes.Remove(taken[1]);\par
+00409                         {\cf20 // Adds the parent to the list.}\par
+00410                         nodes.Add(parent);\par
+00411                     \}\par
+00412 \par
+00413                     {\cf20 // Updates the root node.}\par
+00414                     this.Root = nodes.FirstOrDefault();\par
+00415                 \}\par
+00416             \}\par
+00417             {\cf17 public} BitArray Encode({\cf18 byte}[] source)\par
+00418             \{\par
+00419                 {\cf20 // List to hold the encoded array}\par
+00420                 List<bool> encodedSource = {\cf17 new} List<bool>();\par
+00421 \par
+00422                 {\cf20 // For each byte of the source array}\par
+00423                 {\cf19 for} ({\cf18 int} i = 0; i < source.Length; i++)\par
+00424                 \{\par
+00425                     {\cf20 // Finds the encoded byte in the tree.}\par
+00426                     List<bool> encodedSymbol = this.Root.Traverse_mp3(source[i], {\cf17 new} List<bool>());\par
+00427                     {\cf20 // Add the encoded byte to the list}\par
+00428                     encodedSource.AddRange(encodedSymbol);\par
+00429                 \}\par
+00430 \par
+00431                 {\cf20 // Converts list elements to a bit array.}\par
+00432                 BitArray bits = {\cf17 new} BitArray(encodedSource.ToArray());\par
+00433                 {\cf20 // Returns the bit array.}\par
+00434                 {\cf19 return} bits;\par
+00435             \}\par
+00436 \par
+00437             {\cf17 public} {\cf18 byte}[] Decode(BitArray bits)\par
+00438             \{\par
+00439                 {\cf20 // Variable to hold the current node}\par
+00440                 Node_mp3 current = this.Root;\par
+00441                 {\cf20 // List to hold the decoded array}\par
+00442                 List<byte> decoded = {\cf17 new} List<byte>();\par
+00443 \par
+00444                 {\cf20 // For each bit of the bit array}\par
+00445                 {\cf19 foreach} ({\cf18 bool} bit {\cf19 in} bits)\par
+00446                 \{\par
+00447                     {\cf20 // If bit is 1, it goes to the lower right branch.}\par
+00448                     {\cf19 if} (bit)\par
+00449                     \{\par
+00450                         {\cf19 if} (current.Right != {\cf17 null})\par
+00451                         \{\par
+00452                             current = current.Right;\par
+00453                         \}\par
+00454                     \}\par
+00455                     {\cf20 // If bit is 0, it goes to the lower left branch.}\par
+00456                     {\cf19 else}\par
+00457                     \{\par
+00458                         {\cf19 if} (current.Left != {\cf17 null})\par
+00459                         \{\par
+00460                             current = current.Left;\par
+00461                         \}\par
+00462                     \}\par
+00463 \par
+00464                     {\cf20 // If the leaf has arrived at the node}\par
+00465                     {\cf19 if} (IsLeaf(current))\par
+00466                     \{\par
+00467                         {\cf20 // Adds the node's symbol to the list.}\par
+00468                         decoded.Add(current.Symbol);\par
+00469                         {\cf20 // Resets the current node to the root.}\par
+00470                         current = this.Root;\par
+00471                     \}\par
+00472                 \}\par
+00473 \par
+00474                 {\cf20 // Returns the decoded array.}\par
+00475                 {\cf19 return} decoded.ToArray();\par
+00476             \}\par
+00477 \par
+00478             {\cf17 public} {\cf18 bool} IsLeaf(Node_mp3 node)\par
+00479             \{\par
+00480                 {\cf20 // Checks if the node is a leaf.}\par
+00481                 {\cf20 // If it has no left or right child branches, it is a leaf.}\par
+00482                 {\cf19 return} (node.Left == {\cf17 null} && node.Right == {\cf17 null});\par
+00483             \}\par
+00484         \}\par
+00485 \par
+00495         {\cf17 public} {\cf17 static} {\cf18 string} GenerateLoremIpsum({\cf18 long} length)\par
+00496         \{\par
+00497             {\cf20 // Defines a variable to hold the text Lorem ipsum.}\par
+00498             {\cf18 string} loremIpsumText = {\cf22 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "} +\par
+00499                                     {\cf22 "Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. "} +\par
+00500                                     {\cf22 "Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi."};\par
+00501             {\cf20 // Calculates how many times the text should be repeated.}\par
+00502             {\cf18 int} repeatCount = (int)Math.Ceiling(({\cf18 double})length / loremIpsumText.Length);\par
+00503             {\cf20 // Variable to hold repeated text}\par
+00504             {\cf18 string} loremIpsum = {\cf22 ""};\par
+00505 \par
+00506             {\cf20 // Repeats the text the desired number of times.}\par
+00507             {\cf19 for} ({\cf18 int} i = 0; i < repeatCount; i++)\par
+00508             \{\par
+00509                 loremIpsum += loremIpsumText;\par
+00510             \}\par
+00511 \par
+00512             {\cf20 // Truncates the text to the desired length.}\par
+00513             loremIpsum = loremIpsum.Substring(0, ({\cf18 int})length);\par
+00514             {\cf20 // Returns the text.}\par
+00515             {\cf19 return} loremIpsum;\par
+00516         \}\par
+00517 \par
+00518 \par
+00519     \}\par
+00520 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs File Reference\par \pard\plain 
+{\tc\tcl2 \v C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs}
+{\xe \v C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs}
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b IkeaAssemblyGuide}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+IkeaAssemblyGuide.cs\par \pard\plain 
+{\tc\tcl2 \v C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs}
+{\xe \v C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs}
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }System.Collections;\par
+00002 \par
+00003 \par
+00011 {\cf17 public} {\cf17 class }IkeaAssemblyGuide\par
+00012 \{\par
+00013     {\cf20 // Product name and link}\par
+00014     {\cf17 private} {\cf18 string} productName;\par
+00015     {\cf17 private} {\cf18 string} productLink;\par
+00016 \par
+00017 \par
+00018     {\cf20 // A dictionary of the product's parts and dependencies}\par
+00019     {\cf17 private} Dictionary<string, List<string>> parts;\par
+00020 \par
+00021     {\cf20 // A stack that holds the assembly sequence of parts}\par
+00022     {\cf17 private} Stack<string> order;\par
+00023 \par
+00024     {\cf20 // An ArrayList holding the steps of the assembly process}\par
+00025     {\cf17 private} ArrayList steps;\par
+00026 \par
+00027     {\cf20 // Constructor method}\par
+00028     {\cf17 public} IkeaAssemblyGuide({\cf18 string} name, {\cf18 string} link)\par
+00029     \{\par
+00030         productName = name;\par
+00031         productLink = link;\par
+00032         parts = {\cf17 new} Dictionary<string, List<string>>();\par
+00033         order = {\cf17 new} Stack<string>();\par
+00034         steps = {\cf17 new} ArrayList();\par
+00035     \}\par
+00036 \par
+00037     {\cf20 // Method to add a fragment and its dependencies to the dictionary}\par
+00038     {\cf17 public} {\cf18 void} AddPart({\cf18 string} part, List<string> dependencies)\par
+00039     \{\par
+00040         parts.Add(part, dependencies);\par
+00041     \}\par
+00042 \par
+00043     {\cf20 // Method that performs topological sorting on fragments with DFS}\par
+00044     {\cf17 public} {\cf18 void} TopologicalSort()\par
+00045     \{\par
+00046         {\cf20 // A set that holds visited fragments}\par
+00047         HashSet<string> visited = {\cf17 new} HashSet<string>();\par
+00048 \par
+00049         {\cf20 // Call DFS for each item in the dictionary}\par
+00050         {\cf19 foreach} ({\cf18 string} part {\cf19 in} parts.Keys)\par
+00051         \{\par
+00052             DFS(part, visited);\par
+00053         \}\par
+00054     \}\par
+00055 \par
+00056     {\cf20 // Helper method that does DFS for a part}\par
+00057     {\cf17 private} {\cf18 void} DFS({\cf18 string} part, HashSet<string> visited)\par
+00058     \{\par
+00059         {\cf20 // Returns if the track has been visited.}\par
+00060         {\cf19 if} (visited.Contains(part))\par
+00061         \{\par
+00062             {\cf19 return};\par
+00063         \}\par
+00064 \par
+00065         {\cf20 // Marks the track as visited.}\par
+00066         visited.Add(part);\par
+00067 \par
+00068         {\cf20 // If the fragment has dependencies, it calls DFS for them.}\par
+00069         {\cf19 if} (parts[part].Count > 0)\par
+00070         \{\par
+00071             {\cf19 foreach} ({\cf18 string} dependency {\cf19 in} parts[part])\par
+00072             \{\par
+00073                 DFS(dependency, visited);\par
+00074             \}\par
+00075         \}\par
+00076 \par
+00077         {\cf20 // Adds the fragment to the stack.}\par
+00078         order.Push(part);\par
+00079     \}\par
+00080 \par
+00081     {\cf20 // Method that returns the steps of the assembly process in an ArrayList with textual descriptions}\par
+00082     {\cf17 public} ArrayList GetAssemblySteps()\par
+00083     \{\par
+00084         {\cf20 // Creates a step for each item in the stack and adds them to the ArrayList in reverse order.}\par
+00085         ArrayList steps = {\cf17 new} ArrayList();\par
+00086 \par
+00087         {\cf19 while} (order.Count > 0)\par
+00088         \{\par
+00089             {\cf18 string} part = order.Pop();\par
+00090             {\cf18 string} step = {\cf22 "Assemble part "} + part;\par
+00091             steps.Insert(0, step);\par
+00092         \}\par
+00093 \par
+00094         {\cf20 // Returns the inverted ArrayList.}\par
+00095         {\cf19 return} steps;\par
+00096     \}\par
+00097 \par
+00098 \par
+00099 \}\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

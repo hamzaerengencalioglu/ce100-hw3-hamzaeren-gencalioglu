@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classce100__hw3__algo__lib__cs_1_1_huffman" kind="class" language="C#" prot="public">
+    <compoundname>ce100_hw3_algo_lib_cs::Huffman</compoundname>
+    <innerclass refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree" prot="public">ce100_hw3_algo_lib_cs::Huffman::HuffmanTree</innerclass>
+    <innerclass refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3" prot="public">ce100_hw3_algo_lib_cs::Huffman::HuffmanTree_mp3</innerclass>
+    <innerclass refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node" prot="public">ce100_hw3_algo_lib_cs::Huffman::Node</innerclass>
+    <innerclass refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3" prot="public">ce100_hw3_algo_lib_cs::Huffman::Node_mp3</innerclass>
+      <sectiondef kind="user-defined">
+      <header>GenerateLoremIpsum</header>
+      <description><para>Generates Lorem Ipsum text with the specified length.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source text used to build the Huffman tree.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>generated Lorem Ipsum text. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="function" id="classce100__hw3__algo__lib__cs_1_1_huffman_1ac78f79ce7f37e1a249e211ba48c7376e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string ce100_hw3_algo_lib_cs.Huffman.GenerateLoremIpsum</definition>
+        <argsstring>(long length)</argsstring>
+        <name>GenerateLoremIpsum</name>
+        <qualifiedname>ce100_hw3_algo_lib_cs.Huffman.GenerateLoremIpsum</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="495" column="30" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="495" bodyend="516"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classce100__hw3__algo__lib__cs_1_1_huffman_1a831aa46624b616207428159df16c0888" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ce100_hw3_algo_lib_cs.Huffman.WriteBitArray</definition>
+        <argsstring>(BinaryWriter writer, BitArray bits)</argsstring>
+        <name>WriteBitArray</name>
+        <qualifiedname>ce100_hw3_algo_lib_cs.Huffman.WriteBitArray</qualifiedname>
+        <param>
+          <type>BinaryWriter</type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>BitArray</type>
+          <declname>bits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="97" column="28" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="97" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classce100__hw3__algo__lib__cs_1_1_huffman_1ac68d4c3bac7505d36f26e573b47fca9e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BitArray</type>
+        <definition>static BitArray ce100_hw3_algo_lib_cs.Huffman.ReadBitArray</definition>
+        <argsstring>(BinaryReader reader, long byteCount)</argsstring>
+        <name>ReadBitArray</name>
+        <qualifiedname>ce100_hw3_algo_lib_cs.Huffman.ReadBitArray</qualifiedname>
+        <param>
+          <type>BinaryReader</type>
+          <declname>reader</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>byteCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="106" column="32" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="106" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="15" column="11" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="16" bodyend="519"/>
+    <listofallmembers>
+      <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1ac78f79ce7f37e1a249e211ba48c7376e" prot="public" virt="non-virtual"><scope>ce100_hw3_algo_lib_cs::Huffman</scope><name>GenerateLoremIpsum</name></member>
+      <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1ac68d4c3bac7505d36f26e573b47fca9e" prot="public" virt="non-virtual"><scope>ce100_hw3_algo_lib_cs::Huffman</scope><name>ReadBitArray</name></member>
+      <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1a831aa46624b616207428159df16c0888" prot="public" virt="non-virtual"><scope>ce100_hw3_algo_lib_cs::Huffman</scope><name>WriteBitArray</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

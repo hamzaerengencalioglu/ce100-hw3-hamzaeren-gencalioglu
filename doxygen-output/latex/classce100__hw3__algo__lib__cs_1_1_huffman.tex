@@ -1,0 +1,140 @@
+\hypertarget{classce100__hw3__algo__lib__cs_1_1_huffman}{}\doxysection{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman Class Reference}
+\label{classce100__hw3__algo__lib__cs_1_1_huffman}\index{ce100\_hw3\_algo\_lib\_cs.Huffman@{ce100\_hw3\_algo\_lib\_cs.Huffman}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree}{Huffman\+Tree}}
+\item 
+class \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3}{Huffman\+Tree\+\_\+mp3}}
+\item 
+class \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node}{Node}}
+\item 
+class \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3}{Node\+\_\+mp3}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_a831aa46624b616207428159df16c0888}{Write\+Bit\+Array}} (Binary\+Writer writer, Bit\+Array bits)
+\item 
+static Bit\+Array \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_ac68d4c3bac7505d36f26e573b47fca9e}{Read\+Bit\+Array}} (Binary\+Reader reader, long byte\+Count)
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Generate\+Lorem\+Ipsum}\par
+{\em Generates Lorem Ipsum text with the specified length.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Source} & The source text used to build the Huffman tree.\\
+\hline
+{\em The} & generated Lorem Ipsum text. \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_ac78f79ce7f37e1a249e211ba48c7376e}{Generate\+Lorem\+Ipsum}} (long length)
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_huffman_8cs_source_l00015}{15}} of file \mbox{\hyperlink{_huffman_8cs_source}{Huffman.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce100__hw3__algo__lib__cs_1_1_huffman_ac78f79ce7f37e1a249e211ba48c7376e}\label{classce100__hw3__algo__lib__cs_1_1_huffman_ac78f79ce7f37e1a249e211ba48c7376e}} 
+\index{ce100\_hw3\_algo\_lib\_cs.Huffman@{ce100\_hw3\_algo\_lib\_cs.Huffman}!GenerateLoremIpsum@{GenerateLoremIpsum}}
+\index{GenerateLoremIpsum@{GenerateLoremIpsum}!ce100\_hw3\_algo\_lib\_cs.Huffman@{ce100\_hw3\_algo\_lib\_cs.Huffman}}
+\doxysubsubsection{\texorpdfstring{GenerateLoremIpsum()}{GenerateLoremIpsum()}}
+{\footnotesize\ttfamily static string ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Generate\+Lorem\+Ipsum (\begin{DoxyParamCaption}\item[{long}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{_huffman_8cs_source_l00495}{495}} of file \mbox{\hyperlink{_huffman_8cs_source}{Huffman.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00496\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00497\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Defines\ a\ variable\ to\ hold\ the\ text\ Lorem\ ipsum.}}
+\DoxyCodeLine{00498\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ loremIpsumText\ =\ \textcolor{stringliteral}{"{}Lorem\ ipsum\ dolor\ sit\ amet,\ consectetur\ adipiscing\ elit.\ "{}}\ +}
+\DoxyCodeLine{00499\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Sed\ non\ risus.\ Suspendisse\ lectus\ tortor,\ dignissim\ sit\ amet,\ adipiscing\ nec,\ ultricies\ sed,\ dolor.\ "{}}\ +}
+\DoxyCodeLine{00500\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Cras\ elementum\ ultrices\ diam.\ Maecenas\ ligula\ massa,\ varius\ a,\ semper\ congue,\ euismod\ non,\ mi."{}};}
+\DoxyCodeLine{00501\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Calculates\ how\ many\ times\ the\ text\ should\ be\ repeated.}}
+\DoxyCodeLine{00502\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ repeatCount\ =\ (int)Math.Ceiling((\textcolor{keywordtype}{double})length\ /\ loremIpsumText.Length);}
+\DoxyCodeLine{00503\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Variable\ to\ hold\ repeated\ text}}
+\DoxyCodeLine{00504\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ loremIpsum\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00505\ }
+\DoxyCodeLine{00506\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Repeats\ the\ text\ the\ desired\ number\ of\ times.}}
+\DoxyCodeLine{00507\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ repeatCount;\ i++)}
+\DoxyCodeLine{00508\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00509\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ loremIpsum\ +=\ loremIpsumText;}
+\DoxyCodeLine{00510\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00511\ }
+\DoxyCodeLine{00512\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Truncates\ the\ text\ to\ the\ desired\ length.}}
+\DoxyCodeLine{00513\ \ \ \ \ \ \ \ \ \ \ \ \ loremIpsum\ =\ loremIpsum.Substring(0,\ (\textcolor{keywordtype}{int})length);}
+\DoxyCodeLine{00514\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Returns\ the\ text.}}
+\DoxyCodeLine{00515\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ loremIpsum;}
+\DoxyCodeLine{00516\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classce100__hw3__algo__lib__cs_1_1_huffman_ac68d4c3bac7505d36f26e573b47fca9e}\label{classce100__hw3__algo__lib__cs_1_1_huffman_ac68d4c3bac7505d36f26e573b47fca9e}} 
+\index{ce100\_hw3\_algo\_lib\_cs.Huffman@{ce100\_hw3\_algo\_lib\_cs.Huffman}!ReadBitArray@{ReadBitArray}}
+\index{ReadBitArray@{ReadBitArray}!ce100\_hw3\_algo\_lib\_cs.Huffman@{ce100\_hw3\_algo\_lib\_cs.Huffman}}
+\doxysubsubsection{\texorpdfstring{ReadBitArray()}{ReadBitArray()}}
+{\footnotesize\ttfamily static Bit\+Array ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Read\+Bit\+Array (\begin{DoxyParamCaption}\item[{Binary\+Reader}]{reader,  }\item[{long}]{byte\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{_huffman_8cs_source_l00106}{106}} of file \mbox{\hyperlink{_huffman_8cs_source}{Huffman.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ List\ to\ hold\ bits.}}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ List<bool>\ bits\ =\ \textcolor{keyword}{new}\ List<bool>();}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Reads\ the\ byte\ array\ from\ the\ reader.}}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{byte}[]\ bytes\ =\ reader.ReadBytes((\textcolor{keywordtype}{int})byteCount);}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ For\ each\ byte}}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\textcolor{keywordtype}{byte}\ b\ \textcolor{keywordflow}{in}\ bytes)}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Checks\ 8\ bits\ one\ by\ one.}}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 8;\ i++)}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ If\ bit\ is\ 1,\ it\ adds\ true\ to\ the\ list.}}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ bits.Add((b\ \&\ (1\ <<\ i))\ !=\ 0);}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Creates\ and\ returns\ an\ array\ of\ bits.}}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ BitArray(bits.ToArray());}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classce100__hw3__algo__lib__cs_1_1_huffman_a831aa46624b616207428159df16c0888}\label{classce100__hw3__algo__lib__cs_1_1_huffman_a831aa46624b616207428159df16c0888}} 
+\index{ce100\_hw3\_algo\_lib\_cs.Huffman@{ce100\_hw3\_algo\_lib\_cs.Huffman}!WriteBitArray@{WriteBitArray}}
+\index{WriteBitArray@{WriteBitArray}!ce100\_hw3\_algo\_lib\_cs.Huffman@{ce100\_hw3\_algo\_lib\_cs.Huffman}}
+\doxysubsubsection{\texorpdfstring{WriteBitArray()}{WriteBitArray()}}
+{\footnotesize\ttfamily static void ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Write\+Bit\+Array (\begin{DoxyParamCaption}\item[{Binary\+Writer}]{writer,  }\item[{Bit\+Array}]{bits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{_huffman_8cs_source_l00097}{97}} of file \mbox{\hyperlink{_huffman_8cs_source}{Huffman.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Converts\ bit\ array\ to\ byte\ array.}}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{byte}[]\ bytes\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{byte}[(bits.Length\ +\ 7)\ /\ 8];}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ bits.CopyTo(bytes,\ 0);}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Prints\ the\ byte\ array\ to\ the\ printer.}}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ writer.Write(bytes);}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Administrator/\+Desktop/ce100-\/hw3-\/sln/ce100-\/hw3-\/algo-\/lib-\/cs/\mbox{\hyperlink{_huffman_8cs}{Huffman.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_ikea_assembly_guide" kind="class" language="C#" prot="public">
+    <compoundname>IkeaAssemblyGuide</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ikea_assembly_guide_1afe6a00bd53a0a80318cbe19db3899b1c" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string IkeaAssemblyGuide.productName</definition>
+        <argsstring></argsstring>
+        <name>productName</name>
+        <qualifiedname>IkeaAssemblyGuide.productName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" line="14" column="20" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ikea_assembly_guide_1ae2c3b969c3d04f4c34a83dbcc57400ec" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string IkeaAssemblyGuide.productLink</definition>
+        <argsstring></argsstring>
+        <name>productLink</name>
+        <qualifiedname>IkeaAssemblyGuide.productLink</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" line="15" column="20" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ikea_assembly_guide_1ad304831695fb1fe957b95738be1b2514" prot="private" static="no" mutable="no">
+        <type>Dictionary&lt; string, List&lt; string &gt; &gt;</type>
+        <definition>Dictionary&lt;string, List&lt;string&gt; &gt; IkeaAssemblyGuide.parts</definition>
+        <argsstring></argsstring>
+        <name>parts</name>
+        <qualifiedname>IkeaAssemblyGuide.parts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" line="19" column="24" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ikea_assembly_guide_1af384d644fa4c837f2195d01a9c2a5956" prot="private" static="no" mutable="no">
+        <type>Stack&lt; string &gt;</type>
+        <definition>Stack&lt;string&gt; IkeaAssemblyGuide.order</definition>
+        <argsstring></argsstring>
+        <name>order</name>
+        <qualifiedname>IkeaAssemblyGuide.order</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" line="22" column="19" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ikea_assembly_guide_1adbcb753afd6cbe7b22ad586c225eb6d9" prot="private" static="no" mutable="no">
+        <type>ArrayList</type>
+        <definition>ArrayList IkeaAssemblyGuide.steps</definition>
+        <argsstring></argsstring>
+        <name>steps</name>
+        <qualifiedname>IkeaAssemblyGuide.steps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" line="25" column="23" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ikea_assembly_guide_1ac9c89544660eb3e121985d6ceb462bbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IkeaAssemblyGuide.IkeaAssemblyGuide</definition>
+        <argsstring>(string name, string link)</argsstring>
+        <name>IkeaAssemblyGuide</name>
+        <qualifiedname>IkeaAssemblyGuide.IkeaAssemblyGuide</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" line="28" column="12" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" bodystart="28" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ikea_assembly_guide_1a20b8f09e3a8c8196b95568ce0614f2c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IkeaAssemblyGuide.AddPart</definition>
+        <argsstring>(string part, List&lt; string &gt; dependencies)</argsstring>
+        <name>AddPart</name>
+        <qualifiedname>IkeaAssemblyGuide.AddPart</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>part</declname>
+        </param>
+        <param>
+          <type>List&lt; string &gt;</type>
+          <declname>dependencies</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" line="38" column="17" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ikea_assembly_guide_1a10edcd3b675b56ae553a392fa8a9420a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IkeaAssemblyGuide.TopologicalSort</definition>
+        <argsstring>()</argsstring>
+        <name>TopologicalSort</name>
+        <qualifiedname>IkeaAssemblyGuide.TopologicalSort</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" line="44" column="17" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" bodystart="44" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ikea_assembly_guide_1ab86454e2702133cf2b64620d243f117c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList</type>
+        <definition>ArrayList IkeaAssemblyGuide.GetAssemblySteps</definition>
+        <argsstring>()</argsstring>
+        <name>GetAssemblySteps</name>
+        <qualifiedname>IkeaAssemblyGuide.GetAssemblySteps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" line="82" column="22" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" bodystart="82" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_ikea_assembly_guide_1a2feda70455b94e5484e3052220b1e2ae" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IkeaAssemblyGuide.DFS</definition>
+        <argsstring>(string part, HashSet&lt; string &gt; visited)</argsstring>
+        <name>DFS</name>
+        <qualifiedname>IkeaAssemblyGuide.DFS</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>part</declname>
+        </param>
+        <param>
+          <type>HashSet&lt; string &gt;</type>
+          <declname>visited</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" line="57" column="18" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" bodystart="57" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" line="11" column="7" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/IkeaAssemblyGuide.cs" bodystart="12" bodyend="99"/>
+    <listofallmembers>
+      <member refid="class_ikea_assembly_guide_1a20b8f09e3a8c8196b95568ce0614f2c5" prot="public" virt="non-virtual"><scope>IkeaAssemblyGuide</scope><name>AddPart</name></member>
+      <member refid="class_ikea_assembly_guide_1a2feda70455b94e5484e3052220b1e2ae" prot="private" virt="non-virtual"><scope>IkeaAssemblyGuide</scope><name>DFS</name></member>
+      <member refid="class_ikea_assembly_guide_1ab86454e2702133cf2b64620d243f117c" prot="public" virt="non-virtual"><scope>IkeaAssemblyGuide</scope><name>GetAssemblySteps</name></member>
+      <member refid="class_ikea_assembly_guide_1ac9c89544660eb3e121985d6ceb462bbc" prot="public" virt="non-virtual"><scope>IkeaAssemblyGuide</scope><name>IkeaAssemblyGuide</name></member>
+      <member refid="class_ikea_assembly_guide_1af384d644fa4c837f2195d01a9c2a5956" prot="private" virt="non-virtual"><scope>IkeaAssemblyGuide</scope><name>order</name></member>
+      <member refid="class_ikea_assembly_guide_1ad304831695fb1fe957b95738be1b2514" prot="private" virt="non-virtual"><scope>IkeaAssemblyGuide</scope><name>parts</name></member>
+      <member refid="class_ikea_assembly_guide_1ae2c3b969c3d04f4c34a83dbcc57400ec" prot="private" virt="non-virtual"><scope>IkeaAssemblyGuide</scope><name>productLink</name></member>
+      <member refid="class_ikea_assembly_guide_1afe6a00bd53a0a80318cbe19db3899b1c" prot="private" virt="non-virtual"><scope>IkeaAssemblyGuide</scope><name>productName</name></member>
+      <member refid="class_ikea_assembly_guide_1adbcb753afd6cbe7b22ad586c225eb6d9" prot="private" virt="non-virtual"><scope>IkeaAssemblyGuide</scope><name>steps</name></member>
+      <member refid="class_ikea_assembly_guide_1a10edcd3b675b56ae553a392fa8a9420a" prot="public" virt="non-virtual"><scope>IkeaAssemblyGuide</scope><name>TopologicalSort</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

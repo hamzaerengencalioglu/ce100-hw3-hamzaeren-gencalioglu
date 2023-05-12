@@ -1,0 +1,200 @@
+\hypertarget{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node}{}\doxysection{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Node Class Reference}
+\label{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node}\index{ce100\_hw3\_algo\_lib\_cs.Huffman.Node@{ce100\_hw3\_algo\_lib\_cs.Huffman.Node}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ bool $>$ \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_a34d0c2145b67d1d1f361716e1418f23d}{Traverse}} (char symbol, List$<$ bool $>$ data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_acdcaec161f3ef02c408e115286f559e3}{Symbol}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_ac8f09bb728b21aac079ed62d6f3d4cf1}{Frequency}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node}{Node}} \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_aae0fc776f4fa97942f9a7a76f3c8d06a}{Right}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node}{Node}} \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_adea5e65ae5f9159b2dc46bcb45c15d4c}{Left}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_huffman_8cs_source_l00018}{18}} of file \mbox{\hyperlink{_huffman_8cs_source}{Huffman.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_a34d0c2145b67d1d1f361716e1418f23d}\label{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_a34d0c2145b67d1d1f361716e1418f23d}} 
+\index{ce100\_hw3\_algo\_lib\_cs.Huffman.Node@{ce100\_hw3\_algo\_lib\_cs.Huffman.Node}!Traverse@{Traverse}}
+\index{Traverse@{Traverse}!ce100\_hw3\_algo\_lib\_cs.Huffman.Node@{ce100\_hw3\_algo\_lib\_cs.Huffman.Node}}
+\doxysubsubsection{\texorpdfstring{Traverse()}{Traverse()}}
+{\footnotesize\ttfamily List$<$ bool $>$ ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Node.\+Traverse (\begin{DoxyParamCaption}\item[{char}]{symbol,  }\item[{List$<$ bool $>$}]{data }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_huffman_8cs_source_l00041}{41}} of file \mbox{\hyperlink{_huffman_8cs_source}{Huffman.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_aae0fc776f4fa97942f9a7a76f3c8d06a}{Right}}\ ==\ \textcolor{keyword}{null}\ \&\&\ \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_adea5e65ae5f9159b2dc46bcb45c15d4c}{Left}}\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ If\ the\ symbol\ is\ equal\ to\ this\ node's\ symbol,\ return\ the\ data.}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (symbol.Equals(\textcolor{keyword}{this}.Symbol))}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ data;}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ If\ the\ symbol\ is\ not\ equal\ to\ this\ node's\ symbol,\ return\ null.}}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Defines\ variables\ to\ hold\ left\ and\ right\ sub-\/branches.}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ List<bool>\ left\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ List<bool>\ right\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ If\ there\ is\ a\ left\ lower\ branch}}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_adea5e65ae5f9159b2dc46bcb45c15d4c}{Left}}\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Creates\ the\ left\ path.}}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ List<bool>\ leftPath\ =\ \textcolor{keyword}{new}\ List<bool>();}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ leftPath.AddRange(data);}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ leftPath.Add(\textcolor{keyword}{false});}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Performs\ a\ symbol\ search\ on\ the\ lower\ left\ branch.}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ left\ =\ \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_adea5e65ae5f9159b2dc46bcb45c15d4c}{Left}}.\mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_a34d0c2145b67d1d1f361716e1418f23d}{Traverse}}(symbol,\ leftPath);}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ If\ there\ is\ a\ right\ lower\ branch}}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_aae0fc776f4fa97942f9a7a76f3c8d06a}{Right}}\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Creates\ the\ right\ path.}}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ List<bool>\ rightPath\ =\ \textcolor{keyword}{new}\ List<bool>();}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ rightPath.AddRange(data);}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ rightPath.Add(\textcolor{keyword}{true});}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Starts\ searching\ for\ the\ symbol\ in\ the\ lower\ right\ branch.}}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ right\ =\ \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_aae0fc776f4fa97942f9a7a76f3c8d06a}{Right}}.\mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_a34d0c2145b67d1d1f361716e1418f23d}{Traverse}}(symbol,\ rightPath);}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Returns\ the\ left\ path\ if\ it\ found\ the\ left\ sub-\/branch.}}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (left\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ left;}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Returns\ the\ right\ path\ if\ found\ in\ the\ right\ sub-\/branch.}}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ right;}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_huffman_8cs_source_l00036}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Node.\+Left}}, \mbox{\hyperlink{_huffman_8cs_source_l00031}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Node.\+Right}}, and \mbox{\hyperlink{_huffman_8cs_source_l00041}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Node.\+Traverse()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_huffman_8cs_source_l00194}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree.\+Encode()}}, and \mbox{\hyperlink{_huffman_8cs_source_l00041}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Node.\+Traverse()}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_ac8f09bb728b21aac079ed62d6f3d4cf1}\label{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_ac8f09bb728b21aac079ed62d6f3d4cf1}} 
+\index{ce100\_hw3\_algo\_lib\_cs.Huffman.Node@{ce100\_hw3\_algo\_lib\_cs.Huffman.Node}!Frequency@{Frequency}}
+\index{Frequency@{Frequency}!ce100\_hw3\_algo\_lib\_cs.Huffman.Node@{ce100\_hw3\_algo\_lib\_cs.Huffman.Node}}
+\doxysubsubsection{\texorpdfstring{Frequency}{Frequency}}
+{\footnotesize\ttfamily int ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Node.\+Frequency\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line \mbox{\hyperlink{_huffman_8cs_source_l00025}{25}} of file \mbox{\hyperlink{_huffman_8cs_source}{Huffman.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get};}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{_huffman_8cs_source_l00137}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree.\+Build()}}.
+
+\mbox{\Hypertarget{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_adea5e65ae5f9159b2dc46bcb45c15d4c}\label{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_adea5e65ae5f9159b2dc46bcb45c15d4c}} 
+\index{ce100\_hw3\_algo\_lib\_cs.Huffman.Node@{ce100\_hw3\_algo\_lib\_cs.Huffman.Node}!Left@{Left}}
+\index{Left@{Left}!ce100\_hw3\_algo\_lib\_cs.Huffman.Node@{ce100\_hw3\_algo\_lib\_cs.Huffman.Node}}
+\doxysubsubsection{\texorpdfstring{Left}{Left}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node}{Node}} ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Node.\+Left\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line \mbox{\hyperlink{_huffman_8cs_source_l00035}{35}} of file \mbox{\hyperlink{_huffman_8cs_source}{Huffman.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get};}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set};}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{_huffman_8cs_source_l00214}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree.\+Decode()}}, \mbox{\hyperlink{_huffman_8cs_source_l00255}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree.\+Is\+Leaf()}}, and \mbox{\hyperlink{_huffman_8cs_source_l00041}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Node.\+Traverse()}}.
+
+\mbox{\Hypertarget{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_aae0fc776f4fa97942f9a7a76f3c8d06a}\label{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_aae0fc776f4fa97942f9a7a76f3c8d06a}} 
+\index{ce100\_hw3\_algo\_lib\_cs.Huffman.Node@{ce100\_hw3\_algo\_lib\_cs.Huffman.Node}!Right@{Right}}
+\index{Right@{Right}!ce100\_hw3\_algo\_lib\_cs.Huffman.Node@{ce100\_hw3\_algo\_lib\_cs.Huffman.Node}}
+\doxysubsubsection{\texorpdfstring{Right}{Right}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node}{Node}} ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Node.\+Right\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line \mbox{\hyperlink{_huffman_8cs_source_l00030}{30}} of file \mbox{\hyperlink{_huffman_8cs_source}{Huffman.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get};}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{_huffman_8cs_source_l00214}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree.\+Decode()}}, \mbox{\hyperlink{_huffman_8cs_source_l00255}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree.\+Is\+Leaf()}}, and \mbox{\hyperlink{_huffman_8cs_source_l00041}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Node.\+Traverse()}}.
+
+\mbox{\Hypertarget{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_acdcaec161f3ef02c408e115286f559e3}\label{classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node_acdcaec161f3ef02c408e115286f559e3}} 
+\index{ce100\_hw3\_algo\_lib\_cs.Huffman.Node@{ce100\_hw3\_algo\_lib\_cs.Huffman.Node}!Symbol@{Symbol}}
+\index{Symbol@{Symbol}!ce100\_hw3\_algo\_lib\_cs.Huffman.Node@{ce100\_hw3\_algo\_lib\_cs.Huffman.Node}}
+\doxysubsubsection{\texorpdfstring{Symbol}{Symbol}}
+{\footnotesize\ttfamily char ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Node.\+Symbol\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line \mbox{\hyperlink{_huffman_8cs_source_l00020}{20}} of file \mbox{\hyperlink{_huffman_8cs_source}{Huffman.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get};}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set};}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{_huffman_8cs_source_l00214}{ce100\+\_\+hw3\+\_\+algo\+\_\+lib\+\_\+cs.\+Huffman.\+Huffman\+Tree.\+Decode()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Administrator/\+Desktop/ce100-\/hw3-\/sln/ce100-\/hw3-\/algo-\/lib-\/cs/\mbox{\hyperlink{_huffman_8cs}{Huffman.\+cs}}\end{DoxyCompactItemize}
