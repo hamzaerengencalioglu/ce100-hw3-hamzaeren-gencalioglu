@@ -1,0 +1,20 @@
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set file path
+        run: echo "FILE_PATH=C:\Users\Administrator\Desktop\ce100-hw3-hamzaeren-gencalioglu\mp3-txt-folder\GoodTime-Input.mp3" >> $GITHUB_ENV
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set file path
+        run: echo "FILE_PATH=C:\Users\Administrator\Desktop\ce100-hw3-hamzaeren-gencalioglu\mp3-txt-folder\GoodTime-Input.mp3" >> $GITHUB_ENV
+      
+      - name: Run tests
+        run: |
+          # Testlerinizi çalıştırmak için gerekli komutları buraya yazın
+          # Dosya yolunu kullanmak için $FILE_PATH değişkenini kullanabilirsiniz
+          echo $FILE_PATH
+          # Örnek bir test komutu
+          my_test_command --file=$FILE_PATH
