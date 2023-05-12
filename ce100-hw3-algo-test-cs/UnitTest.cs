@@ -7,7 +7,7 @@ public class UnitTest {
 
   [Fact]
   public void HuffmanCoding_Txt_Test() {
-            string mp3FilePath = "D:\a\deneme\deneme\ce100-hw3-algo-test-cs\bin\Debug\net7.0\Mp3-Txt_Folder\GoodTime_Input.mp3";
+    string mp3FilePath = "D:\a\deneme\deneme\ce100-hw3-algo-test-cs\bin\Debug\net7.0\Mp3-Txt_Folder\GoodTime_Input.mp3";
     string txtFilePath = "Mp3-Txt_Folder/Txt_Input.txt";
     long mp3FileSize = new FileInfo(mp3FilePath).Length;
     string loremIpsum = Huffman.GenerateLoremIpsum(mp3FileSize);

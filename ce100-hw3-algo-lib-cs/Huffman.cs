@@ -3,15 +3,15 @@
 
 namespace ce100_hw3_algo_lib_cs {
 
-    /**
-     * @name Huffman
-     * 
-     * @brief Build the Huffman tree based on the source text.
-     *
-     * @param Source The source text used to build the Huffman tree.
-     **/
+/**
+ * @name Huffman
+ *
+ * @brief Build the Huffman tree based on the source text.
+ *
+ * @param Source The source text used to build the Huffman tree.
+ **/
 
-    public class Huffman {
+public class Huffman {
 
   public class Node {
     public char Symbol {
@@ -218,15 +218,15 @@ namespace ce100_hw3_algo_lib_cs {
     }
 
   }
-        /**
-     * @name HuffmanTree_mp3
-     * 
-     * @brief Build the Huffman tree based on the source mp3.
-     *
-     * @param Source The source mp3 used to build the Huffman tree.
-     **/
+  /**
+  * @name HuffmanTree_mp3
+  *
+  * @brief Build the Huffman tree based on the source mp3.
+  *
+  * @param Source The source mp3 used to build the Huffman tree.
+  **/
 
-        public class Node_mp3 {
+  public class Node_mp3 {
     public byte Symbol {
       get;
       set;
@@ -405,16 +405,16 @@ namespace ce100_hw3_algo_lib_cs {
     }
   }
 
-        /**
-         * @name GenerateLoremIpsum
-         * 
-         * @brief Generates Lorem Ipsum text with the specified length.
-         *
-         * @param Source The source text used to build the Huffman tree.
-         * 
-         * @param The generated Lorem Ipsum text.
-         **/
-        public static string GenerateLoremIpsum(long length) {
+  /**
+   * @name GenerateLoremIpsum
+   *
+   * @brief Generates Lorem Ipsum text with the specified length.
+   *
+   * @param Source The source text used to build the Huffman tree.
+   *
+   * @param The generated Lorem Ipsum text.
+   **/
+  public static string GenerateLoremIpsum(long length) {
     // Defines a variable to hold the text Lorem ipsum.
     string loremIpsumText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
                             "Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. " +

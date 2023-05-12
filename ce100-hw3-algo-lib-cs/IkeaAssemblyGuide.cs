@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 
 
-    /**
-    * @name IkeaAssemblyGuide
-    * 
-    * @brief Construct how to assemble pieces of furniture using IkeaAssemblyGuide.
-    *
-    * @param Creates assembly guide for assembling parts using IkeaAssemblyGuide.
-    **/
+/**
+* @name IkeaAssemblyGuide
+*
+* @brief Construct how to assemble pieces of furniture using IkeaAssemblyGuide.
+*
+* @param Creates assembly guide for assembling parts using IkeaAssemblyGuide.
+**/
 public class IkeaAssemblyGuide {
   // Product name and link
   private string productName;
