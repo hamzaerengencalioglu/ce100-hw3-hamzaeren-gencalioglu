@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="353" column="26" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="353" bodyend="-1"/>
+        <location file="ce100-hw3-algo-lib-cs/Huffman.cs" line="353" column="26" bodyfile="ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="353" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="property">
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="354" column="29" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="355" bodyend="358"/>
+        <location file="ce100-hw3-algo-lib-cs/Huffman.cs" line="354" column="29" bodyfile="ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="355" bodyend="358"/>
         <referencedby refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3_1a1a96874a895877ee47493baa3ce7b461" compoundref="_huffman_8cs" startline="437" endline="476">ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Decode</referencedby>
         <referencedby refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3_1a10db01adfca7b8c774a0d7bebe6d9bf4" compoundref="_huffman_8cs" startline="417" endline="435">ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Encode</referencedby>
       </memberdef>
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="359" column="31" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="359" bodyend="-1"/>
+        <location file="ce100-hw3-algo-lib-cs/Huffman.cs" line="359" column="31" bodyfile="ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="359" bodyend="-1"/>
         <referencedby refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3_1ac41ccbb12e004e929b9fdb7f14afe1bc" compoundref="_huffman_8cs" startline="361" endline="416">ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Build</referencedby>
       </memberdef>
       </sectiondef>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="361" column="25" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="361" bodyend="416"/>
+        <location file="ce100-hw3-algo-lib-cs/Huffman.cs" line="361" column="25" bodyfile="ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="361" bodyend="416"/>
         <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3_1addd419263069bbb2e70a8064c3e12aa9" compoundref="_huffman_8cs" startline="359">ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Frequencies</references>
         <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1a76cf8eaa290addcc3984b04958187dc5" compoundref="_huffman_8cs" startline="279" endline="282">ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Frequency</references>
       </memberdef>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="417" column="29" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="417" bodyend="435"/>
+        <location file="ce100-hw3-algo-lib-cs/Huffman.cs" line="417" column="29" bodyfile="ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="417" bodyend="435"/>
         <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3_1a102bd1a2822b9f07861445a8deb32e6c" compoundref="_huffman_8cs" startline="355" endline="358">ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Root</references>
         <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1a49f1ff1a6b0b87810598dbca37d33246" compoundref="_huffman_8cs" startline="294" endline="348">ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Traverse_mp3</references>
       </memberdef>
@@ -112,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="437" column="25" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="437" bodyend="476"/>
+        <location file="ce100-hw3-algo-lib-cs/Huffman.cs" line="437" column="25" bodyfile="ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="437" bodyend="476"/>
         <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3_1ad3eacdafa7eea1d9701e862383397c9f" compoundref="_huffman_8cs" startline="478" endline="483">ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.IsLeaf</references>
         <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3_1a102bd1a2822b9f07861445a8deb32e6c" compoundref="_huffman_8cs" startline="355" endline="358">ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Root</references>
       </memberdef>
@@ -132,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="478" column="25" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="478" bodyend="483"/>
+        <location file="ce100-hw3-algo-lib-cs/Huffman.cs" line="478" column="25" bodyfile="ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="478" bodyend="483"/>
         <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1a690bc0a177ff59fa379863294d8bd0f7" compoundref="_huffman_8cs" startline="284" endline="287">ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Left</references>
         <references refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1ad70aaa343d42c6b1e5aadbfd766b34f8" compoundref="_huffman_8cs" startline="289" endline="292">ce100_hw3_algo_lib_cs.Huffman.Node_mp3.Right</references>
         <referencedby refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3_1a1a96874a895877ee47493baa3ce7b461" compoundref="_huffman_8cs" startline="437" endline="476">ce100_hw3_algo_lib_cs.Huffman.HuffmanTree_mp3.Decode</referencedby>
@@ -142,7 +142,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="351" column="15" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="352" bodyend="484"/>
+    <location file="ce100-hw3-algo-lib-cs/Huffman.cs" line="351" column="15" bodyfile="ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="352" bodyend="484"/>
     <listofallmembers>
       <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3_1ac41ccbb12e004e929b9fdb7f14afe1bc" prot="public" virt="non-virtual"><scope>ce100_hw3_algo_lib_cs::Huffman::HuffmanTree_mp3</scope><name>Build</name></member>
       <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_huffman_tree__mp3_1a1a96874a895877ee47493baa3ce7b461" prot="public" virt="non-virtual"><scope>ce100_hw3_algo_lib_cs::Huffman::HuffmanTree_mp3</scope><name>Decode</name></member>

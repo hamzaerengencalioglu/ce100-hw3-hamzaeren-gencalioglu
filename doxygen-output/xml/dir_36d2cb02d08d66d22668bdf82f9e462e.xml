@@ -1,11 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
-  <compounddef id="namespace_system_1_1_collections" kind="namespace" language="C#">
-    <compoundname>System::Collections</compoundname>
+  <compounddef id="dir_36d2cb02d08d66d22668bdf82f9e462e" kind="dir">
+    <compoundname>ce100-hw3-algo-lib-cs</compoundname>
+    <innerfile refid="_huffman_8cs">Huffman.cs</innerfile>
+    <innerfile refid="_ikea_assembly_guide_8cs">IkeaAssemblyGuide.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="ce100-hw3-algo-lib-cs/Huffman.cs" line="1" column="25"/>
+    <location file="ce100-hw3-algo-lib-cs/"/>
   </compounddef>
 </doxygen>

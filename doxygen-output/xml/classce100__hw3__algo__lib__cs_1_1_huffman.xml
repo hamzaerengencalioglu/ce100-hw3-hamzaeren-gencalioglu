@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="495" column="30" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="495" bodyend="516"/>
+        <location file="ce100-hw3-algo-lib-cs/Huffman.cs" line="495" column="30" bodyfile="ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="495" bodyend="516"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -68,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="97" column="28" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="97" bodyend="104"/>
+        <location file="ce100-hw3-algo-lib-cs/Huffman.cs" line="97" column="28" bodyfile="ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="97" bodyend="104"/>
       </memberdef>
       <memberdef kind="function" id="classce100__hw3__algo__lib__cs_1_1_huffman_1ac68d4c3bac7505d36f26e573b47fca9e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>BitArray</type>
@@ -90,14 +90,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="106" column="32" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="106" bodyend="126"/>
+        <location file="ce100-hw3-algo-lib-cs/Huffman.cs" line="106" column="32" bodyfile="ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="106" bodyend="126"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" line="15" column="11" bodyfile="C:/Users/Administrator/Desktop/ce100-hw3-sln/ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="16" bodyend="519"/>
+    <location file="ce100-hw3-algo-lib-cs/Huffman.cs" line="15" column="11" bodyfile="ce100-hw3-algo-lib-cs/Huffman.cs" bodystart="16" bodyend="519"/>
     <listofallmembers>
       <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1ac78f79ce7f37e1a249e211ba48c7376e" prot="public" virt="non-virtual"><scope>ce100_hw3_algo_lib_cs::Huffman</scope><name>GenerateLoremIpsum</name></member>
       <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1ac68d4c3bac7505d36f26e573b47fca9e" prot="public" virt="non-virtual"><scope>ce100_hw3_algo_lib_cs::Huffman</scope><name>ReadBitArray</name></member>

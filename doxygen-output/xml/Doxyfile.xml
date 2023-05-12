@@ -119,7 +119,7 @@
   <option  id='WARN_LINE_FORMAT' default='yes' type='string'><value><![CDATA["at line $line of file $file"]]></value></option>
   <option  id='WARN_LOGFILE' default='no' type='string'><value><![CDATA[Doxyfile.log]]></value></option>
   <option  id='INPUT' default='no' type='stringlist'>
-    <value><![CDATA[../ce100-hw3-sln/ce100-hw3-algo-lib-cs]]></value>
+    <value><![CDATA[ce100-hw3-algo-lib-cs]]></value>
   </option>
   <option  id='INPUT_ENCODING' default='yes' type='string'><value><![CDATA[UTF-8]]></value></option>
   <option  id='INPUT_FILE_ENCODING' default='yes' type='stringlist'>
