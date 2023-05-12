@@ -221,8 +221,8 @@ var assemblies = [
   {
     "name": "ce100-hw3-algo-lib-cs",
     "classes": [
-      { "name": "ce100_hw3_algo_lib_cs.Huffman", "rp": "ce100_hw3_algo_lib_cs_Huffman.html", "cl": 268, "ucl": 0, "cal": 268, "tl": 520, "cb": 79, "tb": 80, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "IkeaAssemblyGuide", "rp": "ce100_hw3_algo_lib_cs_IkeaAssemblyGuide.html", "cl": 42, "ucl": 0, "cal": 42, "tl": 99, "cb": 10, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "ce100_hw3_algo_lib_cs.Huffman", "rp": "ce100_hw3_algo_lib_cs_Huffman.html", "cl": 171, "ucl": 0, "cal": 171, "tl": 520, "cb": 79, "tb": 80, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "IkeaAssemblyGuide", "rp": "ce100_hw3_algo_lib_cs_IkeaAssemblyGuide.html", "cl": 27, "ucl": 0, "cal": 27, "tl": 99, "cb": 10, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
     ]},
 ];
 
