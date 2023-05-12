@@ -7,14 +7,14 @@ public class UnitTest {
 
   [Fact]
   public void HuffmanCoding_Txt_Test() {
-    string mp3FilePath = "C:\\Users\\Administrator\\Desktop\\ce100-hw3-hamzaeren-gencalioglu\\mp3-txt-folder\\GoodTime_Input.mp3";
-    string txtFilePath = "C:\\Users\\Administrator\\Desktop\\ce100-hw3-hamzaeren-gencalioglu\\mp3-txt-folder\\Txt_Input.txt";
+    string mp3FilePath = "C:\\Users\\Administrator\\Desktop\\ce100-hw3-hamzaeren-gencalioglu\\mp3-txt-folder\\GoodTime-Input.mp3";
+    string txtFilePath = "C:\\Users\\Administrator\\Desktop\\ce100-hw3-hamzaeren-gencalioglu\\mp3-txt-folder\\Txt-Input.txt";
     long mp3FileSize = new FileInfo(mp3FilePath).Length;
     string loremIpsum = Huffman.GenerateLoremIpsum(mp3FileSize);
     File.WriteAllText(txtFilePath, loremIpsum);
-    string inputFilePath = "C:\\Users\\Administrator\\Desktop\\ce100-hw3-hamzaeren-gencalioglu\\mp3-txt-folder\\Txt_Input.txt";
-    string compressedFilePath = "C:\\Users\\Administrator\\Desktop\\ce100-hw3-hamzaeren-gencalioglu\\mp3-txt-folder\\Txt_Compressed.bin";
-    string decompressedFilePath = "C:\\Users\\Administrator\\Desktop\\ce100-hw3-hamzaeren-gencalioglu\\mp3-txt-folder\\Txt_Output.txt";
+    string inputFilePath = "C:\\Users\\Administrator\\Desktop\\ce100-hw3-hamzaeren-gencalioglu\\mp3-txt-folder\\Txt-Input.txt";
+    string compressedFilePath = "C:\\Users\\Administrator\\Desktop\\ce100-hw3-hamzaeren-gencalioglu\\mp3-txt-folder\\Txt-Compressed.bin";
+    string decompressedFilePath = "C:\\Users\\Administrator\\Desktop\\ce100-hw3-hamzaeren-gencalioglu\\mp3-txt-folder\\Txt-Output.txt";
     string input = File.ReadAllText(inputFilePath);
     Huffman.HuffmanTree tree = new Huffman.HuffmanTree();
     tree.Build(input);
@@ -38,9 +38,9 @@ public class UnitTest {
 
   [Fact]
   public void HuffmanCoding_Mp3_Test() {
-    string inputFilePath = "C:\\Users\\Administrator\\Desktop\\ce100-hw3-hamzaeren-gencalioglu\\mp3-txt-folder\\GoodTime_Input.mp3";
-    string compressedFilePath = "C:\\Users\\Administrator\\Desktop\\ce100-hw3-hamzaeren-gencalioglu\\mp3-txt-folder\\GoodTime_Compressed.bin";
-    string decompressedFilePath = "C:\\Users\\Administrator\\Desktop\\ce100-hw3-hamzaeren-gencalioglu\\mp3-txt-folder\\GoodTime_Output.mp3";
+    string inputFilePath = "C:\\Users\\Administrator\\Desktop\\ce100-hw3-hamzaeren-gencalioglu\\mp3-txt-folder\\GoodTime-Input.mp3";
+    string compressedFilePath = "C:\\Users\\Administrator\\Desktop\\ce100-hw3-hamzaeren-gencalioglu\\mp3-txt-folder\\GoodTime-Compressed.bin";
+    string decompressedFilePath = "C:\\Users\\Administrator\\Desktop\\ce100-hw3-hamzaeren-gencalioglu\\mp3-txt-folder\\GoodTime-Output.mp3";
     // Read the file contents
     byte[] input = File.ReadAllBytes(inputFilePath);
     // Create Huffman tree and encode the input file
