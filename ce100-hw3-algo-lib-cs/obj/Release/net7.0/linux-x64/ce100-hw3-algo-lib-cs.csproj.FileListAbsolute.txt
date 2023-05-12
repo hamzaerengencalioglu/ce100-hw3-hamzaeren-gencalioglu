@@ -1,0 +1,12 @@
+C:\Users\Administrator\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\bin\Release\net7.0\linux-x64\ce100-hw3-algo-lib-cs.deps.json
+C:\Users\Administrator\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\bin\Release\net7.0\linux-x64\ce100-hw3-algo-lib-cs.dll
+C:\Users\Administrator\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\bin\Release\net7.0\linux-x64\ce100-hw3-algo-lib-cs.pdb
+C:\Users\Administrator\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\obj\Release\net7.0\linux-x64\ce100-hw3-algo-lib-cs.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\obj\Release\net7.0\linux-x64\ce100-hw3-algo-lib-cs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\obj\Release\net7.0\linux-x64\ce100-hw3-algo-lib-cs.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\obj\Release\net7.0\linux-x64\ce100-hw3-algo-lib-cs.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\obj\Release\net7.0\linux-x64\ce100-hw3-algo-lib-cs.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\obj\Release\net7.0\linux-x64\ce100-hw3-algo-lib-cs.dll
+C:\Users\Administrator\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\obj\Release\net7.0\linux-x64\refint\ce100-hw3-algo-lib-cs.dll
+C:\Users\Administrator\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\obj\Release\net7.0\linux-x64\ce100-hw3-algo-lib-cs.pdb
+C:\Users\Administrator\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\obj\Release\net7.0\linux-x64\ref\ce100-hw3-algo-lib-cs.dll
