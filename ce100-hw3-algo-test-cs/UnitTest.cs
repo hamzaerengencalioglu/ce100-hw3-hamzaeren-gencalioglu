@@ -7,7 +7,7 @@ public class UnitTest {
 
   [Fact]
   public void HuffmanCoding_Txt_Test() {
-    string mp3FilePath = "ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-test-cs\bin\Release\net7.0\GoodTime_Input.mp3";
+    string mp3FilePath = "GoodTime_Input.mp3";
     string txtFilePath = "Txt_Input.txt";
     long mp3FileSize = new FileInfo(mp3FilePath).Length;
     string loremIpsum = Huffman.GenerateLoremIpsum(mp3FileSize);
@@ -38,7 +38,7 @@ public class UnitTest {
 
   [Fact]
   public void HuffmanCoding_Mp3_Test() {
-    string inputFilePath = "ce100-hw3-algo-test-cs\bin\Release\net7.0\GoodTime_Input.mp3";
+    string inputFilePath = "GoodTime_Input.mp3";
     string compressedFilePath = "GoodTime_Compressed.bin";
     string decompressedFilePath = "GoodTime_Output.mp3";
     // Read the file contents
