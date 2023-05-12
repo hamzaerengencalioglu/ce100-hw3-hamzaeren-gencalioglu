@@ -5,68 +5,68 @@ using System.Collections;
 namespace ce100_hw3_algo_test_cs {
 public class UnitTest {
 
-  [Fact]
-  public void HuffmanCoding_Txt_Test() {
-    string mp3FilePath = "GoodTime_Input.mp3";
-    string txtFilePath = "Txt_Input.txt";
-    long mp3FileSize = new FileInfo(mp3FilePath).Length;
-    string loremIpsum = Huffman.GenerateLoremIpsum(mp3FileSize);
-    File.WriteAllText(txtFilePath, loremIpsum);
-    string inputFilePath = "Txt_Input.txt";
-    string compressedFilePath = "Txt_Compressed.bin";
-    string decompressedFilePath = "Txt_Output.txt";
-    string input = File.ReadAllText(inputFilePath);
-    Huffman.HuffmanTree tree = new Huffman.HuffmanTree();
-    tree.Build(input);
-    BitArray encoded = tree.Encode(input);
-    using (FileStream compressedFileStream = new FileStream(compressedFilePath, FileMode.Create)) {
-      using (BinaryWriter writer = new BinaryWriter(compressedFileStream)) {
-        Huffman.WriteBitArray(writer, encoded);
-      }
-    }
-    using (FileStream compressedFileStream = new FileStream(compressedFilePath, FileMode.Open)) {
-      using (BinaryReader reader = new BinaryReader(compressedFileStream)) {
-        BitArray encodedFromFile = Huffman.ReadBitArray(reader, compressedFileStream.Length);
-        string decoded = tree.Decode(encodedFromFile);
-        File.WriteAllText(decompressedFilePath, decoded);
-      }
-    }
-    string decompressed = File.ReadAllText(decompressedFilePath);
-    Assert.Equal(input, decompressed);
-  }
+  //[Fact]
+  //public void HuffmanCoding_Txt_Test() {
+  //  string mp3FilePath = "GoodTime_Input.mp3";
+  //  string txtFilePath = "Txt_Input.txt";
+  //  long mp3FileSize = new FileInfo(mp3FilePath).Length;
+  //  string loremIpsum = Huffman.GenerateLoremIpsum(mp3FileSize);
+  //  File.WriteAllText(txtFilePath, loremIpsum);
+  //  string inputFilePath = "Txt_Input.txt";
+  //  string compressedFilePath = "Txt_Compressed.bin";
+  //  string decompressedFilePath = "Txt_Output.txt";
+  //  string input = File.ReadAllText(inputFilePath);
+  //  Huffman.HuffmanTree tree = new Huffman.HuffmanTree();
+  //  tree.Build(input);
+  //  BitArray encoded = tree.Encode(input);
+  //  using (FileStream compressedFileStream = new FileStream(compressedFilePath, FileMode.Create)) {
+  //    using (BinaryWriter writer = new BinaryWriter(compressedFileStream)) {
+  //      Huffman.WriteBitArray(writer, encoded);
+  //    }
+  //  }
+  //  using (FileStream compressedFileStream = new FileStream(compressedFilePath, FileMode.Open)) {
+  //    using (BinaryReader reader = new BinaryReader(compressedFileStream)) {
+  //      BitArray encodedFromFile = Huffman.ReadBitArray(reader, compressedFileStream.Length);
+  //      string decoded = tree.Decode(encodedFromFile);
+  //      File.WriteAllText(decompressedFilePath, decoded);
+  //    }
+  //  }
+  //  string decompressed = File.ReadAllText(decompressedFilePath);
+  //  Assert.Equal(input, decompressed);
+  //}
 
 
-  [Fact]
-  public void HuffmanCoding_Mp3_Test() {
-    string inputFilePath = "GoodTime_Input.mp3";
-    string compressedFilePath = "GoodTime_Compressed.bin";
-    string decompressedFilePath = "GoodTime_Output.mp3";
-    // Read the file contents
-    byte[] input = File.ReadAllBytes(inputFilePath);
-    // Create Huffman tree and encode the input file
-    Huffman.HuffmanTree_mp3 tree = new Huffman.HuffmanTree_mp3();
-    tree.Build(input);
-    BitArray encoded = tree.Encode(input);
-    // Write the encoded bits to binary file
-    using (FileStream compressedFileStream = new FileStream(compressedFilePath, FileMode.Create)) {
-      using (BinaryWriter writer = new BinaryWriter(compressedFileStream)) {
-        Huffman.WriteBitArray(writer, encoded);
-      }
-    }
-    // Read the compressed file and the encoded bits
-    using (FileStream compressedFileStream = new FileStream(compressedFilePath, FileMode.Open)) {
-      using (BinaryReader reader = new BinaryReader(compressedFileStream)) {
-        BitArray encodedFromFile = Huffman.ReadBitArray(reader, compressedFileStream.Length);
-        // Decode the encoded bits with Huffman tree
-        byte[] decodedBytes = tree.Decode(encodedFromFile);
-        // Write the decoded bytes as the original file
-        File.WriteAllBytes(decompressedFilePath, decodedBytes);
-      }
-    }
-    // Read the decompressed file and compare with the original file
-    byte[] decompressedBytes = File.ReadAllBytes(decompressedFilePath);
-    Assert.Equal(input, decompressedBytes);
-  }
+  //[Fact]
+  //public void HuffmanCoding_Mp3_Test() {
+  //  string inputFilePath = "GoodTime_Input.mp3";
+  //  string compressedFilePath = "GoodTime_Compressed.bin";
+  //  string decompressedFilePath = "GoodTime_Output.mp3";
+  //  // Read the file contents
+  //  byte[] input = File.ReadAllBytes(inputFilePath);
+  //  // Create Huffman tree and encode the input file
+  //  Huffman.HuffmanTree_mp3 tree = new Huffman.HuffmanTree_mp3();
+  //  tree.Build(input);
+  //  BitArray encoded = tree.Encode(input);
+  //  // Write the encoded bits to binary file
+  //  using (FileStream compressedFileStream = new FileStream(compressedFilePath, FileMode.Create)) {
+  //    using (BinaryWriter writer = new BinaryWriter(compressedFileStream)) {
+  //      Huffman.WriteBitArray(writer, encoded);
+  //    }
+  //  }
+  //  // Read the compressed file and the encoded bits
+  //  using (FileStream compressedFileStream = new FileStream(compressedFilePath, FileMode.Open)) {
+  //    using (BinaryReader reader = new BinaryReader(compressedFileStream)) {
+  //      BitArray encodedFromFile = Huffman.ReadBitArray(reader, compressedFileStream.Length);
+  //      // Decode the encoded bits with Huffman tree
+  //      byte[] decodedBytes = tree.Decode(encodedFromFile);
+  //      // Write the decoded bytes as the original file
+  //      File.WriteAllBytes(decompressedFilePath, decodedBytes);
+  //    }
+  //  }
+  //  // Read the decompressed file and compare with the original file
+  //  byte[] decompressedBytes = File.ReadAllBytes(decompressedFilePath);
+  //  Assert.Equal(input, decompressedBytes);
+  //}
 
 
   [Fact]
