@@ -29,7 +29,6 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
         working-directory: ./ce100-hw3-algo-test-cs
-
       - name: Install coverlet.msbuild
         run: dotnet add package coverlet.msbuild
         working-directory: ./ce100-hw3-algo-test-cs
@@ -41,11 +40,10 @@ jobs:
       - name: Test with Coverage
         run: dotnet test --configuration Release --verbosity normal --collect:"XPlat Code Coverage" --results-directory:./TestResults --logger:trx
         working-directory: ./ce100-hw3-algo-test-cs
-
       - name: Check Test Coverage
         run: |
             $ErrorActionPreference = 'Stop'
-            $coverageThreshold = 0.00
+            $coverageThreshold = 100.00
             $coverageReportPath = Get-ChildItem -Recurse -Filter 'coverage.cobertura.xml' | Select-Object -ExpandProperty FullName
             $lines = Get-Content $coverageReportPath
             $xmlContent = $lines -join "`n"
@@ -97,11 +95,9 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
         working-directory: ./ce100-hw3-algo-test-cs
-
       - name: Install coverlet.msbuild
         run: dotnet add package coverlet.msbuild --version 3.1.0
         working-directory: ./ce100-hw3-algo-test-cs
-
       - name: Build
         run: dotnet build --configuration Release
         working-directory: ./ce100-hw3-algo-test-cs
@@ -109,7 +105,6 @@ jobs:
       - name: Test with Coverage
         run: dotnet test --no-build --configuration Release --verbosity normal --collect:"XPlat Code Coverage" --results-directory:./TestResults --logger:trx
         working-directory: ./ce100-hw3-algo-test-cs
-
       - name: Generate Coverage Report
         run: reportgenerator "-reports:**/coverage.cobertura.xml" "-targetdir:coveragereport" -reporttypes:Html
         
@@ -145,17 +140,10 @@ jobs:
         id: commit_summary
         run: echo "::set-output name=summary::$(git log --format=%B -n 10 ${{ github.sha }})"
 
-        steps:
-  - name: Create Release
-    uses: actions/create-release@v1
-    with:
-      tag_name: refs/tags/v1.0.0
-      release_name: Release refs/tags/v1.0.0
-      body: Changes in this release:
-      draft: false
-      prerelease: false
-    env:
-
+      - name: Create Release
+        id: create_common_release
+        uses: actions/create-release@v1
+        env:
           GITHUB_TOKEN: ${{ secrets.CE100_HW3 }}
         with:
           tag_name: ${{ github.ref }}
@@ -163,7 +151,8 @@ jobs:
           body: |
             Changes in this release:
             ${{ steps.commit_summary.outputs.summary }}
-            Hamza Eren Gencalioglu
+            
+            Dr. Ugur CORUH
           draft: false
           prerelease: false
         
