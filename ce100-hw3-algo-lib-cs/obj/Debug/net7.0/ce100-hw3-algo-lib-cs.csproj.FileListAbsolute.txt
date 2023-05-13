@@ -10,3 +10,15 @@ C:\Users\Administrator\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-li
 C:\Users\Administrator\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\obj\Debug\net7.0\refint\ce100-hw3-algo-lib-cs.dll
 C:\Users\Administrator\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\obj\Debug\net7.0\ce100-hw3-algo-lib-cs.pdb
 C:\Users\Administrator\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\obj\Debug\net7.0\ref\ce100-hw3-algo-lib-cs.dll
+C:\Users\bayra\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\bin\Debug\net7.0\ce100-hw3-algo-lib-cs.deps.json
+C:\Users\bayra\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\bin\Debug\net7.0\ce100-hw3-algo-lib-cs.dll
+C:\Users\bayra\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\bin\Debug\net7.0\ce100-hw3-algo-lib-cs.pdb
+C:\Users\bayra\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\obj\Debug\net7.0\ce100-hw3-algo-lib-cs.csproj.AssemblyReference.cache
+C:\Users\bayra\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\obj\Debug\net7.0\ce100-hw3-algo-lib-cs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bayra\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\obj\Debug\net7.0\ce100-hw3-algo-lib-cs.AssemblyInfoInputs.cache
+C:\Users\bayra\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\obj\Debug\net7.0\ce100-hw3-algo-lib-cs.AssemblyInfo.cs
+C:\Users\bayra\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\obj\Debug\net7.0\ce100-hw3-algo-lib-cs.csproj.CoreCompileInputs.cache
+C:\Users\bayra\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\obj\Debug\net7.0\ce100-hw3-algo-lib-cs.dll
+C:\Users\bayra\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\obj\Debug\net7.0\refint\ce100-hw3-algo-lib-cs.dll
+C:\Users\bayra\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\obj\Debug\net7.0\ce100-hw3-algo-lib-cs.pdb
+C:\Users\bayra\Desktop\ce100-hw3-hamzaeren-gencalioglu\ce100-hw3-algo-lib-cs\obj\Debug\net7.0\ref\ce100-hw3-algo-lib-cs.dll
