@@ -16,3 +16,5 @@ You need to open the project by cloning the project from github to your computer
 Do not run the project by downloading as zip
 
 ## You Can Clone This Repo By Typing The Following Command In Gitbash
+
+https://github.com/hamzaerengencalioglu/ce100-hw3-hamzaeren-gencalioglu.git
