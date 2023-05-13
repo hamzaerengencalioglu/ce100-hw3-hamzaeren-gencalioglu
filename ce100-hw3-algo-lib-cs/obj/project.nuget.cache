@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "mshMrWy1SpQ/gnqa1OHL7xcoHZz7Cz+EXj/F/gAq+I4krBaewzUIVl0Ju3eIY4UvkLno3AR/b63cq5i0Pl8wAQ==",
+  "dgSpecHash": "TK96exeooeYPSQ1qcwa4K0QKwinlw5evxZyQL5Zzt2bbVD9PyIwfOJgVqu9Hvx2FAuZODkkkwtoGKYszVhf2cw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bayra\\Desktop\\ce100-hw3-hamzaeren-gencalioglu\\ce100-hw3-algo-lib-cs\\ce100-hw3-algo-lib-cs.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\ce100-hw3-hamzaeren-gencalioglu\\ce100-hw3-algo-lib-cs\\ce100-hw3-algo-lib-cs.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.5\\microsoft.netcore.app.runtime.win-x64.7.0.5.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.5\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.5.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.5\\microsoft.aspnetcore.app.runtime.win-x64.7.0.5.nupkg.sha512"
+  ],
   "logs": []
 }
