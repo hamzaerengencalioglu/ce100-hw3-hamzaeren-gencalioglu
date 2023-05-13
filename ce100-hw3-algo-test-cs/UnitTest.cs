@@ -1,7 +1,5 @@
 ﻿using ce100_hw3_algo_lib_cs;
 using System.Collections;
-
-
 namespace ce100_hw3_algo_test_cs {
 public class UnitTest {
 
@@ -148,6 +146,61 @@ public class UnitTest {
     };
     Assert.Equal(expectedSteps, steps);
   }
-}
+
+       
+            [Fact] // Applying the Fact attribute to the following method to indicate that it is a test method
+            public void ConnectTrees_ValidTreeCount_GeneratesPipeline() // Defining a public method named ConnectTrees_ValidTreeCount_GeneratesPipeline that takes no arguments and returns nothing
+            {
+                // Arrange
+                int treeCount = 15; // Declaring an integer variable named treeCount and initializing it with the value of 15
+                pipelinesystems garden = new pipelinesystems(treeCount); // Creating a new pipelinesystems object named garden with treeCount as an argument
+
+                // Act
+                garden.ConnectTrees(); // Calling the ConnectTrees method on the garden object
+                List<string> pipelineDescription = garden.GetPipelineDescription(); // Calling the GetPipelineDescription method on the garden object and assigning its return value to the pipelineDescription variable
+
+                // Assert
+                Assert.NotEmpty(pipelineDescription); // Asserting that the pipelineDescription list is not empty using the NotEmpty method of the Assert class
+                Assert.Equal(treeCount - 1, pipelineDescription.Count); // Asserting that the value of treeCount - 1 is equal to the Count property of the pipelineDescription list using the Equal method of the Assert class
+            }
+
+            [Fact] // Applying the Fact attribute to the following method to indicate that it is a test method
+            public void ConnectTrees_TooFewTrees_ThrowsArgumentException() // Defining a public method named ConnectTrees_TooFewTrees_ThrowsArgumentException that takes no arguments and returns nothing
+            {
+                // Arrange
+                int treeCount = 5; // Declaring an integer variable named treeCount and initializing it with the value of 5
+
+                // Act & Assert
+                Assert.Throws<ArgumentException>(() => new pipelinesystems(treeCount)); // Asserting that calling the pipelinesystems constructor with treeCount as an argument throws an ArgumentException using the Throws method of the Assert class
+            }
+      
+        
+            
+            
+            [Fact]
+            public void BelmannFord_Test()
+            {
+              
+                // Create a graph with 5 vertices
+                int verticesCount = 5;
+                BellmanFord bellmanFord = new BellmanFord(verticesCount);
+
+                // Add edges to the graph
+                bellmanFord.AddEdge(0, 1, 6);
+                bellmanFord.AddEdge(0, 2, 7);
+                bellmanFord.AddEdge(1, 3, 5);
+                bellmanFord.AddEdge(2, 3, -2);
+                bellmanFord.AddEdge(3, 4, -4);
+
+                // Find the shortest path from vertex 0 to vertex 4
+                int[] shortestPath = bellmanFord.FindShortestPath(0, 4);
+
+                // Validate the result
+                int[] expectedPath = { 0, 2, 3, 4 };
+                Assert.Equal(expectedPath, shortestPath);
+                
+            }
+        
+    }
 
 }
