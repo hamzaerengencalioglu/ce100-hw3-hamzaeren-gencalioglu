@@ -152,7 +152,7 @@ jobs:
             Changes in this release:
             ${{ steps.commit_summary.outputs.summary }}
             
-            Dr. Ugur CORUH
+            Hamza Eren Gencalioglu
           draft: false
           prerelease: false
         
