@@ -121,10 +121,17 @@ jobs:
         id: commit_summary
         run: echo "::set-output name=summary::$(git log --format=%B -n 1 ${{ github.sha }})"
 
-      - name: Create Release
-        id: create_common_release
-        uses: actions/create-release@v1
-        env:
+      steps:
+  - name: Create Release
+    uses: actions/create-release@v1
+    with:
+      tag_name: refs/tags/v1.0.0
+      release_name: Release refs/tags/v1.0.0
+      body: Changes in this release:
+      draft: false
+      prerelease: false
+    env:
+
           GITHUB_TOKEN: ${{ secrets.CE100_HW3 }}
         with:
           tag_name: ${{ github.ref }}
