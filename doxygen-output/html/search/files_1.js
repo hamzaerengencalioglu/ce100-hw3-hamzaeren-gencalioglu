@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ikeaassemblyguide_2ecs_0',['IkeaAssemblyGuide.cs',['../_ikea_assembly_guide_8cs.html',1,'']]]
+  ['huffman_2ecs_0',['Huffman.cs',['../_huffman_8cs.html',1,'']]]
 ];

@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classpipelinesystems_1_1_union_find" kind="class" language="C#" prot="private">
+    <compoundname>pipelinesystems::UnionFind</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpipelinesystems_1_1_union_find_1ae2a0e69bb73bdff7fc047586a05d6b40" prot="private" static="no" mutable="no">
+        <type>int[]</type>
+        <definition>int [] pipelinesystems.UnionFind.parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <qualifiedname>pipelinesystems.UnionFind.parent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="125" column="21" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpipelinesystems_1_1_union_find_1ac7bef86289e0d2e11a4579ce620e6d88" prot="private" static="no" mutable="no">
+        <type>int[]</type>
+        <definition>int [] pipelinesystems.UnionFind.rank</definition>
+        <argsstring></argsstring>
+        <name>rank</name>
+        <qualifiedname>pipelinesystems.UnionFind.rank</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="126" column="21" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpipelinesystems_1_1_union_find_1aa9b6922fb57b8f697b83d54770c26dd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pipelinesystems.UnionFind.UnionFind</definition>
+        <argsstring>(int size)</argsstring>
+        <name>UnionFind</name>
+        <qualifiedname>pipelinesystems.UnionFind.UnionFind</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="128" column="16" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="128" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classpipelinesystems_1_1_union_find_1a6a80647ff064a3f400a8f99c71331eff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int pipelinesystems.UnionFind.Find</definition>
+        <argsstring>(int x)</argsstring>
+        <name>Find</name>
+        <qualifiedname>pipelinesystems.UnionFind.Find</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="140" column="20" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="140" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classpipelinesystems_1_1_union_find_1a5e605ed305c8801cdb2aa13289df2fce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pipelinesystems.UnionFind.Union</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>Union</name>
+        <qualifiedname>pipelinesystems.UnionFind.Union</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="150" column="21" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="150" bodyend="171"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a disjoint-set data structure used in the Kruskal algorithm. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="123" column="12" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="124" bodyend="172"/>
+    <listofallmembers>
+      <member refid="classpipelinesystems_1_1_union_find_1a6a80647ff064a3f400a8f99c71331eff" prot="public" virt="non-virtual"><scope>pipelinesystems::UnionFind</scope><name>Find</name></member>
+      <member refid="classpipelinesystems_1_1_union_find_1ae2a0e69bb73bdff7fc047586a05d6b40" prot="private" virt="non-virtual"><scope>pipelinesystems::UnionFind</scope><name>parent</name></member>
+      <member refid="classpipelinesystems_1_1_union_find_1ac7bef86289e0d2e11a4579ce620e6d88" prot="private" virt="non-virtual"><scope>pipelinesystems::UnionFind</scope><name>rank</name></member>
+      <member refid="classpipelinesystems_1_1_union_find_1a5e605ed305c8801cdb2aa13289df2fce" prot="public" virt="non-virtual"><scope>pipelinesystems::UnionFind</scope><name>Union</name></member>
+      <member refid="classpipelinesystems_1_1_union_find_1aa9b6922fb57b8f697b83d54770c26dd7" prot="public" virt="non-virtual"><scope>pipelinesystems::UnionFind</scope><name>UnionFind</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

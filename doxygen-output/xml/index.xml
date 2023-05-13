@@ -1,5 +1,24 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.6" xml:lang="en-US">
+  <compound refid="class_bellman_ford" kind="class"><name>BellmanFord</name>
+    <member refid="class_bellman_ford_1a7ca991e009a78fea3458d6cf836a2362" kind="variable"><name>verticesCount</name></member>
+    <member refid="class_bellman_ford_1a42800da4a8bb6da0340092f7cbf87415" kind="variable"><name>edges</name></member>
+    <member refid="class_bellman_ford_1a946cfec3f7b8efc6f84d210c75c4570d" kind="function"><name>BellmanFord</name></member>
+    <member refid="class_bellman_ford_1af086a4bd967466df2b11c3a5224823b3" kind="function"><name>AddEdge</name></member>
+    <member refid="class_bellman_ford_1a66d7123071576754ae6d6041bcbdd2c3" kind="function"><name>FindShortestPath</name></member>
+  </compound>
+  <compound refid="classpipelinesystems_1_1_edge" kind="class"><name>pipelinesystems::Edge</name>
+    <member refid="classpipelinesystems_1_1_edge_1abe80e07ec2b6213ce6f05186bc686ee1" kind="property"><name>From</name></member>
+    <member refid="classpipelinesystems_1_1_edge_1ab2a92f7822ba480075044a64d9c7f204" kind="property"><name>To</name></member>
+    <member refid="classpipelinesystems_1_1_edge_1a9fc8e6b83319c398b2e9a476f1d64d84" kind="property"><name>Distance</name></member>
+    <member refid="classpipelinesystems_1_1_edge_1a3593608776f7e1bd7fc5d7b05d185285" kind="function"><name>Edge</name></member>
+  </compound>
+  <compound refid="class_bellman_ford_1_1_edge1" kind="class"><name>BellmanFord::Edge1</name>
+    <member refid="class_bellman_ford_1_1_edge1_1a7daf58b6e651c826f2d85cf9e2efad29" kind="property"><name>Source</name></member>
+    <member refid="class_bellman_ford_1_1_edge1_1a273aa25358afeeaf015d58141785d889" kind="property"><name>Destination</name></member>
+    <member refid="class_bellman_ford_1_1_edge1_1ada4915404ba0e40af78cf72e56fef40d" kind="property"><name>Weight</name></member>
+    <member refid="class_bellman_ford_1_1_edge1_1ae2f185bf2c593591ee071b236dc2b15d" kind="function"><name>Edge1</name></member>
+  </compound>
   <compound refid="classce100__hw3__algo__lib__cs_1_1_huffman" kind="class"><name>ce100_hw3_algo_lib_cs::Huffman</name>
     <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1ac78f79ce7f37e1a249e211ba48c7376e" kind="function"><name>GenerateLoremIpsum</name></member>
     <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1a831aa46624b616207428159df16c0888" kind="function"><name>WriteBitArray</name></member>
@@ -49,13 +68,46 @@
     <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1ad70aaa343d42c6b1e5aadbfd766b34f8" kind="property"><name>Right</name></member>
     <member refid="classce100__hw3__algo__lib__cs_1_1_huffman_1_1_node__mp3_1a49f1ff1a6b0b87810598dbca37d33246" kind="function"><name>Traverse_mp3</name></member>
   </compound>
+  <compound refid="classpipelinesystems" kind="class"><name>pipelinesystems</name>
+    <member refid="classpipelinesystems_1a36edf19bee70c4a6e0f16229e6326aaf" kind="variable"><name>treeCount</name></member>
+    <member refid="classpipelinesystems_1addfc97680ae7e7a0d509628886f94c8f" kind="variable"><name>trees</name></member>
+    <member refid="classpipelinesystems_1a7406d32e196dfebbe755d9577442ec56" kind="variable"><name>pipeline</name></member>
+    <member refid="classpipelinesystems_1aa6870409daa258902966c4944355d866" kind="function"><name>pipelinesystems</name></member>
+    <member refid="classpipelinesystems_1a0aa681d1bb8e3c12ba87e85f2915b6af" kind="function"><name>ConnectTrees</name></member>
+    <member refid="classpipelinesystems_1a1e9f0362862f799b600d1902598d94f8" kind="function"><name>GetPipelineDescription</name></member>
+    <member refid="classpipelinesystems_1a3ffc155aac741d0e541e964ec7c646ed" kind="function"><name>GenerateRandomTreePositions</name></member>
+    <member refid="classpipelinesystems_1ae6005093a7c81a7f9f22dcf1c8e5d813" kind="function"><name>CalculateDistance</name></member>
+  </compound>
+  <compound refid="classpipelinesystems_1_1_tree" kind="class"><name>pipelinesystems::Tree</name>
+    <member refid="classpipelinesystems_1_1_tree_1a653ca7ea80f2c1573400e5eeb24b449c" kind="property"><name>X</name></member>
+    <member refid="classpipelinesystems_1_1_tree_1a992fdbd94ea748f28b6dbe8dba037d28" kind="property"><name>Y</name></member>
+    <member refid="classpipelinesystems_1_1_tree_1a5a2d4f8dfb3466189f0deeeefbc49f36" kind="function"><name>Tree</name></member>
+  </compound>
+  <compound refid="classpipelinesystems_1_1_union_find" kind="class"><name>pipelinesystems::UnionFind</name>
+    <member refid="classpipelinesystems_1_1_union_find_1ae2a0e69bb73bdff7fc047586a05d6b40" kind="variable"><name>parent</name></member>
+    <member refid="classpipelinesystems_1_1_union_find_1ac7bef86289e0d2e11a4579ce620e6d88" kind="variable"><name>rank</name></member>
+    <member refid="classpipelinesystems_1_1_union_find_1aa9b6922fb57b8f697b83d54770c26dd7" kind="function"><name>UnionFind</name></member>
+    <member refid="classpipelinesystems_1_1_union_find_1a6a80647ff064a3f400a8f99c71331eff" kind="function"><name>Find</name></member>
+    <member refid="classpipelinesystems_1_1_union_find_1a5e605ed305c8801cdb2aa13289df2fce" kind="function"><name>Union</name></member>
+  </compound>
   <compound refid="namespacece100__hw3__algo__lib__cs" kind="namespace"><name>ce100_hw3_algo_lib_cs</name>
   </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
   <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_dynamic" kind="namespace"><name>System::Dynamic</name>
+  </compound>
+  <compound refid="_bellman_ford_8cs" kind="file"><name>BellmanFord.cs</name>
   </compound>
   <compound refid="_huffman_8cs" kind="file"><name>Huffman.cs</name>
   </compound>
   <compound refid="_ikea_assembly_guide_8cs" kind="file"><name>IkeaAssemblyGuide.cs</name>
+  </compound>
+  <compound refid="pipelinesystems_8cs" kind="file"><name>pipelinesystems.cs</name>
+    <member refid="pipelinesystems_8cs_1abca09429cc4875f2e7694066585cf8e9" kind="property"><name>Tree</name></member>
   </compound>
   <compound refid="dir_36d2cb02d08d66d22668bdf82f9e462e" kind="dir"><name>ce100-hw3-algo-lib-cs</name>
   </compound>

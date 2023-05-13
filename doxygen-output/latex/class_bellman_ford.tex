@@ -1,0 +1,166 @@
+\hypertarget{class_bellman_ford}{}\doxysection{Bellman\+Ford Class Reference}
+\label{class_bellman_ford}\index{BellmanFord@{BellmanFord}}
+
+
+Bellman-\/\+Ford algorithm implementation for finding the shortest path in a graph.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bellman_ford_a946cfec3f7b8efc6f84d210c75c4570d}{Bellman\+Ford}} (int vertices\+Count)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{class_bellman_ford}{Bellman\+Ford}} object with the specified number of vertices. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bellman_ford_af086a4bd967466df2b11c3a5224823b3}{Add\+Edge}} (int source, int destination, int weight)
+\begin{DoxyCompactList}\small\item\em Adds an edge to the graph. \end{DoxyCompactList}\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_bellman_ford_a66d7123071576754ae6d6041bcbdd2c3}{Find\+Shortest\+Path}} (int source, int destination)
+\begin{DoxyCompactList}\small\item\em Finds the shortest path from a source vertex to a destination vertex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Bellman-\/\+Ford algorithm implementation for finding the shortest path in a graph. 
+
+This class represents the Bellman-\/\+Ford algorithm implementation. 
+
+Definition at line \mbox{\hyperlink{_bellman_ford_8cs_source_l00006}{6}} of file \mbox{\hyperlink{_bellman_ford_8cs_source}{Bellman\+Ford.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bellman_ford_a946cfec3f7b8efc6f84d210c75c4570d}\label{class_bellman_ford_a946cfec3f7b8efc6f84d210c75c4570d}} 
+\index{BellmanFord@{BellmanFord}!BellmanFord@{BellmanFord}}
+\index{BellmanFord@{BellmanFord}!BellmanFord@{BellmanFord}}
+\doxysubsubsection{\texorpdfstring{BellmanFord()}{BellmanFord()}}
+{\footnotesize\ttfamily Bellman\+Ford.\+Bellman\+Ford (\begin{DoxyParamCaption}\item[{int}]{vertices\+Count }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{class_bellman_ford}{Bellman\+Ford}} object with the specified number of vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices\+Count} & The number of vertices in the graph. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_bellman_ford_8cs_source_l00013}{13}} of file \mbox{\hyperlink{_bellman_ford_8cs_source}{Bellman\+Ford.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014\ \ \ \ \ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ this.verticesCount\ =\ verticesCount;}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ edges\ =\ \textcolor{keyword}{new}\ List<Edge1>();}
+\DoxyCodeLine{00017\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bellman_ford_af086a4bd967466df2b11c3a5224823b3}\label{class_bellman_ford_af086a4bd967466df2b11c3a5224823b3}} 
+\index{BellmanFord@{BellmanFord}!AddEdge@{AddEdge}}
+\index{AddEdge@{AddEdge}!BellmanFord@{BellmanFord}}
+\doxysubsubsection{\texorpdfstring{AddEdge()}{AddEdge()}}
+{\footnotesize\ttfamily void Bellman\+Ford.\+Add\+Edge (\begin{DoxyParamCaption}\item[{int}]{source,  }\item[{int}]{destination,  }\item[{int}]{weight }\end{DoxyParamCaption})}
+
+
+
+Adds an edge to the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & The source vertex of the edge. \\
+\hline
+{\em destination} & The destination vertex of the edge. \\
+\hline
+{\em weight} & The weight/cost of the edge. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_bellman_ford_8cs_source_l00023}{23}} of file \mbox{\hyperlink{_bellman_ford_8cs_source}{Bellman\+Ford.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024\ \ \ \ \ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ edges.Add(\textcolor{keyword}{new}\ Edge1(source,\ destination,\ weight));}
+\DoxyCodeLine{00026\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_bellman_ford_a66d7123071576754ae6d6041bcbdd2c3}\label{class_bellman_ford_a66d7123071576754ae6d6041bcbdd2c3}} 
+\index{BellmanFord@{BellmanFord}!FindShortestPath@{FindShortestPath}}
+\index{FindShortestPath@{FindShortestPath}!BellmanFord@{BellmanFord}}
+\doxysubsubsection{\texorpdfstring{FindShortestPath()}{FindShortestPath()}}
+{\footnotesize\ttfamily int\mbox{[}$\,$\mbox{]} Bellman\+Ford.\+Find\+Shortest\+Path (\begin{DoxyParamCaption}\item[{int}]{source,  }\item[{int}]{destination }\end{DoxyParamCaption})}
+
+
+
+Finds the shortest path from a source vertex to a destination vertex. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & The source vertex. \\
+\hline
+{\em destination} & The destination vertex. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array representing the shortest path from the source vertex to the destination vertex. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_bellman_ford_8cs_source_l00032}{32}} of file \mbox{\hyperlink{_bellman_ford_8cs_source}{Bellman\+Ford.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00033\ \ \ \ \ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}[]\ distances1\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{int}[verticesCount];}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}[]\ previous\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{int}[verticesCount];}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Step\ 1:\ Initialize\ distances}}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ verticesCount;\ i++)}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ distances1[i]\ =\ \textcolor{keywordtype}{int}.MaxValue;}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ previous[i]\ =\ -\/1;}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ distances1[source]\ =\ 0;}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Step\ 2:\ Relax\ edges\ repeatedly}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ verticesCount\ -\/\ 1;\ i++)}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (Edge1\ edge\ \textcolor{keywordflow}{in}\ edges)}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (distances1[edge.Source]\ !=\ \textcolor{keywordtype}{int}.MaxValue\ \&\&\ distances1[edge.Source]\ +\ edge.Weight\ <\ distances1[edge.Destination])}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ distances1[edge.Destination]\ =\ distances1[edge.Source]\ +\ edge.Weight;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ previous[edge.Destination]\ =\ edge.Source;}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Step\ 3:\ Check\ for\ negative-\/weight\ cycles}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (Edge1\ edge\ \textcolor{keywordflow}{in}\ edges)}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (distances1[edge.Source]\ !=\ \textcolor{keywordtype}{int}.MaxValue\ \&\&\ distances1[edge.Source]\ +\ edge.Weight\ <\ distances1[edge.Destination])}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ Exception(\textcolor{stringliteral}{"{}Negative-\/weight\ cycle\ detected.\ Bellman-\/Ford\ algorithm\ cannot\ handle\ negative-\/weight\ cycles."{}});}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Step\ 4:\ Reconstruct\ the\ shortest\ path}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ List<int>\ path\ =\ \textcolor{keyword}{new}\ List<int>();}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ current\ =\ destination;}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (current\ !=\ -\/1)}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ path.Insert(0,\ current);}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ current\ =\ previous[current];}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ path.ToArray();}
+\DoxyCodeLine{00077\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce100-\/hw3-\/algo-\/lib-\/cs/\mbox{\hyperlink{_bellman_ford_8cs}{Bellman\+Ford.\+cs}}\end{DoxyCompactItemize}

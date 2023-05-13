@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classpipelinesystems_1_1_edge" kind="class" language="C#" prot="private">
+    <compoundname>pipelinesystems::Edge</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="classpipelinesystems_1_1_edge_1abe80e07ec2b6213ce6f05186bc686ee1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int pipelinesystems.Edge.From</definition>
+        <argsstring></argsstring>
+        <name>From</name>
+        <qualifiedname>pipelinesystems.Edge.From</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="110" column="20" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="property" id="classpipelinesystems_1_1_edge_1ab2a92f7822ba480075044a64d9c7f204" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int pipelinesystems.Edge.To</definition>
+        <argsstring></argsstring>
+        <name>To</name>
+        <qualifiedname>pipelinesystems.Edge.To</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="111" column="20" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="111" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="property" id="classpipelinesystems_1_1_edge_1a9fc8e6b83319c398b2e9a476f1d64d84" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double pipelinesystems.Edge.Distance</definition>
+        <argsstring></argsstring>
+        <name>Distance</name>
+        <qualifiedname>pipelinesystems.Edge.Distance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="112" column="23" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="112" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpipelinesystems_1_1_edge_1a3593608776f7e1bd7fc5d7b05d185285" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pipelinesystems.Edge.Edge</definition>
+        <argsstring>(int from, int to, double distance)</argsstring>
+        <name>Edge</name>
+        <qualifiedname>pipelinesystems.Edge.Edge</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>distance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="114" column="16" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="114" bodyend="119"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents an edge (pipeline) between two trees in the pipeline system. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="108" column="12" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="109" bodyend="120"/>
+    <listofallmembers>
+      <member refid="classpipelinesystems_1_1_edge_1a9fc8e6b83319c398b2e9a476f1d64d84" prot="public" virt="non-virtual"><scope>pipelinesystems::Edge</scope><name>Distance</name></member>
+      <member refid="classpipelinesystems_1_1_edge_1a3593608776f7e1bd7fc5d7b05d185285" prot="public" virt="non-virtual"><scope>pipelinesystems::Edge</scope><name>Edge</name></member>
+      <member refid="classpipelinesystems_1_1_edge_1abe80e07ec2b6213ce6f05186bc686ee1" prot="public" virt="non-virtual"><scope>pipelinesystems::Edge</scope><name>From</name></member>
+      <member refid="classpipelinesystems_1_1_edge_1ab2a92f7822ba480075044a64d9c7f204" prot="public" virt="non-virtual"><scope>pipelinesystems::Edge</scope><name>To</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

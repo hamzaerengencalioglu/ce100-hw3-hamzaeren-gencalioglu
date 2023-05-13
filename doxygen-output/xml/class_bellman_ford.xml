@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_bellman_ford" kind="class" language="C#" prot="public">
+    <compoundname>BellmanFord</compoundname>
+    <innerclass refid="class_bellman_ford_1_1_edge1" prot="private">BellmanFord::Edge1</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bellman_ford_1a7ca991e009a78fea3458d6cf836a2362" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BellmanFord.verticesCount</definition>
+        <argsstring></argsstring>
+        <name>verticesCount</name>
+        <qualifiedname>BellmanFord.verticesCount</qualifiedname>
+        <briefdescription>
+<para>The number of vertices in the graph. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/BellmanFord.cs" line="8" column="17" bodyfile="ce100-hw3-algo-lib-cs/BellmanFord.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bellman_ford_1a42800da4a8bb6da0340092f7cbf87415" prot="private" static="no" mutable="no">
+        <type>List&lt; Edge1 &gt;</type>
+        <definition>List&lt;Edge1&gt; BellmanFord.edges</definition>
+        <argsstring></argsstring>
+        <name>edges</name>
+        <qualifiedname>BellmanFord.edges</qualifiedname>
+        <briefdescription>
+<para>The list of edges in the graph. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/BellmanFord.cs" line="9" column="18" bodyfile="ce100-hw3-algo-lib-cs/BellmanFord.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bellman_ford_1a946cfec3f7b8efc6f84d210c75c4570d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BellmanFord.BellmanFord</definition>
+        <argsstring>(int verticesCount)</argsstring>
+        <name>BellmanFord</name>
+        <qualifiedname>BellmanFord.BellmanFord</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>verticesCount</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="class_bellman_ford" kindref="compound">BellmanFord</ref> object with the specified number of vertices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>verticesCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of vertices in the graph. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/BellmanFord.cs" line="13" column="12" bodyfile="ce100-hw3-algo-lib-cs/BellmanFord.cs" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bellman_ford_1af086a4bd967466df2b11c3a5224823b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BellmanFord.AddEdge</definition>
+        <argsstring>(int source, int destination, int weight)</argsstring>
+        <name>AddEdge</name>
+        <qualifiedname>BellmanFord.AddEdge</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>destination</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>weight</declname>
+        </param>
+        <briefdescription>
+<para>Adds an edge to the graph. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source vertex of the edge. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destination</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination vertex of the edge. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The weight/cost of the edge. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/BellmanFord.cs" line="23" column="17" bodyfile="ce100-hw3-algo-lib-cs/BellmanFord.cs" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bellman_ford_1a66d7123071576754ae6d6041bcbdd2c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int[]</type>
+        <definition>int[] BellmanFord.FindShortestPath</definition>
+        <argsstring>(int source, int destination)</argsstring>
+        <name>FindShortestPath</name>
+        <qualifiedname>BellmanFord.FindShortestPath</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>destination</declname>
+        </param>
+        <briefdescription>
+<para>Finds the shortest path from a source vertex to a destination vertex. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source vertex. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destination</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination vertex. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An array representing the shortest path from the source vertex to the destination vertex. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/BellmanFord.cs" line="32" column="16" bodyfile="ce100-hw3-algo-lib-cs/BellmanFord.cs" bodystart="32" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bellman-Ford algorithm implementation for finding the shortest path in a graph. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class represents the Bellman-Ford algorithm implementation. </para>
+    </detaileddescription>
+    <location file="ce100-hw3-algo-lib-cs/BellmanFord.cs" line="6" column="7" bodyfile="ce100-hw3-algo-lib-cs/BellmanFord.cs" bodystart="7" bodyend="97"/>
+    <listofallmembers>
+      <member refid="class_bellman_ford_1af086a4bd967466df2b11c3a5224823b3" prot="public" virt="non-virtual"><scope>BellmanFord</scope><name>AddEdge</name></member>
+      <member refid="class_bellman_ford_1a946cfec3f7b8efc6f84d210c75c4570d" prot="public" virt="non-virtual"><scope>BellmanFord</scope><name>BellmanFord</name></member>
+      <member refid="class_bellman_ford_1a42800da4a8bb6da0340092f7cbf87415" prot="private" virt="non-virtual"><scope>BellmanFord</scope><name>edges</name></member>
+      <member refid="class_bellman_ford_1a66d7123071576754ae6d6041bcbdd2c3" prot="public" virt="non-virtual"><scope>BellmanFord</scope><name>FindShortestPath</name></member>
+      <member refid="class_bellman_ford_1a7ca991e009a78fea3458d6cf836a2362" prot="private" virt="non-virtual"><scope>BellmanFord</scope><name>verticesCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

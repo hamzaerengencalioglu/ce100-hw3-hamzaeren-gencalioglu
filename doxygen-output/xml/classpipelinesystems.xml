@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classpipelinesystems" kind="class" language="C#" prot="public">
+    <compoundname>pipelinesystems</compoundname>
+    <innerclass refid="classpipelinesystems_1_1_edge" prot="private">pipelinesystems::Edge</innerclass>
+    <innerclass refid="classpipelinesystems_1_1_tree" prot="private">pipelinesystems::Tree</innerclass>
+    <innerclass refid="classpipelinesystems_1_1_union_find" prot="private">pipelinesystems::UnionFind</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpipelinesystems_1a36edf19bee70c4a6e0f16229e6326aaf" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int pipelinesystems.treeCount</definition>
+        <argsstring></argsstring>
+        <name>treeCount</name>
+        <qualifiedname>pipelinesystems.treeCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="7" column="17" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpipelinesystems_1addfc97680ae7e7a0d509628886f94c8f" prot="private" static="no" mutable="no">
+        <type>List&lt; Tree &gt;</type>
+        <definition>List&lt;Tree&gt; pipelinesystems.trees</definition>
+        <argsstring></argsstring>
+        <name>trees</name>
+        <qualifiedname>pipelinesystems.trees</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="8" column="18" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpipelinesystems_1a7406d32e196dfebbe755d9577442ec56" prot="private" static="no" mutable="no">
+        <type>List&lt; Edge &gt;</type>
+        <definition>List&lt;Edge&gt; pipelinesystems.pipeline</definition>
+        <argsstring></argsstring>
+        <name>pipeline</name>
+        <qualifiedname>pipelinesystems.pipeline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="9" column="18" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpipelinesystems_1aa6870409daa258902966c4944355d866" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pipelinesystems.pipelinesystems</definition>
+        <argsstring>(int treeCount)</argsstring>
+        <name>pipelinesystems</name>
+        <qualifiedname>pipelinesystems.pipelinesystems</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>treeCount</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the pipelinesystems class with the specified tree count. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>treeCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of trees in the pipeline system. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="13" column="12" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="13" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classpipelinesystems_1a0aa681d1bb8e3c12ba87e85f2915b6af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pipelinesystems.ConnectTrees</definition>
+        <argsstring>()</argsstring>
+        <name>ConnectTrees</name>
+        <qualifiedname>pipelinesystems.ConnectTrees</qualifiedname>
+        <briefdescription>
+<para>Connects the trees in the pipeline system using the Kruskal algorithm. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="44" column="17" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="44" bodyend="67"/>
+        <references refid="pipelinesystems_8cs_1abca09429cc4875f2e7694066585cf8e9" compoundref="pipelinesystems_8cs" startline="87" endline="87">Tree</references>
+      </memberdef>
+      <memberdef kind="function" id="classpipelinesystems_1a1e9f0362862f799b600d1902598d94f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt; string &gt; pipelinesystems.GetPipelineDescription</definition>
+        <argsstring>()</argsstring>
+        <name>GetPipelineDescription</name>
+        <qualifiedname>pipelinesystems.GetPipelineDescription</qualifiedname>
+        <briefdescription>
+<para>Gets the description of the pipeline system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A list of strings describing the pipeline connections between trees. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="71" column="17" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="71" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpipelinesystems_1a3ffc155aac741d0e541e964ec7c646ed" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Tree &gt;</type>
+        <definition>List&lt; Tree &gt; pipelinesystems.GenerateRandomTreePositions</definition>
+        <argsstring>(int count)</argsstring>
+        <name>GenerateRandomTreePositions</name>
+        <qualifiedname>pipelinesystems.GenerateRandomTreePositions</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Generates random positions for the trees in the pipeline system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of trees to generate positions for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A list of Tree objects with random positions. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="28" column="18" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="28" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classpipelinesystems_1ae6005093a7c81a7f9f22dcf1c8e5d813" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pipelinesystems.CalculateDistance</definition>
+        <argsstring>(Tree tree1, Tree tree2)</argsstring>
+        <name>CalculateDistance</name>
+        <qualifiedname>pipelinesystems.CalculateDistance</qualifiedname>
+        <param>
+          <type>Tree</type>
+          <declname>tree1</declname>
+        </param>
+        <param>
+          <type>Tree</type>
+          <declname>tree2</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the distance between two trees. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tree1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first tree. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tree2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second tree. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The distance between the two trees. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="87" column="20" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="87" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="5" column="7" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="6" bodyend="173"/>
+    <listofallmembers>
+      <member refid="classpipelinesystems_1ae6005093a7c81a7f9f22dcf1c8e5d813" prot="private" virt="non-virtual"><scope>pipelinesystems</scope><name>CalculateDistance</name></member>
+      <member refid="classpipelinesystems_1a0aa681d1bb8e3c12ba87e85f2915b6af" prot="public" virt="non-virtual"><scope>pipelinesystems</scope><name>ConnectTrees</name></member>
+      <member refid="classpipelinesystems_1a3ffc155aac741d0e541e964ec7c646ed" prot="private" virt="non-virtual"><scope>pipelinesystems</scope><name>GenerateRandomTreePositions</name></member>
+      <member refid="classpipelinesystems_1a1e9f0362862f799b600d1902598d94f8" prot="public" virt="non-virtual"><scope>pipelinesystems</scope><name>GetPipelineDescription</name></member>
+      <member refid="classpipelinesystems_1a7406d32e196dfebbe755d9577442ec56" prot="private" virt="non-virtual"><scope>pipelinesystems</scope><name>pipeline</name></member>
+      <member refid="classpipelinesystems_1aa6870409daa258902966c4944355d866" prot="public" virt="non-virtual"><scope>pipelinesystems</scope><name>pipelinesystems</name></member>
+      <member refid="classpipelinesystems_1a36edf19bee70c4a6e0f16229e6326aaf" prot="private" virt="non-virtual"><scope>pipelinesystems</scope><name>treeCount</name></member>
+      <member refid="classpipelinesystems_1addfc97680ae7e7a0d509628886f94c8f" prot="private" virt="non-virtual"><scope>pipelinesystems</scope><name>trees</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

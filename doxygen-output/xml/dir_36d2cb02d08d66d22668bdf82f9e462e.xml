@@ -2,8 +2,10 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="dir_36d2cb02d08d66d22668bdf82f9e462e" kind="dir">
     <compoundname>ce100-hw3-algo-lib-cs</compoundname>
+    <innerfile refid="_bellman_ford_8cs">BellmanFord.cs</innerfile>
     <innerfile refid="_huffman_8cs">Huffman.cs</innerfile>
     <innerfile refid="_ikea_assembly_guide_8cs">IkeaAssemblyGuide.cs</innerfile>
+    <innerfile refid="pipelinesystems_8cs">pipelinesystems.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

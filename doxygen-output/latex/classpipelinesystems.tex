@@ -1,0 +1,138 @@
+\hypertarget{classpipelinesystems}{}\doxysection{pipelinesystems Class Reference}
+\label{classpipelinesystems}\index{pipelinesystems@{pipelinesystems}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpipelinesystems_aa6870409daa258902966c4944355d866}{pipelinesystems}} (int tree\+Count)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the pipelinesystems class with the specified tree count. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpipelinesystems_a0aa681d1bb8e3c12ba87e85f2915b6af}{Connect\+Trees}} ()
+\begin{DoxyCompactList}\small\item\em Connects the trees in the pipeline system using the Kruskal algorithm. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classpipelinesystems_a1e9f0362862f799b600d1902598d94f8}{Get\+Pipeline\+Description}} ()
+\begin{DoxyCompactList}\small\item\em Gets the description of the pipeline system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{pipelinesystems_8cs_source_l00005}{5}} of file \mbox{\hyperlink{pipelinesystems_8cs_source}{pipelinesystems.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpipelinesystems_aa6870409daa258902966c4944355d866}\label{classpipelinesystems_aa6870409daa258902966c4944355d866}} 
+\index{pipelinesystems@{pipelinesystems}!pipelinesystems@{pipelinesystems}}
+\index{pipelinesystems@{pipelinesystems}!pipelinesystems@{pipelinesystems}}
+\doxysubsubsection{\texorpdfstring{pipelinesystems()}{pipelinesystems()}}
+{\footnotesize\ttfamily pipelinesystems.\+pipelinesystems (\begin{DoxyParamCaption}\item[{int}]{tree\+Count }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the pipelinesystems class with the specified tree count. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree\+Count} & The number of trees in the pipeline system. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{pipelinesystems_8cs_source_l00013}{13}} of file \mbox{\hyperlink{pipelinesystems_8cs_source}{pipelinesystems.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014\ \ \ \ \ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (treeCount\ <\ 10)}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ ArgumentException(\textcolor{stringliteral}{"{}The\ minimum\ number\ of\ trees\ must\ be\ 10\ or\ more."{}});}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ this.treeCount\ =\ treeCount;}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ trees\ =\ GenerateRandomTreePositions(treeCount);}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ pipeline\ =\ \textcolor{keyword}{new}\ List<Edge>();}
+\DoxyCodeLine{00023\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpipelinesystems_a0aa681d1bb8e3c12ba87e85f2915b6af}\label{classpipelinesystems_a0aa681d1bb8e3c12ba87e85f2915b6af}} 
+\index{pipelinesystems@{pipelinesystems}!ConnectTrees@{ConnectTrees}}
+\index{ConnectTrees@{ConnectTrees}!pipelinesystems@{pipelinesystems}}
+\doxysubsubsection{\texorpdfstring{ConnectTrees()}{ConnectTrees()}}
+{\footnotesize\ttfamily void pipelinesystems.\+Connect\+Trees (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Connects the trees in the pipeline system using the Kruskal algorithm. 
+
+
+
+Definition at line \mbox{\hyperlink{pipelinesystems_8cs_source_l00044}{44}} of file \mbox{\hyperlink{pipelinesystems_8cs_source}{pipelinesystems.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00045\ \ \ \ \ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ List<Edge>\ allEdges\ =\ \textcolor{keyword}{new}\ List<Edge>();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ treeCount\ -\/\ 1;\ i++)}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{pipelinesystems_8cs_abca09429cc4875f2e7694066585cf8e9}{Tree}}\ tree1\ =\ trees[i];}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{pipelinesystems_8cs_abca09429cc4875f2e7694066585cf8e9}{Tree}}\ tree2\ =\ trees[i\ +\ 1];}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ distance\ =\ CalculateDistance(tree1,\ tree2);}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ allEdges.Add(\textcolor{keyword}{new}\ Edge(i,\ i\ +\ 1,\ distance));}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ allEdges.Sort((x,\ y)\ =>\ x.Distance.CompareTo(y.Distance));}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ UnionFind\ uf\ =\ \textcolor{keyword}{new}\ UnionFind(treeCount);}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (Edge\ edge\ \textcolor{keywordflow}{in}\ allEdges)}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (uf.Find(edge.From)\ !=\ uf.Find(edge.To))}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uf.Union(edge.From,\ edge.To);}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ pipeline.Add(edge);}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00067\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{pipelinesystems_8cs_source_l00087}{Tree}}.
+
+\mbox{\Hypertarget{classpipelinesystems_a1e9f0362862f799b600d1902598d94f8}\label{classpipelinesystems_a1e9f0362862f799b600d1902598d94f8}} 
+\index{pipelinesystems@{pipelinesystems}!GetPipelineDescription@{GetPipelineDescription}}
+\index{GetPipelineDescription@{GetPipelineDescription}!pipelinesystems@{pipelinesystems}}
+\doxysubsubsection{\texorpdfstring{GetPipelineDescription()}{GetPipelineDescription()}}
+{\footnotesize\ttfamily List$<$ string $>$ pipelinesystems.\+Get\+Pipeline\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the description of the pipeline system. 
+
+\begin{DoxyReturn}{Returns}
+A list of strings describing the pipeline connections between trees. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{pipelinesystems_8cs_source_l00071}{71}} of file \mbox{\hyperlink{pipelinesystems_8cs_source}{pipelinesystems.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00072\ \ \ \ \ \{}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ List<string>\ descriptions\ =\ \textcolor{keyword}{new}\ List<string>();}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (Edge\ edge\ \textcolor{keywordflow}{in}\ pipeline)}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ description\ =\ \$\textcolor{stringliteral}{"{}Tree\ \{edge.From\}\ is\ connected\ to\ Tree\ \{edge.To\}\ with\ a\ pipeline\ of\ length\ \{edge.Distance\}."{}};}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ descriptions.Add(description);}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ descriptions;}
+\DoxyCodeLine{00081\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce100-\/hw3-\/algo-\/lib-\/cs/\mbox{\hyperlink{pipelinesystems_8cs}{pipelinesystems.\+cs}}\end{DoxyCompactItemize}

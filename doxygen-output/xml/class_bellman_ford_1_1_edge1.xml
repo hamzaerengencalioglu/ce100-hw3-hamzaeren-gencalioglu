@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_bellman_ford_1_1_edge1" kind="class" language="C#" prot="private">
+    <compoundname>BellmanFord::Edge1</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_bellman_ford_1_1_edge1_1a7daf58b6e651c826f2d85cf9e2efad29" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int BellmanFord.Edge1.Source</definition>
+        <argsstring></argsstring>
+        <name>Source</name>
+        <qualifiedname>BellmanFord.Edge1.Source</qualifiedname>
+        <briefdescription>
+<para>The source vertex of the edge. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/BellmanFord.cs" line="82" column="20" bodyfile="ce100-hw3-algo-lib-cs/BellmanFord.cs" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="property" id="class_bellman_ford_1_1_edge1_1a273aa25358afeeaf015d58141785d889" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int BellmanFord.Edge1.Destination</definition>
+        <argsstring></argsstring>
+        <name>Destination</name>
+        <qualifiedname>BellmanFord.Edge1.Destination</qualifiedname>
+        <briefdescription>
+<para>The destination vertex of the edge. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/BellmanFord.cs" line="83" column="20" bodyfile="ce100-hw3-algo-lib-cs/BellmanFord.cs" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="property" id="class_bellman_ford_1_1_edge1_1ada4915404ba0e40af78cf72e56fef40d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int BellmanFord.Edge1.Weight</definition>
+        <argsstring></argsstring>
+        <name>Weight</name>
+        <qualifiedname>BellmanFord.Edge1.Weight</qualifiedname>
+        <briefdescription>
+<para>The weight/cost of the edge. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/BellmanFord.cs" line="84" column="20" bodyfile="ce100-hw3-algo-lib-cs/BellmanFord.cs" bodystart="84" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bellman_ford_1_1_edge1_1ae2f185bf2c593591ee071b236dc2b15d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BellmanFord.Edge1.Edge1</definition>
+        <argsstring>(int source, int destination, int weight)</argsstring>
+        <name>Edge1</name>
+        <qualifiedname>BellmanFord.Edge1.Edge1</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>destination</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>weight</declname>
+        </param>
+        <briefdescription>
+<para>Constructs an Edge object with the specified source, destination, and weight. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source vertex of the edge. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destination</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination vertex of the edge. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The weight/cost of the edge. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/BellmanFord.cs" line="90" column="16" bodyfile="ce100-hw3-algo-lib-cs/BellmanFord.cs" bodystart="90" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents an edge in the graph. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce100-hw3-algo-lib-cs/BellmanFord.cs" line="80" column="12" bodyfile="ce100-hw3-algo-lib-cs/BellmanFord.cs" bodystart="81" bodyend="96"/>
+    <listofallmembers>
+      <member refid="class_bellman_ford_1_1_edge1_1a273aa25358afeeaf015d58141785d889" prot="public" virt="non-virtual"><scope>BellmanFord::Edge1</scope><name>Destination</name></member>
+      <member refid="class_bellman_ford_1_1_edge1_1ae2f185bf2c593591ee071b236dc2b15d" prot="public" virt="non-virtual"><scope>BellmanFord::Edge1</scope><name>Edge1</name></member>
+      <member refid="class_bellman_ford_1_1_edge1_1a7daf58b6e651c826f2d85cf9e2efad29" prot="public" virt="non-virtual"><scope>BellmanFord::Edge1</scope><name>Source</name></member>
+      <member refid="class_bellman_ford_1_1_edge1_1ada4915404ba0e40af78cf72e56fef40d" prot="public" virt="non-virtual"><scope>BellmanFord::Edge1</scope><name>Weight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

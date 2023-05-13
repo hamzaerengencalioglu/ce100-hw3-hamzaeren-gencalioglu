@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classpipelinesystems_1_1_tree" kind="class" language="C#" prot="private">
+    <compoundname>pipelinesystems::Tree</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="classpipelinesystems_1_1_tree_1a653ca7ea80f2c1573400e5eeb24b449c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int pipelinesystems.Tree.X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <qualifiedname>pipelinesystems.Tree.X</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="97" column="20" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="property" id="classpipelinesystems_1_1_tree_1a992fdbd94ea748f28b6dbe8dba037d28" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int pipelinesystems.Tree.Y</definition>
+        <argsstring></argsstring>
+        <name>Y</name>
+        <qualifiedname>pipelinesystems.Tree.Y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="98" column="20" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="98" bodyend="98"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpipelinesystems_1_1_tree_1a5a2d4f8dfb3466189f0deeeefbc49f36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pipelinesystems.Tree.Tree</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>Tree</name>
+        <qualifiedname>pipelinesystems.Tree.Tree</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="100" column="16" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="100" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a tree in the pipeline system. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce100-hw3-algo-lib-cs/pipelinesystems.cs" line="95" column="12" bodyfile="ce100-hw3-algo-lib-cs/pipelinesystems.cs" bodystart="96" bodyend="105"/>
+    <listofallmembers>
+      <member refid="classpipelinesystems_1_1_tree_1a5a2d4f8dfb3466189f0deeeefbc49f36" prot="public" virt="non-virtual"><scope>pipelinesystems::Tree</scope><name>Tree</name></member>
+      <member refid="classpipelinesystems_1_1_tree_1a653ca7ea80f2c1573400e5eeb24b449c" prot="public" virt="non-virtual"><scope>pipelinesystems::Tree</scope><name>X</name></member>
+      <member refid="classpipelinesystems_1_1_tree_1a992fdbd94ea748f28b6dbe8dba037d28" prot="public" virt="non-virtual"><scope>pipelinesystems::Tree</scope><name>Y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

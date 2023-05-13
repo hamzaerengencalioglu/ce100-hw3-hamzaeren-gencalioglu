@@ -1,0 +1,119 @@
+\hypertarget{pipelinesystems_8cs}{}\doxysection{ce100-\/hw3-\/algo-\/lib-\/cs/pipelinesystems.cs File Reference}
+\label{pipelinesystems_8cs}\index{ce100-\/hw3-\/algo-\/lib-\/cs/pipelinesystems.cs@{ce100-\/hw3-\/algo-\/lib-\/cs/pipelinesystems.cs}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpipelinesystems}{pipelinesystems}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\$ \mbox{\hyperlink{pipelinesystems_8cs_abca09429cc4875f2e7694066585cf8e9}{Tree}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{pipelinesystems_8cs_abca09429cc4875f2e7694066585cf8e9}\label{pipelinesystems_8cs_abca09429cc4875f2e7694066585cf8e9}} 
+\index{pipelinesystems.cs@{pipelinesystems.cs}!Tree@{Tree}}
+\index{Tree@{Tree}!pipelinesystems.cs@{pipelinesystems.cs}}
+\doxysubsubsection{\texorpdfstring{Tree}{Tree}}
+{\footnotesize\ttfamily \$ Tree}
+
+
+
+Definition at line \mbox{\hyperlink{pipelinesystems_8cs_source_l00087}{87}} of file \mbox{\hyperlink{pipelinesystems_8cs_source}{pipelinesystems.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00088\ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ xDiff\ =\ tree1.X\ -\/\ tree2.X;}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ yDiff\ =\ tree1.Y\ -\/\ tree2.Y;}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Math.Sqrt(xDiff\ *\ xDiff\ +\ yDiff\ *\ yDiff);}
+\DoxyCodeLine{00092\ \ \ \ \ \}}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{pipelinesystems_8cs_abca09429cc4875f2e7694066585cf8e9}{Tree}}}
+\DoxyCodeLine{00096\ \ \ \ \ \{}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ X\ \{\ \textcolor{keyword}{get};\ \}}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ Y\ \{\ \textcolor{keyword}{get};\ \}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{pipelinesystems_8cs_abca09429cc4875f2e7694066585cf8e9}{Tree}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y) }
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ X\ =\ x;}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ Y\ =\ y;}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00105\ \ \ \ \ \}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{class\ }Edge}
+\DoxyCodeLine{00109\ \ \ \ \ \{}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ From\ \{\ \textcolor{keyword}{get};\ \}}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ To\ \{\ \textcolor{keyword}{get};\ \}}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{double}\ Distance\ \{\ \textcolor{keyword}{get};\ \}}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Edge(\textcolor{keywordtype}{int}\ from,\ \textcolor{keywordtype}{int}\ to,\ \textcolor{keywordtype}{double}\ distance) }
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ From\ =\ from;}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ To\ =\ to;}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ Distance\ =\ distance;}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00120\ \ \ \ \ \}}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{class\ }UnionFind}
+\DoxyCodeLine{00124\ \ \ \ \ \{}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}[]\ parent;}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}[]\ rank;}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ UnionFind(\textcolor{keywordtype}{int}\ size) }
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ parent\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{int}[size];}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ rank\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{int}[size];}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ size;\ i++)}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ parent[i]\ =\ i;}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ rank[i]\ =\ 0;}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Defining\ a\ public\ method\ named\ Find\ that\ takes\ an\ integer\ argument\ named\ x\ and\ returns\ an\ integer}}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ Find(\textcolor{keywordtype}{int}\ x) }
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (parent[x]\ !=\ x)}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ parent[x]\ =\ Find(parent[x]);}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ parent[x];}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ Union(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y)\textcolor{comment}{//\ Defining\ a\ public\ method\ named\ Union\ that\ takes\ two\ integer\ arguments\ named\ x\ and\ y\ and\ returns\ nothing}}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Calling\ the\ Find\ method\ with\ x\ and\ y\ as\ an\ argument\ and\ assigning\ its\ return\ value\ to\ the\ rootX\ and\ rootY\ variable}}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ rootX\ =\ Find(x);}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ rootY\ =\ Find(y);}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Checking\ if\ the\ element\ at\ index\ rootX\ in\ the\ rank\ array\ is\ less\ than\ the\ element\ at\ index\ rootY\ in\ the\ rank\ array}}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (rank[rootX]\ <\ rank[rootY])}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ parent[rootX]\ =\ rootY;}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ If\ it\ is\ less,\ assigning\ the\ value\ of\ rootY\ to\ the\ element\ at\ index\ rootX\ in\ the\ parent\ array}}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (rank[rootX]\ >\ rank[rootY])}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ parent[rootY]\ =\ rootX;}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ If\ neither\ of\ the\ previous\ conditions\ are\ true}}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ parent[rootY]\ =\ rootX;}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ rank[rootX]++;}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00172\ \ \ \ \ \}}
+\DoxyCodeLine{00173\ \}}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00176\ }
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{pipelinesystems_8cs_source_l00044}{pipelinesystems.\+Connect\+Trees()}}.
+
